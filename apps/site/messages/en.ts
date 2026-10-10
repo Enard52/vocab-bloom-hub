@@ -1,4 +1,30 @@
 export default {
+  comparison: {
+    version: 'API version',
+    close: 'Close',
+    title: 'Compare live responses',
+    description:
+      'The same English word is requested directly from {service} and from every installed dataset on this instance. Responses are displayed in the original service’s format.',
+    word: 'English word',
+    translations: 'Include translations',
+    compare: 'Compare',
+    provenance: 'Show vocabBloom extensions',
+    schema_note:
+      'Only vocabBloom extensions are hidden by default. All other response fields, values and array order are preserved, including source and license information. Expand dataset terms for attribution. The original response is fetched through this site’s server and may be cached for one minute.',
+    results: 'Results for “{word}”',
+    dataset_count: 'Datasets: {count}',
+    original: 'Original service',
+    loading: 'Loading…',
+    request_error:
+      'The request failed or timed out. The service may be unavailable, or your browser may have blocked the request. Try Compare again or open the request URL.',
+    active: 'Active',
+    group_status: 'Adapter status: {status}',
+    terms: 'Dataset terms and attribution',
+    datasets: 'Instance datasets',
+    dataset_error:
+      'The instance could not return the dataset groups. Check the response below and try again. This instance must support the /datasets compatibility routes.',
+    empty: 'No installed datasets were returned.',
+  },
   provenance: {
     dataset_sources: 'Dataset sources',
     contributions: 'Changes and their licenses',
@@ -133,6 +159,7 @@ export default {
       database: 'Database',
       operations: 'Operations',
       api: 'API',
+      migration: 'Migration guides',
       sdk: 'SDKs',
       data: 'Data',
       project: 'Project',

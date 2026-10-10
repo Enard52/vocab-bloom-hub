@@ -31,7 +31,7 @@ export type FreeDictionaryEntriesResT = {
   word: string;
   entries: FreeDictionaryEntryT[];
   source: { url: string; license: DictionaryApiLicenseT };
-  /** Active dataset terms. Word-specific origins are retained on each entry. */
+  /** Terms of the dataset read. Word-specific origins are retained on each entry. */
   vocabBloom: PublicDatasetTermsV1T;
 };
 /** Upstream parameter errors are plain text, not the native error envelope. */

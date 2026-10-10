@@ -17,8 +17,7 @@ export function validateFreeDictionaryQuery(
 ): { pretty: boolean; translations: boolean } {
   const query = freeDictionaryQuery(req);
   // Unknown upstream options are ignored, but never imply selection of a different dataset here.
-  if (query.has('dataset'))
-    throw new BadRequestException('Dataset selection is not supported; the active dataset is served.');
+  if (query.has('dataset')) throw new BadRequestException('Dataset selection is not supported on this route.');
   const translations = entries ? freeDictionaryBoolean(query, 'translations') : false;
   return { translations, pretty: freeDictionaryBoolean(query, 'pretty') };
 }

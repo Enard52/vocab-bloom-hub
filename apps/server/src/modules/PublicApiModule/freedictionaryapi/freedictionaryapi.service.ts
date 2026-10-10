@@ -8,6 +8,7 @@ import { scopedDataSource } from '../../../core/utils/dataset-scope';
 import { EnEntry } from '../../EnModule/entities/en_entry.entity';
 import { EnWord } from '../../EnModule/entities/en_word.entity';
 import { DatasetsService } from '../../DatasetsModule/datasets.service';
+import { Dataset } from '../../DatasetsModule/entities/dataset.entity';
 import { PublicMetaService } from '../public-meta.service';
 import { HeadwordReader } from '../utils/headword-reader';
 import { compatibilityLicense } from '../utils/compatibility';
@@ -40,8 +41,19 @@ export class FreeDictionaryApiService {
     translations: boolean,
     baseUrl: string,
   ): Promise<FreeDictionaryEntriesResT> {
-    const dataSource = scopedDataSource(this.dataSource);
-    const dataset = this.datasets.getActive();
+    return this.entriesIn(this.datasets.getActive(), language, word, translations, baseUrl);
+  }
+
+  /** The same spelling rules and projection on the connection of a given installed dataset. */
+  async entriesIn(
+    dataset: Dataset,
+    language: string,
+    word: string,
+    translations: boolean,
+    baseUrl: string,
+    emptySourceUrl = `${baseUrl}/api/v1/meta`,
+  ): Promise<FreeDictionaryEntriesResT> {
+    const dataSource = await this.datasets.reader(dataset);
     const terms = await this.meta.termsOf(dataset);
     let ids: number[] = [];
     if (language === 'en' || language === 'all') {
@@ -80,7 +92,7 @@ export class FreeDictionaryApiService {
     const entries = toFreeDictionaryEntries(rows, word, dataset.name, translations);
     const nativeUrl = rows.length
       ? `${baseUrl}/api/v1/words/${encodeURIComponent(rows[0].word)}/datasets`
-      : `${baseUrl}/api/v1/meta`;
+      : emptySourceUrl;
     const licenses = rows.length
       ? rows.flatMap((entry) =>
           [...(entry.origins ?? []), ...(entry.contributions ?? [])].flatMap((origin) => origin.licenses),

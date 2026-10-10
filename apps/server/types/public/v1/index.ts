@@ -481,6 +481,11 @@ export type PublicApiErrorT = ErrorResT & {
   statusCode: number;
 };
 
+export type {
+  DictionaryApiV1DatasetsResT,
+  DictionaryApiV2DatasetsResT,
+  FreeDictionaryDatasetsResT,
+} from '../compatibility-datasets';
 export type { DictionaryApiErrorT, DictionaryApiV1ResT, DictionaryApiV2ResT } from '../dictionaryapi';
 export type {
   FreeDictionaryEntriesResT,

@@ -1,3 +1,5 @@
+import type { ComparisonServiceT } from '@/components/MigrationComparison/data';
+
 import { InterfaceLanguageEnum } from '@/types/common';
 
 export enum DocSectionE {
@@ -6,6 +8,7 @@ export enum DocSectionE {
   database = 'database',
   operations = 'operations',
   api = 'api',
+  migration = 'migration',
   dict = 'dict',
   sdk = 'sdk',
   data = 'data',
@@ -28,6 +31,8 @@ export type DocPageT = {
    * pattern must hit in every translation (`content/sections.ts`)
    */
   extract?: RegExp;
+  /** Live adapter comparison rendered on migration pages. */
+  comparison?: ComparisonServiceT;
   section: DocSectionE;
   title: string;
   titleRu: string;
@@ -162,6 +167,24 @@ export const DOC_PAGES: DocPageT[] = [
     section: DocSectionE.api,
     title: 'Swagger and the API docs',
     titleRu: 'Swagger и документация API',
+  },
+  {
+    slug: 'migrate/dictionaryapi',
+    comparison: 'dictionaryapi',
+    file: 'docs/migrate-dictionaryapi.md',
+    translations: { [InterfaceLanguageEnum.ru]: 'docs/migrate-dictionaryapi.ru.md' },
+    section: DocSectionE.migration,
+    title: 'Migrate from dictionaryapi.dev',
+    titleRu: 'Переход с dictionaryapi.dev',
+  },
+  {
+    slug: 'migrate/freedictionaryapi',
+    comparison: 'freedictionaryapi',
+    file: 'docs/migrate-freedictionaryapi.md',
+    translations: { [InterfaceLanguageEnum.ru]: 'docs/migrate-freedictionaryapi.ru.md' },
+    section: DocSectionE.migration,
+    title: 'Migrate from freedictionaryapi.com',
+    titleRu: 'Переход с freedictionaryapi.com',
   },
   {
     slug: 'authentication',

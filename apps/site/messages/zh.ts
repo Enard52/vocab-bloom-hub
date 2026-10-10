@@ -1,5 +1,28 @@
 // reviewed: zh · @assassinationss · 2026-09-24 · bd845a9
 export default {
+  comparison: {
+    version: 'API 版本',
+    close: '关闭',
+    title: '实时比较响应',
+    description: '直接向 {service} 和此实例中每个已安装的数据集查询同一个英语单词。响应以原始服务的格式显示。',
+    word: '英语单词',
+    translations: '包含翻译',
+    compare: '比较',
+    provenance: '显示 vocabBloom 扩展',
+    schema_note:
+      '默认仅隐藏 vocabBloom 扩展。其他字段、值和数组顺序均保持不变，包括来源和许可证信息。展开数据集条款可查看署名信息。原始响应通过本站服务器获取，可能缓存一分钟。',
+    results: '“{word}”的结果',
+    dataset_count: '数据集：{count}',
+    original: '原始服务',
+    loading: '加载中…',
+    request_error: '请求失败或超时。服务可能不可用，或浏览器阻止了请求。请再次点击“比较”或打开请求 URL。',
+    active: '当前启用',
+    group_status: '适配器状态：{status}',
+    terms: '数据集条款和署名',
+    datasets: '实例数据集',
+    dataset_error: '实例未能返回数据集分组。请查看下方响应并重试。此实例必须支持适配器的 /datasets 路由。',
+    empty: '未返回已安装的数据集。',
+  },
   provenance: {
     dataset_sources: '数据集来源',
     contributions: '修改及其许可',
@@ -130,6 +153,7 @@ export default {
       database: '数据库',
       operations: '运维',
       api: 'API',
+      migration: '迁移指南',
       sdk: 'SDK',
       data: '数据',
       project: '项目',

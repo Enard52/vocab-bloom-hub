@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 240px minmax(0, 1fr);
   gap: 40px;
+
+  > div {
+    min-width: 0;
+  }
 }
 
 .sidebar {
@@ -23,7 +27,14 @@
   min-width: 0;
 }
 
+// The rail ends with the article. A sticky element directly in .content
+// would keep scrolling over the full-width comparison in the next row.
 .aside {
+  align-self: stretch;
+  min-width: 0;
+}
+
+.tocSticky {
   position: sticky;
   top: 76px;
   max-height: calc(100vh - 90px);
@@ -107,4 +118,11 @@
   .aside {
     display: none;
   }
+}
+
+.comparison {
+  grid-column: 1 / -1;
+  min-width: 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
 }

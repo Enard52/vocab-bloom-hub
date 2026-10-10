@@ -1,4 +1,30 @@
 export default {
+  comparison: {
+    version: 'Version de l’API',
+    close: 'Fermer',
+    title: 'Comparer les réponses en direct',
+    description:
+      'Le même mot anglais est recherché directement auprès de {service} et dans chaque jeu de données installé sur cette instance. Les réponses sont affichées au format du service d’origine.',
+    word: 'Mot anglais',
+    translations: 'Inclure les traductions',
+    compare: 'Comparer',
+    provenance: 'Afficher les extensions vocabBloom',
+    schema_note:
+      'Seules les extensions vocabBloom sont masquées par défaut. Les autres champs, valeurs et leur ordre sont conservés, y compris les sources et licences. Consultez les conditions du jeu de données pour l’attribution. La réponse d’origine est obtenue via le serveur de ce site et peut être mise en cache pendant une minute.',
+    results: 'Résultats pour « {word} »',
+    dataset_count: 'Jeux de données : {count}',
+    original: 'Service d’origine',
+    loading: 'Chargement…',
+    request_error:
+      'La requête a échoué ou le délai est dépassé. Le service peut être indisponible ou votre navigateur peut avoir bloqué la requête. Cliquez à nouveau sur Comparer ou ouvrez l’URL.',
+    active: 'Actif',
+    group_status: 'Statut de l’adaptateur : {status}',
+    terms: 'Conditions et attribution du jeu de données',
+    datasets: 'Jeux de données de l’instance',
+    dataset_error:
+      'L’instance n’a pas renvoyé les groupes de données. Consultez la réponse ci-dessous et réessayez. L’instance doit prendre en charge les routes /datasets des adaptateurs.',
+    empty: 'Aucun jeu de données installé n’a été renvoyé.',
+  },
   provenance: {
     dataset_sources: 'Sources du jeu de données',
     contributions: 'Modifications et leurs licences',
@@ -133,6 +159,7 @@ export default {
       database: 'Base de données',
       operations: 'Exploitation',
       api: 'API',
+      migration: 'Guides de migration',
       sdk: 'SDK',
       data: 'Données',
       project: 'Projet',

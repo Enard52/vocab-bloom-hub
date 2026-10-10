@@ -1,4 +1,30 @@
 export default {
+  comparison: {
+    version: 'Versión de la API',
+    close: 'Cerrar',
+    title: 'Comparar respuestas en directo',
+    description:
+      'Se consulta la misma palabra inglesa directamente en {service} y en cada conjunto de datos instalado en esta instancia. Las respuestas se muestran en el formato del servicio original.',
+    word: 'Palabra en inglés',
+    translations: 'Incluir traducciones',
+    compare: 'Comparar',
+    provenance: 'Mostrar extensiones vocabBloom',
+    schema_note:
+      'Solo se ocultan las extensiones vocabBloom de forma predeterminada. Los demás campos, valores y el orden se conservan, incluidas las fuentes y licencias. La atribución está en las condiciones del conjunto de datos. La respuesta original se obtiene a través del servidor de este sitio y puede almacenarse en caché durante un minuto.',
+    results: 'Resultados de «{word}»',
+    dataset_count: 'Conjuntos de datos: {count}',
+    original: 'Servicio original',
+    loading: 'Cargando…',
+    request_error:
+      'La consulta ha fallado o agotado el tiempo de espera. El servicio puede no estar disponible o el navegador puede haber bloqueado la consulta. Pulsa Comparar de nuevo o abre la URL.',
+    active: 'Activo',
+    group_status: 'Estado del adaptador: {status}',
+    terms: 'Condiciones y atribución del conjunto de datos',
+    datasets: 'Conjuntos de datos de la instancia',
+    dataset_error:
+      'La instancia no pudo devolver los grupos de datos. Revisa la respuesta y vuelve a intentarlo. La instancia debe admitir las rutas /datasets de los adaptadores.',
+    empty: 'No se devolvieron conjuntos de datos instalados.',
+  },
   provenance: {
     dataset_sources: 'Fuentes del conjunto de datos',
     contributions: 'Cambios y sus licencias',
@@ -133,6 +159,7 @@ export default {
       database: 'Base de datos',
       operations: 'Operación',
       api: 'API',
+      migration: 'Guías de migración',
       sdk: 'SDK',
       data: 'Datos',
       project: 'Proyecto',

@@ -15,6 +15,8 @@ import {
   EnPartOfSpeechE,
   EnWordFormsE,
   PublicWordDatasetsV1ResT,
+  DictionaryApiV2DatasetsResT,
+  FreeDictionaryDatasetsResT,
 } from '../types';
 
 /**
@@ -516,6 +518,30 @@ describe('datasets in schemas (Postgres, issue #527)', () => {
       `SELECT "value" FROM "public"."settings" WHERE "field" = 'active_dataset'`,
     );
     expect(setting).toEqual([{ value: 'default' }]);
+  });
+
+  it('projects an inactive schema through both compatibility adapters without switching it', async () => {
+    const dictionaryUrl = `/api/compat/dictionaryapi/v2/entries/en/${HEADWORD}`;
+    const freeUrl = `/api/compat/freedictionaryapi/v1/entries/en/${HEADWORD}`;
+    const comparison = await request(server()).get(`${dictionaryUrl}/datasets`).expect(200);
+    const group = (comparison.body as DictionaryApiV2DatasetsResT).data.find((d) => d.dataset === NAME)!;
+    expect(group).toMatchObject({ active: false, status: 200, source: 'princeton-wordnet' });
+    expect(app.get(DatasetsService).getActive().name).toBe('default');
+    const freeComparison = await request(server()).get(`${freeUrl}/datasets`).expect(200);
+    const freeGroup = (freeComparison.body as FreeDictionaryDatasetsResT).data.find((d) => d.dataset === NAME)!;
+    expect(freeGroup.response.entries[0].vocabBloom.source).toBe('princeton-wordnet');
+    try {
+      await request(server()).post(`/api/en/datasets/${NAME}/activate`).set(auth).expect(200);
+      const direct = await request(server()).get(dictionaryUrl).expect(200);
+      expect(group.response).toEqual(direct.body);
+      const freeDirect = await request(server()).get(freeUrl).expect(200);
+      expect(freeGroup.response).toEqual({
+        ...freeDirect.body,
+        vocabBloom: { ...freeDirect.body.vocabBloom, active: false },
+      });
+    } finally {
+      await request(server()).post('/api/en/datasets/default/activate').set(auth).expect(200);
+    }
   });
 
   it('keeps the histories apart: an edit marks the word in its dataset only, a name leaves them all (issue #531)', async () => {

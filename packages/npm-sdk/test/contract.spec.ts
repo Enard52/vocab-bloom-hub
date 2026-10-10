@@ -46,6 +46,9 @@ describe('SDK coverage of the public contract (issue #275)', () => {
       .filter(([path]) => !path.startsWith('/api/v1/'))
       .flatMap(([, item]) => Object.values(item).map((op) => op.operationId));
     expect(compatibility.sort()).toEqual([
+      'CompatibilityDatasetsController_dictionaryApiV1',
+      'CompatibilityDatasetsController_dictionaryApiV2',
+      'CompatibilityDatasetsController_freeDictionaryApi',
       'DictionaryApiController_v1',
       'DictionaryApiController_v2',
       'FreeDictionaryApiController_entries',

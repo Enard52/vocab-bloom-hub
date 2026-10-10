@@ -24,6 +24,66 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
+  '/api/compat/dictionaryapi/v2/entries/{language}/{word}/datasets': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /**
+     * dictionaryapi.dev v2 responses from every installed dataset
+     * @description One group per installed dataset with its terms, status and response in the adapter format. Missing words have status 404 and the adapter error in response. The outer request returns 200 even when no dataset matches. English only; the usual headword and inflection rules apply in each dataset. No query parameters. Does not activate any dataset. One public rate-limit unit; cached across all datasets.
+     */
+    get: operations['CompatibilityDatasetsController_dictionaryApiV2'];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/api/compat/dictionaryapi/v1/entries/{language}/{word}/datasets': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /**
+     * dictionaryapi.dev v1 responses from every installed dataset
+     * @description One group per installed dataset with its terms, status and response in the adapter format. Missing words have status 404 and the adapter error in response. The outer request returns 200 even when no dataset matches. English only; the usual headword and inflection rules apply in each dataset. No query parameters. Does not activate any dataset. One public rate-limit unit; cached across all datasets.
+     */
+    get: operations['CompatibilityDatasetsController_dictionaryApiV1'];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  '/api/compat/freedictionaryapi/v1/entries/{language}/{word}/datasets': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /**
+     * freedictionaryapi.com responses from every installed dataset
+     * @description One group per installed dataset with its terms, status 200 and the adapter object in response. Exact spelling; en and all read English. Missing words and other languages have empty response.entries. The outer request returns 200 even when no dataset matches. Does not activate any dataset. One public rate-limit unit; cached across all datasets. Empty source links point here rather than active-only /meta.
+     */
+    get: operations['CompatibilityDatasetsController_freeDictionaryApi'];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
   '/api/compat/dictionaryapi/v2/entries/{language}/{word}': {
     parameters: {
       query?: never;
@@ -1040,10 +1100,54 @@ export interface components {
       message: string;
       error: boolean;
     };
-    DictionaryApiErrorT: {
-      title: string;
-      message: string;
-      resolution: string;
+    DictionaryApiV1DatasetsResT: {
+      data: (
+        | {
+            /** @enum {number} */
+            status: 200;
+            response: components['schemas']['DictionaryApiV1ResT'];
+            origins?: components['schemas']['OriginT'][];
+            licenses?: components['schemas']['WordLicenseT'][];
+            description?: string | null;
+            dataset: string;
+            title?: string;
+            active: boolean;
+            source: string;
+            dataset_version: string | null;
+            license: string;
+            license_url: string;
+            attribution: string;
+            attribution_url: string | null;
+            notice: string;
+            license_text: string;
+          }
+        | {
+            /** @enum {number} */
+            status: 404;
+            response: components['schemas']['DictionaryApiErrorT'];
+            origins?: components['schemas']['OriginT'][];
+            licenses?: components['schemas']['WordLicenseT'][];
+            description?: string | null;
+            dataset: string;
+            title?: string;
+            active: boolean;
+            source: string;
+            dataset_version: string | null;
+            license: string;
+            license_url: string;
+            attribution: string;
+            attribution_url: string | null;
+            notice: string;
+            license_text: string;
+          }
+      )[];
+      /** @description found counts datasets with entries, including for adapters whose misses are HTTP 200. */
+      meta: {
+        language: string;
+        word: string;
+        datasets: number;
+        found: number;
+      };
     };
     DictionaryApiV1ResT: {
       meaning: {
@@ -1086,6 +1190,60 @@ export interface components {
       name: string;
       url: string;
     };
+    DictionaryApiErrorT: {
+      title: string;
+      message: string;
+      resolution: string;
+    };
+    DictionaryApiV2DatasetsResT: {
+      data: (
+        | {
+            /** @enum {number} */
+            status: 200;
+            response: components['schemas']['DictionaryApiV2ResT'];
+            origins?: components['schemas']['OriginT'][];
+            licenses?: components['schemas']['WordLicenseT'][];
+            description?: string | null;
+            dataset: string;
+            title?: string;
+            active: boolean;
+            source: string;
+            dataset_version: string | null;
+            license: string;
+            license_url: string;
+            attribution: string;
+            attribution_url: string | null;
+            notice: string;
+            license_text: string;
+          }
+        | {
+            /** @enum {number} */
+            status: 404;
+            response: components['schemas']['DictionaryApiErrorT'];
+            origins?: components['schemas']['OriginT'][];
+            licenses?: components['schemas']['WordLicenseT'][];
+            description?: string | null;
+            dataset: string;
+            title?: string;
+            active: boolean;
+            source: string;
+            dataset_version: string | null;
+            license: string;
+            license_url: string;
+            attribution: string;
+            attribution_url: string | null;
+            notice: string;
+            license_text: string;
+          }
+      )[];
+      /** @description found counts datasets with entries, including for adapters whose misses are HTTP 200. */
+      meta: {
+        language: string;
+        word: string;
+        datasets: number;
+        found: number;
+      };
+    };
     DictionaryApiV2ResT: {
       meanings: components['schemas']['DictionaryApiMeaningT'][];
       word: string;
@@ -1110,6 +1268,34 @@ export interface components {
       synonyms: string[];
       antonyms: string[];
     };
+    FreeDictionaryDatasetsResT: {
+      data: {
+        /** @enum {number} */
+        status: 200;
+        response: components['schemas']['FreeDictionaryEntriesResT'];
+        origins?: components['schemas']['OriginT'][];
+        licenses?: components['schemas']['WordLicenseT'][];
+        description?: string | null;
+        dataset: string;
+        title?: string;
+        active: boolean;
+        source: string;
+        dataset_version: string | null;
+        license: string;
+        license_url: string;
+        attribution: string;
+        attribution_url: string | null;
+        notice: string;
+        license_text: string;
+      }[];
+      /** @description found counts datasets with entries, including for adapters whose misses are HTTP 200. */
+      meta: {
+        language: string;
+        word: string;
+        datasets: number;
+        found: number;
+      };
+    };
     FreeDictionaryEntriesResT: {
       word: string;
       entries: components['schemas']['FreeDictionaryEntryT'][];
@@ -1117,7 +1303,7 @@ export interface components {
         url: string;
         license: components['schemas']['DictionaryApiLicenseT'];
       };
-      /** @description Active dataset terms. Word-specific origins are retained on each entry. */
+      /** @description Terms of the dataset read. Word-specific origins are retained on each entry. */
       vocabBloom: components['schemas']['PublicDatasetTermsV1T'];
     };
     FreeDictionaryEntryT: {
@@ -1239,6 +1425,156 @@ export interface operations {
         };
         content: {
           'application/json': components['schemas']['PublicApiErrorT'];
+        };
+      };
+    };
+  };
+  CompatibilityDatasetsController_dictionaryApiV2: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        language: 'en' | 'en_US' | 'en_GB';
+        /** @description Headword spelling, case-insensitive (spaces URL-encoded for phrases). An inflected form resolves to its base entry */
+        word: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['DictionaryApiV2DatasetsResT'];
+        };
+      };
+      /** @description Invalid input: an unknown field, a value outside the allowed set, or a foreign cursor */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['DictionaryApiErrorT'];
+        };
+      };
+      /** @description Nothing matches */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['DictionaryApiErrorT'];
+        };
+      };
+      /** @description Rate limit of the public prefix exceeded (PUBLIC_API_RATE_LIMIT); retry after the window */
+      429: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['DictionaryApiErrorT'];
+        };
+      };
+    };
+  };
+  CompatibilityDatasetsController_dictionaryApiV1: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        language: 'en' | 'en_US' | 'en_GB';
+        /** @description Headword spelling, case-insensitive (spaces URL-encoded for phrases). An inflected form resolves to its base entry */
+        word: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['DictionaryApiV1DatasetsResT'];
+        };
+      };
+      /** @description Invalid input: an unknown field, a value outside the allowed set, or a foreign cursor */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['DictionaryApiErrorT'];
+        };
+      };
+      /** @description Nothing matches */
+      404: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['DictionaryApiErrorT'];
+        };
+      };
+      /** @description Rate limit of the public prefix exceeded (PUBLIC_API_RATE_LIMIT); retry after the window */
+      429: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['DictionaryApiErrorT'];
+        };
+      };
+    };
+  };
+  CompatibilityDatasetsController_freeDictionaryApi: {
+    parameters: {
+      query?: {
+        /** @description Indent the whole response with two spaces; default false. */
+        pretty?: boolean;
+        /** @description Include supported translations; default false. Only true/false, first occurrence wins. */
+        translations?: boolean;
+      };
+      header?: never;
+      path: {
+        /** @description en or all; other values return empty entries */
+        language: string;
+        /** @description Exact case-sensitive spelling, encoded as one URL segment */
+        word: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: {
+      /** @description OK */
+      200: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'application/json': components['schemas']['FreeDictionaryDatasetsResT'];
+        };
+      };
+      /** @description Invalid input: an unknown field, a value outside the allowed set, or a foreign cursor */
+      400: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'text/plain': components['schemas']['FreeDictionaryErrorT'];
+        };
+      };
+      /** @description Rate limit of the public prefix exceeded (PUBLIC_API_RATE_LIMIT); retry after the window */
+      429: {
+        headers: {
+          [name: string]: unknown;
+        };
+        content: {
+          'text/plain': components['schemas']['FreeDictionaryErrorT'];
         };
       };
     };

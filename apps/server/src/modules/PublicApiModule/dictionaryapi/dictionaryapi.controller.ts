@@ -1,15 +1,5 @@
 import type { Request } from 'express';
-import {
-  BadRequestException,
-  Query,
-  Req,
-  Controller,
-  Get,
-  NotFoundException,
-  Param,
-  UseGuards,
-  UseInterceptors,
-} from '@nestjs/common';
+import { Query, Req, Controller, Get, Param, UseGuards, UseInterceptors } from '@nestjs/common';
 import { ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
 import { Throttle } from '@nestjs/throttler';
 import type { DictionaryApiV1ResT, DictionaryApiV2ResT } from '../../../../types/public/dictionaryapi';
@@ -21,6 +11,7 @@ import { PublicWordsService } from '../public-words.service';
 import { HeadwordParamPipe } from '../utils/headword-param.pipe';
 import { HEADWORD_PARAM } from '../public-words.controller';
 import { toDictionaryApiV1, toDictionaryApiV2 } from './projection';
+import { validateDictionaryApiRequest } from './query';
 
 @ApiTags('dictionaryapi.dev compatibility')
 @Controller(DICTIONARY_API_PREFIX)
@@ -31,9 +22,7 @@ export class DictionaryApiController {
   constructor(private readonly words: PublicWordsService) {}
 
   private read(language: string, word: string, query: Record<string, unknown>) {
-    if (Object.keys(query).length) throw new BadRequestException('Query parameters are not supported');
-    // The historical English aliases are locale hints, not separate databases.
-    if (!['en', 'en_us', 'en_gb'].includes(language.toLowerCase())) throw new NotFoundException();
+    validateDictionaryApiRequest(language, query);
     return this.words.getByHeadword(word);
   }
 

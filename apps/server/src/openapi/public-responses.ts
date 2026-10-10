@@ -27,6 +27,22 @@ export const PUBLIC_ERROR_DESCRIPTIONS: Record<number, string> = {
 };
 
 export const PUBLIC_RESPONSES: Record<string, PublicResponseSpecT> = {
+  CompatibilityDatasetsController_dictionaryApiV1: {
+    type: 'DictionaryApiV1DatasetsResT',
+    errors: [400, 404, 429],
+    errorType: 'DictionaryApiErrorT',
+  },
+  CompatibilityDatasetsController_dictionaryApiV2: {
+    type: 'DictionaryApiV2DatasetsResT',
+    errors: [400, 404, 429],
+    errorType: 'DictionaryApiErrorT',
+  },
+  CompatibilityDatasetsController_freeDictionaryApi: {
+    type: 'FreeDictionaryDatasetsResT',
+    errors: [400, 429],
+    errorType: 'FreeDictionaryErrorT',
+    errorContentType: 'text/plain',
+  },
   FreeDictionaryApiController_entries: {
     type: 'FreeDictionaryEntriesResT',
     errors: [400, 429],

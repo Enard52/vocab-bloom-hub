@@ -1,4 +1,30 @@
 export default {
+  comparison: {
+    version: 'API-Version',
+    close: 'Schließen',
+    title: 'Live-Antworten vergleichen',
+    description:
+      'Dasselbe englische Wort wird direkt bei {service} und in jedem installierten Datensatz dieser Instanz abgefragt. Die Antworten werden im Format des ursprünglichen Dienstes angezeigt.',
+    word: 'Englisches Wort',
+    translations: 'Übersetzungen einschließen',
+    compare: 'Vergleichen',
+    provenance: 'vocabBloom-Erweiterungen anzeigen',
+    schema_note:
+      'Standardmäßig werden nur vocabBloom-Erweiterungen ausgeblendet. Alle anderen Felder, Werte und die Reihenfolge bleiben erhalten, einschließlich Quellen und Lizenzen. Quellenangaben stehen unter den Datensatzbedingungen. Die Originalantwort wird über den Server dieser Website geladen und kann eine Minute lang zwischengespeichert werden.',
+    results: 'Ergebnisse für „{word}“',
+    dataset_count: 'Datensätze: {count}',
+    original: 'Ursprünglicher Dienst',
+    loading: 'Wird geladen…',
+    request_error:
+      'Die Anfrage ist fehlgeschlagen oder hat zu lange gedauert. Der Dienst ist möglicherweise nicht erreichbar oder Ihr Browser hat die Anfrage blockiert. Klicken Sie erneut auf Vergleichen oder öffnen Sie die Anfrage-URL.',
+    active: 'Aktiv',
+    group_status: 'Adapterstatus: {status}',
+    terms: 'Datensatzbedingungen und Quellenangaben',
+    datasets: 'Datensätze der Instanz',
+    dataset_error:
+      'Die Instanz konnte keine Datensatzgruppen liefern. Prüfen Sie die Antwort unten und versuchen Sie es erneut. Die Instanz muss die /datasets-Routen der Adapter unterstützen.',
+    empty: 'Es wurden keine installierten Datensätze zurückgegeben.',
+  },
   provenance: {
     dataset_sources: 'Quellen des Datensatzes',
     contributions: 'Änderungen und ihre Lizenzen',
@@ -133,6 +159,7 @@ export default {
       database: 'Datenbank',
       operations: 'Betrieb',
       api: 'API',
+      migration: 'Migrationsanleitungen',
       sdk: 'SDKs',
       data: 'Daten',
       project: 'Projekt',

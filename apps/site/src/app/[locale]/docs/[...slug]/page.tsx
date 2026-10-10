@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { JsonLd } from '@/components/JsonLd';
+import { MigrationComparison } from '@/components/MigrationComparison';
 import { Markdown } from '@/components/Markdown';
 import { Toc } from '@/components/Toc';
 import { firstParagraph } from '@/content/description';
@@ -68,6 +69,7 @@ export default async function DocPage({ params }: DocPageP) {
   if (!page) notFound();
 
   const t = await getTranslations('docs');
+  const comparisonT = await getTranslations('comparison');
   const { file, markdown } = sourceOf(page, locale);
   // a section the registry names must exist in every translation: fail the build, not the reader
   if (markdown === null)
@@ -118,8 +120,22 @@ export default async function DocPage({ params }: DocPageP) {
         </div>
       </article>
       <aside className={styles.aside}>
-        <Toc headings={rendered.headings} title={t('on_this_page')} />
+        <div className={styles.tocSticky}>
+          <Toc
+            headings={
+              page.comparison
+                ? [...rendered.headings, { id: 'live-comparison', text: comparisonT('title'), depth: 2 }]
+                : rendered.headings
+            }
+            title={t('on_this_page')}
+          />
+        </div>
       </aside>
+      {page.comparison && (
+        <div className={styles.comparison}>
+          <MigrationComparison key={page.comparison} service={page.comparison} />
+        </div>
+      )}
     </div>
   );
 }

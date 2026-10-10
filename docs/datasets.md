@@ -427,6 +427,11 @@ public search serves the active dataset only. A name that is no dataset answers
 
 ## Reading every dataset at once
 
+For the response formats of dictionaryapi.dev and freedictionaryapi.com, append `/datasets`
+to their compatibility lookup routes. Each group carries its dataset terms, status and the
+complete adapter response. This reads installed datasets without activation, with the spelling
+rules of the chosen adapter: [compatibility responses from every dataset](./api.md#compatibility-responses-from-every-dataset).
+
 The public API serves the active dataset. One read answers from all of them:
 `GET /api/v1/words/{word}/datasets` gives the headword as every dataset of the instance has it,
 **a group per dataset** with the terms of that dataset, and
