@@ -84,13 +84,64 @@ describe('every language', () => {
         expect.arrayContaining(['sdk-node', 'sdk-python']),
       );
     }
-    expect(render('sdk-node', 'get-words-word')).toBeNull();
+    expect(render('sdk-node', 'post-words-batch')).toBeNull();
     // the first tab is curl everywhere: a reader without a choice yet sees it
     for (const request of requests) expect(snippetsOf(request)[0].id).toBe('curl');
   });
 });
 
 describe('the exact text', () => {
+  it('offers headword SDK tabs and prints the first entry’s first definition safely', () => {
+    expect(snippetsOf(bySlug('get-words-word')).map(({ id }) => id)).toEqual(
+      expect.arrayContaining(['sdk-node', 'sdk-python']),
+    );
+    expect(render('sdk-node', 'get-words-word')).toBe(
+      [
+        "import { VocabBloomClient } from '@vocab-bloom-hub/client';",
+        '',
+        "const client = new VocabBloomClient({ baseUrl: 'https://x.example' });",
+        "const { data } = await client.word('run');",
+        'console.log(data[0]?.meanings?.[0]?.definition);',
+      ].join('\n'),
+    );
+    expect(render('sdk-python', 'get-words-word')).toBe(
+      [
+        'from vocab_bloom_hub import VocabBloomClient',
+        '',
+        'client = VocabBloomClient("https://x.example")',
+        'answer = client.word("run")',
+        'first = answer.data[0] if answer.data else None',
+        'print(first.meanings[0].definition if first and first.meanings else None)',
+      ].join('\n'),
+    );
+    const endpoint = playgroundEndpoint(
+      endpoints.find(({ slug }) => slug === 'get-words-word')!,
+      spec,
+    );
+    expect(planRequest(endpoint, { word: 'run' })).toMatchObject({
+      method: 'GET',
+      path: '/v1/words/run',
+      query: '',
+    });
+  });
+
+  it('headword SDK examples use the supplied origin and escaped path argument', () => {
+    const request = {
+      ...bySlug('get-words-word'),
+      path: '/api/v1/words/say%20%22hi%22%20it%27s%20%5C',
+      origin: 'https://dictionary.example',
+    };
+    for (const [id, literal] of [
+      ['sdk-node', jsLiteral],
+      ['sdk-python', pythonLiteral],
+    ] as const) {
+      const code = SNIPPET_LANGUAGES.find((language) => language.id === id)!.render(request)!;
+      expect(code).toContain(`client.word(${literal('say "hi" it\'s \\')})`);
+      expect(code).toContain(request.origin);
+      expect(code).not.toContain('x.example');
+    }
+  });
+
   it('offers words SDK tabs with an A1 page, five headwords and an optional iterator', () => {
     expect(snippetsOf(bySlug('get-words')).map(({ id }) => id)).toEqual(
       expect.arrayContaining(['sdk-node', 'sdk-python']),

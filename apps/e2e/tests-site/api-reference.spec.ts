@@ -79,9 +79,14 @@ test.describe('API reference', () => {
 
     // the choice is shared by every endpoint on the page and remembered across loads; an
     // endpoint without a snippet in that language keeps its first tab
-    await expect(page.locator('section#get-words-word pre[data-language="curl"]')).toBeVisible();
+    const headword = page.locator('section#get-words-word');
+    await expect(headword.locator('pre[data-language="sdk-python"]')).toBeVisible();
+    await expect(headword.locator('pre[data-language="sdk-python"]')).toContainText('client.word("run")');
+    await expect(headword.locator('pre[data-language="curl"]')).toBeHidden();
+    await expect(page.locator('section#post-words-batch pre[data-language="curl"]')).toBeVisible();
     await page.reload();
     await expect(operation.locator('pre[data-language="sdk-python"]')).toBeVisible();
+    await expect(headword.locator('pre[data-language="sdk-python"]')).toBeVisible();
   });
 
   test('a schema link from the endpoint list resolves', async ({ page }) => {
