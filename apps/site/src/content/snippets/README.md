@@ -64,6 +64,10 @@ The `get-words-word-forms` examples take the headword from the shared sample pat
 and print every form's `word` and `form_of_word`. An empty forms list prints no rows.
 Enter `run` as the playground headword to send the same request.
 
+The `get-openapi-json` examples call `client.openapi()` and print `info.version`.
+The method returns the document directly, without a `data` envelope. The Node.js example
+narrows the SDK’s `unknown` info field before reading its version, so it also works in TypeScript.
+
 The `get-random` examples call `client.random()` without filters and print the returned word.
 Leave the playground filters empty to send the same request.
 
