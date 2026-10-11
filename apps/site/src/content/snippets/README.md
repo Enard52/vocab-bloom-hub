@@ -53,6 +53,9 @@ adding an entry. The sample values of the path come from `pathArguments(request,
 `request.ts`, so the snippet passes what the generated ones put into the URL. The method names are in `packages/npm-sdk/README.md` and
 `packages/python-sdk/README.md`.
 
+The `get-random` examples call `client.random()` without filters and print the returned word.
+Leave the playground filters empty to send the same request.
+
 The `get-search` examples call `client.search({ search: 'run' })` in Node.js and
 `client.search("run")` in Python, then print the fuzzy-match flag and the first result's word
 (or an empty-result value when the instance has no match).

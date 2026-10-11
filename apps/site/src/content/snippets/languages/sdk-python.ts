@@ -16,6 +16,8 @@ const client = (origin: string): string[] => [
 ];
 
 const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
+  'get-random': ({ origin }) =>
+    [...client(origin), 'answer = client.random()', 'print(answer.data.word)'].join('\n'),
   'post-words-batch': ({ origin, body }) =>
     [
       ...client(origin),
