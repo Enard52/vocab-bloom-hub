@@ -73,6 +73,10 @@ the first meaning translation’s `title` and `language`, handling an empty list
 separates `meaning_translations` (which have titles) from `short_translations`. Use `run`
 with empty filters in the playground for the same request.
 
+The `get-words-word-synonyms` examples request the shared sample headword (`run`) and
+print the linked words as a list, or an empty list when there are no synonyms. Enter
+`run` in the playground to send the same request.
+
 The `get-random` examples call `client.random()` without filters and print the returned word.
 Leave the playground filters empty to send the same request.
 

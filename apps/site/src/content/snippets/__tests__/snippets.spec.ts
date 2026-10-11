@@ -87,13 +87,64 @@ describe('every language', () => {
         expect.arrayContaining(['sdk-node', 'sdk-python']),
       );
     }
-    expect(render('sdk-node', 'get-words-word-synonyms')).toBeNull();
+    expect(render('sdk-node', 'get-words-word-antonyms')).toBeNull();
     // the first tab is curl everywhere: a reader without a choice yet sees it
     for (const request of requests) expect(snippetsOf(request)[0].id).toBe('curl');
   });
 });
 
 describe('the exact text', () => {
+  it('offers synonyms SDK tabs and prints the linked words', () => {
+    expect(snippetsOf(bySlug('get-words-word-synonyms')).map(({ id }) => id)).toEqual(
+      expect.arrayContaining(['sdk-node', 'sdk-python']),
+    );
+    expect(render('sdk-node', 'get-words-word-synonyms')).toBe(
+      [
+        "import { VocabBloomClient } from '@vocab-bloom-hub/client';",
+        '',
+        "const client = new VocabBloomClient({ baseUrl: 'https://x.example' });",
+        "const { data } = await client.synonyms('run');",
+        'console.log(data.map((link) => link.word));',
+      ].join('\n'),
+    );
+    expect(render('sdk-python', 'get-words-word-synonyms')).toBe(
+      [
+        'from vocab_bloom_hub import VocabBloomClient',
+        '',
+        'client = VocabBloomClient("https://x.example")',
+        'answer = client.synonyms("run")',
+        'print([link.word for link in answer.data])',
+      ].join('\n'),
+    );
+    const endpoint = playgroundEndpoint(
+      endpoints.find(({ slug }) => slug === 'get-words-word-synonyms')!,
+      spec,
+    );
+    expect(planRequest(endpoint, { word: 'run' })).toMatchObject({
+      method: 'GET',
+      path: '/v1/words/run/synonyms',
+      query: '',
+    });
+  });
+
+  it('synonyms SDK examples use the supplied origin and escaped headword', () => {
+    const word = 'say "hi"';
+    const request = {
+      ...bySlug('get-words-word-synonyms'),
+      origin: 'https://dictionary.example',
+      path: `/api/v1/words/${encodeURIComponent(word)}/synonyms`,
+    };
+    for (const [id, literal] of [
+      ['sdk-node', jsLiteral],
+      ['sdk-python', pythonLiteral],
+    ] as const) {
+      const code = SNIPPET_LANGUAGES.find((language) => language.id === id)!.render(request)!;
+      expect(code).toContain(request.origin);
+      expect(code).toContain(`client.synonyms(${literal(word)})`);
+      expect(code).not.toContain('x.example');
+    }
+  });
+
   it('offers translations SDK tabs and safely prints the first meaning translation', () => {
     expect(snippetsOf(bySlug('get-words-word-translations')).map(({ id }) => id)).toEqual(
       expect.arrayContaining(['sdk-node', 'sdk-python']),

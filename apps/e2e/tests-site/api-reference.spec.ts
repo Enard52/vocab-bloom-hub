@@ -90,7 +90,10 @@ test.describe('API reference', () => {
     await expect(
       page.locator('section#get-words-word-translations pre[data-language="sdk-python"]'),
     ).toBeVisible();
-    await expect(page.locator('section#get-words-word-synonyms pre[data-language="curl"]')).toBeVisible();
+    const synonyms = page.locator('section#get-words-word-synonyms');
+    await expect(synonyms.locator('pre[data-language="sdk-python"]')).toBeVisible();
+    await expect(synonyms.locator('pre[data-language="sdk-python"]')).toContainText('client.synonyms("run")');
+    await expect(page.locator('section#get-words-word-antonyms pre[data-language="curl"]')).toBeVisible();
     await page.reload();
     await expect(operation.locator('pre[data-language="sdk-python"]')).toBeVisible();
     await expect(headword.locator('pre[data-language="sdk-python"]')).toBeVisible();

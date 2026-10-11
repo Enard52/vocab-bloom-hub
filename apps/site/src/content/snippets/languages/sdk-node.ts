@@ -16,6 +16,14 @@ const client = (origin: string): string[] => [
 ];
 
 const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
+  'get-words-word-synonyms': (request) => {
+    const [word] = pathArguments(request, '/api/v1/words/{word}/synonyms');
+    return [
+      ...client(request.origin),
+      `const { data } = await client.synonyms(${jsLiteral(word)});`,
+      'console.log(data.map((link) => link.word));',
+    ].join('\n');
+  },
   'get-words-word-translations': (request) => {
     const [word] = pathArguments(request, '/api/v1/words/{word}/translations');
     return [
