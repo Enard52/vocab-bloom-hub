@@ -79,3 +79,17 @@ See [the complete all-datasets contract](./api.md#compatibility-responses-from-e
 
 For the complete mapping and HTTP limits, see [dictionaryapi.dev compatibility](./api.md#dictionaryapidev-compatibility).
 For dataset installation and activation, see [Datasets](./datasets.md).
+
+## Website comparison snapshots
+
+The website comparison uses saved original-service responses for all nine preset words and
+supported version/translation options. They are committed with the website and refreshed
+manually with `yarn workspace site comparisons:generate` (`--missing-only` retries missing
+or failed snapshots). Building, starting and browsing the site never requests the originals.
+The retrieval date is displayed. A failed refresh retains an older successful snapshot
+with a warning when available; otherwise the error is shown. Instance datasets are queried live.
+
+Unavailable v1 examples are reconstructed from saved v2 responses using the service’s
+published `transformV2toV1` mapping. The comparison labels them as reconstructed, without
+a v1 retrieval date or an observed HTTP status. A manual refresh can replace them with
+actual v1 responses; a failed refresh retains the reconstructed example.

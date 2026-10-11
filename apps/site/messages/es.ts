@@ -1,22 +1,26 @@
 export default {
   comparison: {
+    snapshot_reconstructed:
+      'Reconstruido a partir de la respuesta v2 guardada mediante la conversión v1 publicada por el servicio. No se obtuvo del endpoint v1.',
+    snapshot_missing: 'La copia falta o no se puede leer. Ejecuta comparisons:generate para descargarla.',
+    snapshot_unavailable: 'No hay una copia válida. Ejecuta comparisons:generate para reintentarlo.',
+    snapshot_stale:
+      'La última actualización manual ha fallado. Se muestra la copia anterior con su fecha original.',
+    snapshot_date: 'Respuesta original obtenida: {date}',
     version: 'Versión de la API',
     close: 'Cerrar',
-    title: 'Comparar respuestas en directo',
+    title: 'Comparar respuestas',
     description:
-      'Se consulta la misma palabra inglesa directamente en {service} y en cada conjunto de datos instalado en esta instancia. Las respuestas se muestran en el formato del servicio original.',
+      'Las respuestas originales son copias guardadas que se actualizan manualmente. La misma palabra inglesa se consulta en todos los conjuntos instalados en esta instancia con el formato de {service}.',
     word: 'Palabra en inglés',
     translations: 'Incluir traducciones',
-    compare: 'Comparar',
     provenance: 'Mostrar extensiones vocabBloom',
     schema_note:
-      'Solo se ocultan las extensiones vocabBloom de forma predeterminada. Los demás campos, valores y el orden se conservan, incluidas las fuentes y licencias. La atribución está en las condiciones del conjunto de datos. La respuesta original se obtiene a través del servidor de este sitio y puede almacenarse en caché durante un minuto.',
+      'Solo se ocultan las extensiones vocabBloom de forma predeterminada. Los demás campos, valores y el orden se conservan, incluidas las fuentes y licencias. La atribución está en las condiciones del conjunto de datos. Las respuestas originales se actualizan manualmente; visitar, compilar o iniciar el sitio no llama a servicios externos.',
     results: 'Resultados de «{word}»',
     dataset_count: 'Conjuntos de datos: {count}',
     original: 'Servicio original',
     loading: 'Cargando…',
-    request_error:
-      'La consulta ha fallado o agotado el tiempo de espera. El servicio puede no estar disponible o el navegador puede haber bloqueado la consulta. Pulsa Comparar de nuevo o abre la URL.',
     active: 'Activo',
     group_status: 'Estado del adaptador: {status}',
     terms: 'Condiciones y atribución del conjunto de datos',

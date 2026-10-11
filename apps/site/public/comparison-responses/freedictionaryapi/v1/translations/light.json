@@ -1,0 +1,1929 @@
+{
+  "status": 200,
+  "body": {
+    "word": "light",
+    "entries": [
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "noun",
+        "pronunciations": [
+          { "type": "ipa", "text": "/laɪt/", "tags": [] },
+          { "type": "ipa", "text": "[laɪt]", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "[lɑjt]", "tags": ["British", "Southern", "Standard"] },
+          { "type": "ipa", "text": "[ɫɐɪt]", "tags": ["General American"] },
+          { "type": "ipa", "text": "[ləjt]", "tags": ["Canada", "US", "regional"] },
+          { "type": "ipa", "text": "[lɑɪt]", "tags": ["General Australian"] }
+        ],
+        "forms": [
+          { "word": "lights", "tags": ["plural"] },
+          { "word": "lite", "tags": ["alternative", "archaic", "informal"] },
+          { "word": "lighte", "tags": ["alternative", "obsolete"] },
+          { "word": "lyght", "tags": ["alternative", "obsolete"] },
+          { "word": "lyghte", "tags": ["alternative", "obsolete"] },
+          { "word": "licht", "tags": ["alternative", "Scotland"] }
+        ],
+        "senses": [
+          {
+            "definition": "(physics, uncountable) Electromagnetic radiation in the wavelength range visible to the human eye (about 400–750 nanometers): visible light.",
+            "tags": ["uncountable"],
+            "examples": [
+              "As you can see, this spacious dining-room gets a lot of light in the mornings.",
+              "When the studio light is on, I am recording my evening show."
+            ],
+            "quotes": [
+              {
+                "text": "Then came a maid with hand-bag and shawls, and after her a tall young lady. She stood for a moment holding her skirt above the grimy steps,[…], and the light of the reflector fell full upon her.",
+                "reference": "1897 December (indicated as 1898), Winston Churchill, chapter V, in The Celebrity: An Episode, New York, N.Y.: The Macmillan Company; London: Macmillan & Co., Ltd., →OCLC:"
+              },
+              {
+                "text": "Here the stripped panelling was warmly gold and the pictures, mostly of the English school, were mellow and gentle in the afternoon light.",
+                "reference": "1963, Margery Allingham, chapter 3, in The China Governess: A Mystery, London: Chatto & Windus, →OCLC:"
+              },
+              {
+                "text": "[Rural solar plant] schemes are of little help to industry or other heavy users of electricity. Nor is solar power yet as cheap as the grid. For all that, the rapid arrival of electric light to Indian villages is long overdue. When the national grid suffers its next huge outage, as it did in July 2012 when hundreds of millions were left in the dark, look for specks of light in the villages.",
+                "reference": "2013 July 20, “Out of the gloom”, in The Economist, volume 408, number 8845:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(by extension) Electromagnetic radiation in the wavelength range visible to the human eye or in nearby ranges (infrared or ultraviolet radiation).",
+            "tags": ["broadly", "countable", "uncountable"],
+            "examples": ["black light"],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(by extension, less commonly) Electromagnetic radiation of any wavelength.",
+            "tags": ["broadly", "countable", "uncommon", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "It’s everywhere. At this moment, as you sit quietly reading this book, you are awash in it. At work, it’s emanating from your electronic devices; step outside for lunch, and the sun bathes you in it. You may receive an extra dose of it when you visit your doctor, pass through security at the airport, or drive through city streets, but minuscule amounts of it are with you always. You cannot see, hear, smell, or feel it, but there is never a single second when it is not flying through your body. Too much of it will kill you, but without it you wouldn’t live a year. “Invisible light” seems like a contradiction. Like Simon and Garfunkel’s “The Sound of Silence,” it’s an oxymoron. We think of light, by definition, as something seen, something that enables our seeing, illuminating the darkness. Unlike dogs, who sniff in order to “get” what an object is, we depend on vision above all our other senses. We rely on light to tell us about our surroundings. But just as there are frequencies of sound audible to other animals that we cannot hear, there is a whole world of light outside our range of vision, a world that is humming with activity. Though we rarely think about this invisible world, our way of life depends on it. It’s because of invisible light that you can do things such as send a text message, use GPS to find your way to a friend’s house, listen to the radio, or microwave a frozen pizza. Invisible light shows us things we would never otherwise see, including our own skeletons and brains and the history of our universe. I was reminded of just how much we rely on invisible light, and how mysterious it remains to us, during a visit from my sister and her family. It was a lazy summer afternoon, and we were sprawled across a few couches sharing a bowl of popcorn. My niece, her shoulders crimson after a day outdoors, was chatting on her cell phone, holding up a promising finger to her mother, who was scolding her for not using sunscreen. My brother-in-law, meanwhile, was asking my opinion on an article he’d read proposing that Wi-Fi be banned in schools because of its dangers. We were all depending on invisible light (for the microwave popcorn, the cell-phone service) while being concerned that it might harm us (sunburn, mysterious Wi-Fi health threats) and confused about what to do to protect ourselves. We need it, and it surrounds us, yet we remain uneasy about living with invisible light, partly because we fear what is unknown. After all, most of us don’t know much about “all the light we cannot see.” This book aims to change that. My hope is to expose the hidden side of the spectrum, to make the invisible (at least temporarily) visible and vivid to you.",
+                "reference": "2017, Bob Berman, Zapped: From Infrared to X-rays, the Curious History of Invisible Light, Little, Brown and Company, →ISBN, pages 8-9:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(countable) A source of illumination.",
+            "tags": ["countable"],
+            "examples": ["Put that light out!"],
+            "quotes": [
+              {
+                "text": "And the light ſhineth in darkneſſe, and the darkneſſe compꝛehended it not.",
+                "reference": "1611, The Holy Bible, […] (King James Version), London: […] Robert Barker, […], →OCLC, John 1:5:"
+              },
+              {
+                "text": "He was thinking; but the glory of the song, the swell from the great organ, the clustered lights, […], the height and vastness of this noble fane, its antiquity and its strength—all these things seemed to have their part as causes of the thrilling emotion that accompanied his thoughts.",
+                "reference": "1918, W[illiam] B[abington] Maxwell, chapter V, in The Mirror and the Lamp, Indianapolis, Ind.: The Bobbs-Merrill Company, →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "af", "name": "Afrikaans" }, "word": "lig" },
+              { "language": { "code": "akk", "name": "Akkadian" }, "word": "nūrum" },
+              { "language": { "code": "ar", "name": "Arabic" }, "word": "نُور" },
+              { "language": { "code": "afb", "name": "Arabic" }, "word": "ليت" },
+              { "language": { "code": "ary", "name": "Arabic" }, "word": "ضو" },
+              { "language": { "code": "an", "name": "Aragonese" }, "word": "luz" },
+              { "language": { "code": "hy", "name": "Armenian" }, "word": "լույս" },
+              { "language": { "code": "ast", "name": "Asturian" }, "word": "lluz" },
+              { "language": { "code": "az", "name": "Azerbaijani" }, "word": "işıq" },
+              { "language": { "code": "ba", "name": "Bashkir" }, "word": "яҡты" },
+              { "language": { "code": "ba", "name": "Bashkir" }, "word": "ут" },
+              { "language": { "code": "eu", "name": "Basque" }, "word": "argi" },
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "осветле́ние" },
+              { "language": { "code": "my", "name": "Burmese" }, "word": "အလင်း" },
+              { "language": { "code": "ca", "name": "Catalan" }, "word": "llum" },
+              { "language": { "code": "chr", "name": "Cherokee" }, "word": "ᎠᏨᏍᏗ" },
+              { "language": { "code": "yue", "name": "Chinese Cantonese" }, "word": "燈 /灯" },
+              { "language": { "code": "nan-hbl", "name": "Chinese" }, "word": "光源" },
+              { "language": { "code": "cmn", "name": "Chinese Mandarin" }, "word": "光源" },
+              { "language": { "code": "cmn", "name": "Chinese Mandarin" }, "word": "燈 /灯" },
+              { "language": { "code": "wlc", "name": "Mwali Comorian" }, "word": "mwendje" },
+              { "language": { "code": "wni", "name": "Ndzwani Comorian" }, "word": "matra class 6" },
+              { "language": { "code": "cs", "name": "Czech" }, "word": "světlo" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "lys" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "lyskilde" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "licht" },
+              { "language": { "code": "eo", "name": "Esperanto" }, "word": "lampo" },
+              { "language": { "code": "fo", "name": "Faroese" }, "word": "ljós" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "valo" },
+              { "language": { "code": "fr", "name": "French" }, "word": "lumière" },
+              { "language": { "code": "gl", "name": "Galician" }, "word": "luz" },
+              { "language": { "code": "de", "name": "German" }, "word": "Lichtquelle" },
+              { "language": { "code": "de", "name": "German" }, "word": "Licht" },
+              { "language": { "code": "el", "name": "Greek" }, "word": "φως" },
+              { "language": { "code": "grc", "name": "Ancient Greek" }, "word": "φωστήρ" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "אוֹר" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "प्रकाश" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "उजाला" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "आलोक" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "उज्ज्वल" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "दीप्ति" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "ज्योति" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "fényforrás" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "fényszóró" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "fény" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "villany" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "lámpa" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "világítás" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "ljós" },
+              { "language": { "code": "io", "name": "Ido" }, "word": "lumo" },
+              { "language": { "code": "ia", "name": "Interlingua" }, "word": "lumine" },
+              { "language": { "code": "ga", "name": "Irish" }, "word": "solas" },
+              { "language": { "code": "it", "name": "Italian" }, "word": "luce" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "明かり" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "灯り" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "光源" },
+              { "language": { "code": "jv", "name": "Javanese" }, "word": "sunar" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "불" },
+              { "language": { "code": "ckb", "name": "Central Kurdish" }, "word": "ڕۆشنایی" },
+              { "language": { "code": "kmr", "name": "Northern Kurdish" }, "word": "ronî" },
+              { "language": { "code": "kmr", "name": "Northern Kurdish" }, "word": "ronahî" },
+              { "language": { "code": "lo", "name": "Lao" }, "word": "ປະທີບ" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "lūmen" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "lūcerna" },
+              { "language": { "code": "lij", "name": "Ligurian" }, "word": "lûxe" },
+              { "language": { "code": "nb", "name": "Norwegian Bokmål" }, "word": "lys" },
+              { "language": { "code": "nn", "name": "Norwegian Nynorsk" }, "word": "ljos" },
+              { "language": { "code": "ang", "name": "Old English" }, "word": "lēoht" },
+              { "language": { "code": "prg", "name": "Old Prussian" }, "word": "likti" },
+              { "language": { "code": "fa-ira", "name": "Iranian Persian" }, "word": "چِراغ" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "światło" },
+              { "language": { "code": "pt", "name": "Portuguese" }, "word": "luz" },
+              { "language": { "code": "qu", "name": "Quechua" }, "word": "acki" },
+              { "language": { "code": "qu", "name": "Quechua" }, "word": "azki" },
+              { "language": { "code": "ro", "name": "Romanian" }, "word": "lumină" },
+              { "language": { "code": "ro", "name": "Romanian" }, "word": "corp de iluminat" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "свет" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "освеще́ние" },
+              { "language": { "code": "sco", "name": "Scots" }, "word": "licht" },
+              { "language": { "code": "gd", "name": "Scottish Gaelic" }, "word": "solas" },
+              { "language": { "code": "gd", "name": "Scottish Gaelic" }, "word": "soillse" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "svetlo" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "svetlost" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "svetlina" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "luča" },
+              { "language": { "code": "sk", "name": "Slovak" }, "word": "osvetlenie" },
+              { "language": { "code": "sl", "name": "Slovene" }, "word": "luč" },
+              { "language": { "code": "st", "name": "Sotho" }, "word": "lesedi" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "luz" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "luminaria" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "iluminaria" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" },
+              { "language": { "code": "sv", "name": "Swedish" }, "word": "ljus" },
+              { "language": { "code": "tl", "name": "Tagalog" }, "word": "ilaw" },
+              { "language": { "code": "tl", "name": "Tagalog" }, "word": "liwanag" },
+              { "language": { "code": "rif", "name": "Tarifit" }, "word": "tfawt" },
+              { "language": { "code": "tsg", "name": "Tausug" }, "word": "su" },
+              { "language": { "code": "te", "name": "Telugu" }, "word": "జ్యోతి" },
+              { "language": { "code": "tpi", "name": "Tok Pisin" }, "word": "lait" },
+              { "language": { "code": "tr", "name": "Turkish" }, "word": "ışık" },
+              { "language": { "code": "ota", "name": "Ottoman Turkish" }, "word": "ایشق" },
+              { "language": { "code": "ota", "name": "Ottoman Turkish" }, "word": "سراج" },
+              { "language": { "code": "ota", "name": "Ottoman Turkish" }, "word": "چراغ" },
+              { "language": { "code": "ota", "name": "Ottoman Turkish" }, "word": "آیدین" },
+              { "language": { "code": "ota", "name": "Ottoman Turkish" }, "word": "نور" },
+              { "language": { "code": "uk", "name": "Ukrainian" }, "word": "сві́тло" },
+              { "language": { "code": "uk", "name": "Ukrainian" }, "word": "осві́тлення" },
+              { "language": { "code": "ur", "name": "Urdu" }, "word": "رَوشْنی" },
+              { "language": { "code": "ur", "name": "Urdu" }, "word": "روشْنی" },
+              { "language": { "code": "ur", "name": "Urdu" }, "word": "پْرَکَاش" },
+              { "language": { "code": "ur", "name": "Urdu" }, "word": "پَرْکَاش" },
+              { "language": { "code": "ur", "name": "Urdu" }, "word": "بَتّی" },
+              { "language": { "code": "vec", "name": "Venetan" }, "word": "lum" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "đèn" },
+              { "language": { "code": "wa", "name": "Walloon" }, "word": "loumire" },
+              { "language": { "code": "wa", "name": "Walloon" }, "word": "lampe" },
+              { "language": { "code": "war", "name": "Waray-Waray" }, "word": "suna" },
+              { "language": { "code": "war", "name": "Waray-Waray" }, "word": "hayag" },
+              { "language": { "code": "cy", "name": "Welsh" }, "word": "golau" },
+              { "language": { "code": "cy", "name": "Welsh" }, "word": "goleuni" },
+              { "language": { "code": "cy", "name": "Welsh" }, "word": "lleu" },
+              { "language": { "code": "sah", "name": "Yakut" }, "word": "сырдык" },
+              { "language": { "code": "yi", "name": "Yiddish" }, "word": "ליכט" },
+              { "language": { "code": "zza", "name": "Zazaki" }, "word": "berq" }
+            ],
+            "subsenses": [
+              {
+                "definition": "A lightbulb or similar light-emitting device, regardless of whether it is lit.",
+                "tags": ["countable", "uncountable"],
+                "examples": ["We turned off all the lights and went to sleep."],
+                "quotes": [
+                  {
+                    "text": "The ceiling lights were off, but I knew the narrow light spilling from the lamp on my bureau would be enough for her to see the pale red marks on my chest, which had been fading for so long they had gone back to being shiny again.",
+                    "reference": "2016 August 7, Jameson Rich, “The Shirt Stays On”, in The New York Times, New York, N.Y.: The New York Times Company, →ISSN, →OCLC, archived from the original on 25 Nov 2022:"
+                  }
+                ],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              },
+              {
+                "definition": "A traffic light, or (by extension) an intersection controlled by traffic lights.",
+                "tags": ["countable", "uncountable"],
+                "examples": ["To get to our house, turn right at the third light."],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              }
+            ]
+          },
+          {
+            "definition": "(figurative) Spiritual or mental illumination; enlightenment, useful information.",
+            "tags": ["countable", "figuratively", "uncountable"],
+            "examples": ["Can you throw any light on this problem?"],
+            "quotes": [
+              {
+                "text": "He shall never know / That I had any light of this from thee.",
+                "reference": "c. 1590–1591 (date written), William Shakespeare, “The Two Gentlemen of Verona”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act III, scene i]:"
+              },
+              {
+                "text": "A sudden light broke upon him and he repeated the first line with expression.",
+                "reference": "1927, Ernest Bramah, Max Carrados Mysteries:"
+              },
+              {
+                "text": "Greatly interested in these differences—some of them so great that they led me to seek exchanges of light with Englishmen—I looked for some work that would describe and account for them with a show of completeness, and perhaps depict the process of their origin.",
+                "reference": "[1921 [1919], H. L. Mencken, The American Language, 2nd edition, New York: Alfred A. Knopf, →ISBN, →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(in the plural, now rare) Facts; pieces of information; ideas, concepts.",
+            "tags": ["archaic", "countable", "in plural", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Now these notions are twofold, actions or habits[…], which are durable lights and notions, which we may use when we will.",
+                "reference": "1624, Democritus Junior [pseudonym; Robert Burton], The Anatomy of Melancholy: […], 2nd edition, Oxford, Oxfordshire: […] John Lichfield and James Short, for Henry Cripps, →OCLC:"
+              },
+              {
+                "text": "\"Well, there's her statement of her case, and according to her lights, it's a just one. She's got a slum-bred mind.\"",
+                "reference": "1950, Norman Lindsay, Dust or Polish?, Sydney: Angus and Robertson, page 164:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "valaistus" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "neuvo" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "A notable person within a specific field or discipline.",
+            "tags": ["countable", "uncountable"],
+            "examples": ["Picasso was one of the leading lights of the cubist movement."],
+            "quotes": [
+              {
+                "text": "Joan of Arc, a light of ancient France",
+                "reference": "1842, Alfred Tennyson, “A Dream of Fair Women”, in Poems. […], volume (please specify |volume=I or II), London: Edward Moxon, […], →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "johtohahmo" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "merkkihenkilö" },
+              { "language": { "code": "gl", "name": "Galician" }, "word": "luz" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "(painting) The manner in which the light strikes a picture; that part of a picture which represents those objects upon which the light is supposed to fall; the more illuminated part of a landscape or other scene; opposed to shade.",
+            "tags": ["countable", "uncountable"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "A point of view, or aspect from which a concept, person or thing is regarded.",
+            "tags": ["countable", "uncountable"],
+            "examples": [
+              "I'm really seeing you in a different light today.",
+              "Magoon's governorship in Cuba was viewed in a negative light by many Cuban historians for years thereafter."
+            ],
+            "quotes": [
+              {
+                "text": "Frequent consideration of a thing […] shows it in its several lights and various ways of appearance.",
+                "reference": "1692–1717, Robert South, “Why Christ’s Doctrine was Rejected by the Jews”, in Twelve Sermons Preached upon Several Occasions, volume (please specify |volume=I to VI), London:"
+              },
+              {
+                "text": "Thy ſteddy Temper, Portius,\nCan look on Guilt, Rebellion, Fraud, and Cæſar,\nIn the calm Lights of mild Philoſophy; […]",
+                "reference": "1712 (date written), [Joseph] Addison, Cato, a Tragedy. […], London: […] J[acob] Tonson, […], published 1713, →OCLC, Act I, scene i, page 1:"
+              },
+              {
+                "text": "Now if there was one thing that the animals were completely certain of, it was that they did not want Jones back. When it was put to them in this light, they had no more to say.",
+                "reference": "1943 November – 1944 February (date written; published 1945 August 17), George Orwell [pseudonym; Eric Arthur Blair], Animal Farm […], London: Secker & Warburg, published May 1962, →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "ba", "name": "Bashkir" }, "word": "күҙлек" },
+              { "language": { "code": "ba", "name": "Bashkir" }, "word": "ҡараш" },
+              { "language": { "code": "cmn", "name": "Chinese Mandarin" }, "word": "觀點 /观点" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "valo" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "näkökulma" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "אוֹר" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "megvilágítás" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "szemszög" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "szemlélet" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "látásmód" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "fény" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "szín" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "視点" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "観点" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "lux" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "lumen" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "światło" },
+              { "language": { "code": "pt", "name": "Portuguese" }, "word": "visão" },
+              { "language": { "code": "ro", "name": "Romanian" }, "word": "lumină" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "свет" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" },
+              { "language": { "code": "sv", "name": "Swedish" }, "word": "ljus" },
+              { "language": { "code": "te", "name": "Telugu" }, "word": "కోణము" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "cách" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "trạng thái" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "A flame or something used to create fire.",
+            "tags": ["countable", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "\"There will, I expect, be many such - possibly whole cities in flames - when we consider how many folk may have dropped with lights in their hands.\"",
+                "reference": "1913, Arthur Conan Doyle, “(please specify the page)”, in The Poison Belt […], London; New York, N.Y.: Hodder and Stoughton, →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "an", "name": "Aragonese" }, "word": "fuego" },
+              { "language": { "code": "ba", "name": "Bashkir" }, "word": "ут" },
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "запа́лка" },
+              { "language": { "code": "my", "name": "Burmese" }, "word": "မီး" },
+              { "language": { "code": "ca", "name": "Catalan" }, "word": "flama" },
+              { "language": { "code": "ca", "name": "Catalan" }, "word": "metxa" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "flamme" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "vuurtje" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "tuli" },
+              { "language": { "code": "gl", "name": "Galician" }, "word": "luz" },
+              { "language": { "code": "de", "name": "German" }, "word": "Flamme" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "אֵשׁ" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "tűz" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "gyufa" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "öngyújtó" },
+              { "language": { "code": "ia", "name": "Interlingua" }, "word": "foco" },
+              { "language": { "code": "ga", "name": "Irish" }, "word": "solas" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "明かり" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "火" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "불" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "lux" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "lumen" },
+              { "language": { "code": "mnc", "name": "Manchu" }, "word": "ᡝᠯᡩᡝᠨ" },
+              { "language": { "code": "nb", "name": "Norwegian Bokmål" }, "word": "flamme" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "ogień" },
+              { "language": { "code": "pt", "name": "Portuguese" }, "word": "fogo" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "спи́чки" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "зажига́лка" },
+              { "language": { "code": "sco", "name": "Scots" }, "word": "licht" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "fuego" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "mechero" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" },
+              { "language": { "code": "te", "name": "Telugu" }, "word": "అంటించు" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "lửa" }
+            ],
+            "subsenses": [
+              {
+                "definition": "(slang) A cigarette lighter.",
+                "tags": ["countable", "slang", "uncountable"],
+                "examples": ["Hey, buddy, you got a light?"],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              }
+            ]
+          },
+          {
+            "definition": "A firework made by filling a case with a substance which burns brilliantly with a white or coloured flame.",
+            "tags": ["countable", "uncountable"],
+            "examples": ["a Bengal light"],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "A window in architecture, carriage design, or motor car design: either the opening itself or the window pane of glass that fills it, if any.",
+            "tags": ["countable", "uncountable"],
+            "examples": ["This facade has eight south-facing lights."],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(crosswording) The series of squares reserved for the answer to a crossword clue.",
+            "tags": ["countable", "uncountable"],
+            "examples": ["The average length of a light on a 15×15 grid is 7 or 8."],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [{ "language": { "code": "fi", "name": "Finnish" }, "word": "sananpituus" }],
+            "subsenses": []
+          },
+          {
+            "definition": "(informal) A cross-light in a double acrostic or triple acrostic.",
+            "tags": ["countable", "informal", "uncountable"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Open view; a visible state or condition; public observation; publicity.",
+            "tags": ["countable", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "The duke yet would have dark deeds darkly answered; he would never bring them to light.",
+                "reference": "c. 1603–1604 (date written), William Shakespeare, “Measure for Measure”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act III, scene ii]:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "The power of perception by vision: eyesight (sightedness; vision).",
+            "tags": ["countable", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "My heart panteth, my strength faileth me: as for the light of mine eies, it also is gone from me.",
+                "reference": "1611, The Holy Bible, […] (King James Version), London: […] Robert Barker, […], →OCLC, Psalms 38:10:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "valo" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "látás" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "világ" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "The brightness of the eye or eyes.",
+            "tags": ["countable", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "He seemed to find his way without his eyes; / For out o'door he went without their helps, / And, to the last, bended their light on me.",
+                "reference": "c. 1599–1602 (date written), William Shakespeare, “The Tragedie of Hamlet, Prince of Denmarke”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act II, scene i]:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "da", "name": "Danish" }, "word": "glimt i øjet" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "valo" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "fény" }
+            ],
+            "subsenses": []
+          }
+        ],
+        "synonyms": ["visible light", "luminance", "radiation"],
+        "antonyms": [
+          "darkness",
+          "T-ray",
+          "X-ray",
+          "alpha ray",
+          "beta ray",
+          "gamma ray",
+          "infrared",
+          "longwave",
+          "mediumwave",
+          "microwave",
+          "radio wave",
+          "shortwave",
+          "ultraviolet"
+        ]
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "verb",
+        "pronunciations": [
+          { "type": "ipa", "text": "/laɪt/", "tags": [] },
+          { "type": "ipa", "text": "[laɪt]", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "[lɑjt]", "tags": ["British", "Southern", "Standard"] },
+          { "type": "ipa", "text": "[ɫɐɪt]", "tags": ["General American"] },
+          { "type": "ipa", "text": "[ləjt]", "tags": ["Canada", "US", "regional"] },
+          { "type": "ipa", "text": "[lɑɪt]", "tags": ["General Australian"] }
+        ],
+        "forms": [
+          { "word": "lights", "tags": ["present", "singular", "third-person"] },
+          { "word": "lighting", "tags": ["participle", "present"] },
+          { "word": "lit", "tags": ["participle", "past"] },
+          { "word": "lit", "tags": ["past"] },
+          { "word": "lighted", "tags": ["participle", "past", "uncommon"] },
+          { "word": "lighted", "tags": ["past", "uncommon"] },
+          { "word": "light", "tags": ["obsolete", "participle", "past"] },
+          { "word": "light", "tags": ["obsolete", "past"] },
+          { "word": "lite", "tags": ["alternative", "archaic", "informal"] },
+          { "word": "lighte", "tags": ["alternative", "obsolete"] },
+          { "word": "lyght", "tags": ["alternative", "obsolete"] },
+          { "word": "lyghte", "tags": ["alternative", "obsolete"] },
+          { "word": "licht", "tags": ["alternative", "Scotland"] }
+        ],
+        "senses": [
+          {
+            "definition": "(transitive) To start (a fire).",
+            "tags": ["transitive"],
+            "examples": ["We lit the fire to get some heat."],
+            "quotes": [],
+            "synonyms": ["set"],
+            "antonyms": ["extinguish", "put out", "quench"],
+            "translations": [
+              { "language": { "code": "af", "name": "Afrikaans" }, "word": "aansteek" },
+              { "language": { "code": "ar", "name": "Arabic" }, "word": "أَشْعَلَ" },
+              { "language": { "code": "ar", "name": "Arabic" }, "word": "أَوْقَدَ" },
+              { "language": { "code": "aii", "name": "Assyrian Neo-Aramaic" }, "word": "ܛܲܦܹܐ" },
+              { "language": { "code": "hy", "name": "Armenian" }, "word": "վառել" },
+              { "language": { "code": "eu", "name": "Basque" }, "word": "piztu" },
+              { "language": { "code": "eu", "name": "Basque" }, "word": "isiotu" },
+              { "language": { "code": "be", "name": "Belarusian" }, "word": "запа́льваць" },
+              { "language": { "code": "be", "name": "Belarusian" }, "word": "запалі́ць" },
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "запалвам" },
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "паля" },
+              { "language": { "code": "my", "name": "Burmese" }, "word": "မီးထွန်း" },
+              { "language": { "code": "ca", "name": "Catalan" }, "word": "encendre" },
+              { "language": { "code": "cic", "name": "Chickasaw" }, "word": "ooti" },
+              { "language": { "code": "zh", "name": "Chinese" }, "word": "點火 /点火" },
+              { "language": { "code": "zh", "name": "Chinese Mandarin" }, "word": "點火 /点火" },
+              { "language": { "code": "zh", "name": "Chinese Mandarin" }, "word": "點燃 /点燃" },
+              { "language": { "code": "zdj", "name": "Ngazidja Comorian" }, "word": "upatsa" },
+              { "language": { "code": "zdj", "name": "Ngazidja Comorian" }, "word": "uvuza" },
+              { "language": { "code": "cs", "name": "Czech" }, "word": "zapálit" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "antænde" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "tænde" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "aansteken" },
+              { "language": { "code": "eo", "name": "Esperanto" }, "word": "ekbruligi" },
+              { "language": { "code": "eo", "name": "Esperanto" }, "word": "fajrigi" },
+              { "language": { "code": "et", "name": "Estonian" }, "word": "süütama" },
+              { "language": { "code": "et", "name": "Estonian" }, "word": "läitma" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "sytyttää" },
+              { "language": { "code": "fr", "name": "French" }, "word": "allumer" },
+              { "language": { "code": "gl", "name": "Galician" }, "word": "prender" },
+              { "language": { "code": "gl", "name": "Galician" }, "word": "acender" },
+              { "language": { "code": "de", "name": "German" }, "word": "anzünden" },
+              { "language": { "code": "de", "name": "German" }, "word": "anstecken" },
+              { "language": { "code": "de", "name": "German" }, "word": "anmachen" },
+              { "language": { "code": "gmh", "name": "Middle High German" }, "word": "enzünden" },
+              { "language": { "code": "el", "name": "Greek" }, "word": "ανάβω" },
+              { "language": { "code": "grc", "name": "Ancient Greek" }, "word": "ἅπτω" },
+              { "language": { "code": "grc", "name": "Ancient Greek" }, "word": "αἴθω" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "הדליק" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "הצית" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "הבעיר" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "जलाना" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "प्रज्वलन" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "gyújt" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "meggyújt" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "felgyújt" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "kveikja" },
+              { "language": { "code": "io", "name": "Ido" }, "word": "acendar" },
+              { "language": { "code": "izh", "name": "Ingrian" }, "word": "virittää" },
+              { "language": { "code": "izh", "name": "Ingrian" }, "word": "syttää" },
+              { "language": { "code": "izh", "name": "Ingrian" }, "word": "sytyttää" },
+              { "language": { "code": "ga", "name": "Irish" }, "word": "las" },
+              { "language": { "code": "it", "name": "Italian" }, "word": "accendere" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "引火する" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "点火する" },
+              { "language": { "code": "km", "name": "Khmer" }, "word": "អុចភ្លើង" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "불붙이다" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "불을 지르다" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "점화(點火)하다" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "인화(引火)하다" },
+              { "language": { "code": "kmr", "name": "Northern Kurdish" }, "word": "agir vêxistin" },
+              { "language": { "code": "lo", "name": "Lao" }, "word": "ໄຕ້" },
+              { "language": { "code": "ltg", "name": "Latgalian" }, "word": "aizdegt" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "accendō" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "incendeō" },
+              { "language": { "code": "lv", "name": "Latvian" }, "word": "aizdedzināt" },
+              { "language": { "code": "lv", "name": "Latvian" }, "word": "aizdegt" },
+              { "language": { "code": "lv", "name": "Latvian" }, "word": "iedegt" },
+              { "language": { "code": "lv", "name": "Latvian" }, "word": "uzdegt" },
+              { "language": { "code": "lt", "name": "Lithuanian" }, "word": "uždegti" },
+              { "language": { "code": "ml", "name": "Malayalam" }, "word": "കത്തിയ്ക്കുക" },
+              { "language": { "code": "mi", "name": "Māori" }, "word": "raiti" },
+              { "language": { "code": "lus", "name": "Mizo" }, "word": "häl" },
+              { "language": { "code": "lus", "name": "Mizo" }, "word": "tialh" },
+              { "language": { "code": "lus", "name": "Mizo" }, "word": "ṭankai" },
+              { "language": { "code": "nap", "name": "Neapolitan" }, "word": "abbiccià" },
+              { "language": { "code": "nrm", "name": "Norman" }, "word": "alleunmer" },
+              { "language": { "code": "no", "name": "Norwegian" }, "word": "tenne" },
+              { "language": { "code": "oc", "name": "Occitan" }, "word": "alucar" },
+              { "language": { "code": "ang", "name": "Old English" }, "word": "ǣlan" },
+              { "language": { "code": "roa-opt", "name": "Old Galician-Portuguese" }, "word": "acender" },
+              { "language": { "code": "fa", "name": "Persian" }, "word": "افروختن" },
+              { "language": { "code": "fa", "name": "Persian" }, "word": "روشن کردن" },
+              { "language": { "code": "fa", "name": "Persian" }, "word": "درگیرانیدن" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "rozpalić" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "zapalić" },
+              { "language": { "code": "pt", "name": "Portuguese" }, "word": "acender" },
+              { "language": { "code": "ro", "name": "Romanian" }, "word": "aprinde" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "зажига́ть" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "заже́чь" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "разжига́ть" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "разже́чь" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "запалити" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "упалити" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "zapaliti" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "upaliti" },
+              { "language": { "code": "sk", "name": "Slovak" }, "word": "zapáliť" },
+              { "language": { "code": "sk", "name": "Slovak" }, "word": "zažať" },
+              { "language": { "code": "sl", "name": "Slovene" }, "word": "prižgati" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "encender" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "acender" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "fogarizar" },
+              { "language": { "code": "sv", "name": "Swedish" }, "word": "tända" },
+              { "language": { "code": "tl", "name": "Tagalog" }, "word": "liwanag" },
+              { "language": { "code": "tl", "name": "Tagalog" }, "word": "ilawan" },
+              { "language": { "code": "te", "name": "Telugu" }, "word": "అంటించు" },
+              { "language": { "code": "th", "name": "Thai" }, "word": "จุด" },
+              { "language": { "code": "tpi", "name": "Tok Pisin" }, "word": "lait" },
+              { "language": { "code": "tpi", "name": "Tok Pisin" }, "word": "kamapim" },
+              { "language": { "code": "tr", "name": "Turkish" }, "word": "yakmak" },
+              { "language": { "code": "uk", "name": "Ukrainian" }, "word": "запа́лювати" },
+              { "language": { "code": "uk", "name": "Ukrainian" }, "word": "запали́ти" },
+              { "language": { "code": "vec", "name": "Venetan" }, "word": "inpiẑar" },
+              { "language": { "code": "vec", "name": "Venetan" }, "word": "inpiar" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "đốt" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "thắp" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "châm" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "nhóm" },
+              { "language": { "code": "wa", "name": "Walloon" }, "word": "esprinde" },
+              { "language": { "code": "wa", "name": "Walloon" }, "word": "aloumer" },
+              { "language": { "code": "wa", "name": "Walloon" }, "word": "atoker" },
+              { "language": { "code": "cy", "name": "Welsh" }, "word": "cynnau" },
+              { "language": { "code": "yi", "name": "Yiddish" }, "word": "צינדן" },
+              { "language": { "code": "yi", "name": "Yiddish" }, "word": "אָנצינדן" },
+              { "language": { "code": "zza", "name": "Zazaki" }, "word": "wekerden" },
+              { "language": { "code": "zza", "name": "Zazaki" }, "word": "rosn kerden" },
+              { "language": { "code": "nmn", "name": "ǃXóõ" }, "word": "ʘʻáa" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "(transitive) To set fire to; to set burning.",
+            "tags": ["transitive"],
+            "examples": ["She lit her last match."],
+            "quotes": [
+              {
+                "text": "if a thousand candles be all lighted from one",
+                "reference": "1627, G[eorge] H[akewill], An Apologie of the Power and Prouidence of God in the Gouernment of the World. […], Oxford, Oxfordshire: […] Iohn Lichfield and William Turner, […], →OCLC:"
+              }
+            ],
+            "synonyms": [
+              "ignite",
+              "kindle",
+              "conflagrate",
+              "aflame",
+              "alight",
+              "conflagrate",
+              "fire",
+              "fire up",
+              "ignite",
+              "inflame",
+              "kindle",
+              "light",
+              "light up",
+              "set ablaze",
+              "set afire",
+              "set aflame",
+              "set alight",
+              "set fire",
+              "set on fire",
+              "torch"
+            ],
+            "antonyms": ["extinguish", "put out", "quench"],
+            "translations": [
+              { "language": { "code": "ca", "name": "Catalan" }, "word": "encendre" },
+              { "language": { "code": "eo", "name": "Esperanto" }, "word": "ekbruligi" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "sytyttää" },
+              { "language": { "code": "fr", "name": "French" }, "word": "allumer" },
+              { "language": { "code": "de", "name": "German" }, "word": "anzünden" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "जलाना" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "meggyújt" },
+              { "language": { "code": "izh", "name": "Ingrian" }, "word": "virittää" },
+              { "language": { "code": "it", "name": "Italian" }, "word": "dare fuoco" },
+              { "language": { "code": "it", "name": "Italian" }, "word": "accendere" },
+              { "language": { "code": "ang", "name": "Old English" }, "word": "ǣlan" },
+              { "language": { "code": "fa", "name": "Persian" }, "word": "افروزانیدن" },
+              { "language": { "code": "pt", "name": "Portuguese" }, "word": "acender" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "encender" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "acender (disused)" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "kuwasha" },
+              { "language": { "code": "th", "name": "Thai" }, "word": "เผา" },
+              { "language": { "code": "yi", "name": "Yiddish" }, "word": "אונטערצינדן" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "(transitive) To illuminate; to provide light for when it is dark.",
+            "tags": ["transitive"],
+            "examples": [
+              "I used my torch to light the way home through the woods in the night.",
+              "19th century', Frederic Harrison, The Fortnightly Review\nOne hundred years ago, to have lit this theatre as brilliantly as it is now lighted would have cost, I suppose, fifty pounds."
+            ],
+            "quotes": [
+              {
+                "text": "The Sun has set, and Vesper, to supply / His absent beams, had lighted up the sky.",
+                "reference": "1700, [John] Dryden, “The Flower and the Leaf: Or, The Lady in the Arbour. A Vision.”, in Fables Ancient and Modern; […], London: […] Jacob Tonson, […], →OCLC:"
+              },
+              {
+                "text": "It was lighted by a couple of windows, one of which favoured an intimate inspection of two chimney pots, and a diagonal section of the Town Hall clock.",
+                "reference": "1913, Norman Lindsay, A Curate in Bohemia, Sydney: N.S.W. Bookstall Co., published 1932, page 7:"
+              },
+              {
+                "text": "\"Can I light you down to your cab?\"",
+                "reference": "1932, Delos W. Lovelace, King Kong, published 1965, page 9:"
+              }
+            ],
+            "synonyms": [
+              "illuminate",
+              "light up",
+              "alight",
+              "belight",
+              "beshine",
+              "bright",
+              "enlighten",
+              "fire",
+              "illume",
+              "illuminate",
+              "illumine",
+              "illustrate",
+              "irradiate",
+              "light",
+              "lighten",
+              "light up",
+              "luster",
+              "lustrate",
+              "shed light on"
+            ],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "af", "name": "Afrikaans" }, "word": "skyn" },
+              { "language": { "code": "af", "name": "Afrikaans" }, "word": "belig" },
+              { "language": { "code": "ar", "name": "Arabic" }, "word": "أَضَاءَ" },
+              { "language": { "code": "aii", "name": "Assyrian Neo-Aramaic" }, "word": "ܒܵܗܹܪ" },
+              { "language": { "code": "hy", "name": "Armenian" }, "word": "լուսավորել" },
+              { "language": { "code": "rup", "name": "Aromanian" }, "word": "lunjinedz" },
+              { "language": { "code": "bni", "name": "Bangi" }, "word": "bambola" },
+              { "language": { "code": "eu", "name": "Basque" }, "word": "argitu" },
+              { "language": { "code": "eu", "name": "Basque" }, "word": "argiztatu" },
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "осветявам" },
+              { "language": { "code": "ca", "name": "Catalan" }, "word": "encendre" },
+              { "language": { "code": "ca", "name": "Catalan" }, "word": "il·luminar" },
+              { "language": { "code": "zh", "name": "Chinese Mandarin" }, "word": "照明" },
+              { "language": { "code": "cs", "name": "Czech" }, "word": "osvětlit" },
+              { "language": { "code": "cs", "name": "Czech" }, "word": "osvítit" },
+              { "language": { "code": "dlm", "name": "Dalmatian" }, "word": "luminur" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "belyse" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "oplyse" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "lichten" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "bijlichten" },
+              { "language": { "code": "eo", "name": "Esperanto" }, "word": "lumigi" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "valaista" },
+              { "language": { "code": "fr", "name": "French" }, "word": "allumer" },
+              { "language": { "code": "fr", "name": "French" }, "word": "illuminer" },
+              { "language": { "code": "de", "name": "German" }, "word": "beleuchten" },
+              { "language": { "code": "de", "name": "German" }, "word": "anstrahlen" },
+              { "language": { "code": "el", "name": "Greek" }, "word": "φωτίζω" },
+              { "language": { "code": "grc", "name": "Ancient Greek" }, "word": "φωτίζω" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "האיר" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "प्रकाश" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "उजाला" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "világít" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "megvilágít" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "bevilágít" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "(fénnyel) eláraszt" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "lýsa" },
+              { "language": { "code": "io", "name": "Ido" }, "word": "lumizar" },
+              { "language": { "code": "ig", "name": "Igbo" }, "word": "cha" },
+              { "language": { "code": "ga", "name": "Irish" }, "word": "las" },
+              { "language": { "code": "it", "name": "Italian" }, "word": "illuminare" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "照らす" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "불켜다" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "밝히다" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "비추다" },
+              { "language": { "code": "kmr", "name": "Northern Kurdish" }, "word": "ron kirin" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "illuminare" },
+              { "language": { "code": "lv", "name": "Latvian" }, "word": "apgaismot" },
+              { "language": { "code": "lv", "name": "Latvian" }, "word": "izgaismot" },
+              { "language": { "code": "lij", "name": "Ligurian" }, "word": "illüminò" },
+              { "language": { "code": "ln", "name": "Lingala" }, "word": "bambola" },
+              { "language": { "code": "lt", "name": "Lithuanian" }, "word": "apšviesti" },
+              { "language": { "code": "ml", "name": "Malayalam" }, "word": "പ്രകാശിയ്ക്കുക" },
+              { "language": { "code": "mwl", "name": "Mirandese" }, "word": "alhumbrar" },
+              { "language": { "code": "lus", "name": "Mizo" }, "word": "èn" },
+              { "language": { "code": "lus", "name": "Mizo" }, "word": "tiëng" },
+              { "language": { "code": "nrm", "name": "Norman" }, "word": "alleunmer" },
+              { "language": { "code": "no", "name": "Norwegian" }, "word": "opplyse" },
+              { "language": { "code": "ang", "name": "Old English" }, "word": "līehtan" },
+              { "language": { "code": "fa", "name": "Persian" }, "word": "افروختن" },
+              { "language": { "code": "fa", "name": "Persian" }, "word": "روشن کردن" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "oświetlić" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "iluminować" },
+              { "language": { "code": "pt", "name": "Portuguese" }, "word": "iluminar" },
+              { "language": { "code": "ro", "name": "Romanian" }, "word": "lumina" },
+              { "language": { "code": "ro", "name": "Romanian" }, "word": "ilumina" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "освеща́ть" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "освети́ть" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "osvijetliti" },
+              { "language": { "code": "sk", "name": "Slovak" }, "word": "svietiť" },
+              { "language": { "code": "sl", "name": "Slovene" }, "word": "osvetliti" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "iluminar" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "aluzar" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "alumbrar" },
+              { "language": { "code": "sv", "name": "Swedish" }, "word": "belysa" },
+              { "language": { "code": "sv", "name": "Swedish" }, "word": "lysa upp" },
+              { "language": { "code": "te", "name": "Telugu" }, "word": "ప్రకాశింపజేయు" },
+              { "language": { "code": "th", "name": "Thai" }, "word": "ส่อง" },
+              { "language": { "code": "th", "name": "Thai" }, "word": "เรือง" },
+              { "language": { "code": "tr", "name": "Turkish" }, "word": "aydınlatmak" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "chiếu sáng" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "rọi sáng" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "soi sáng" },
+              { "language": { "code": "cy", "name": "Welsh" }, "word": "goleuo" },
+              { "language": { "code": "zza", "name": "Zazaki" }, "word": "rosn kerden" },
+              { "language": { "code": "zza", "name": "Zazaki" }, "word": "rosn kerden" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "(intransitive) To become ignited; to take fire.",
+            "tags": ["intransitive"],
+            "examples": ["This soggy match will not light."],
+            "quotes": [],
+            "synonyms": [
+              "catch fire",
+              "ignite",
+              "conflagrate",
+              "catch on fire",
+              "catch fire",
+              "combust",
+              "conflagrate",
+              "fire",
+              "go up in flames",
+              "go up in smoke",
+              "ignite",
+              "light",
+              "spunk",
+              "take fire"
+            ],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "паля се" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "syttyä" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "प्रज्वलित" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "meggyullad" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "felgyullad" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "To attend or conduct with a light; to show the way to by means of a light.",
+            "tags": [],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "His bishops lead him forth, and light him on.",
+                "reference": "1824, Walter Savage Landor, Imaginary Conversations: Richard I and the Abbot of Boxley:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(transitive, pinball) To make (a bonus) available to be collected by hitting a target, and thus light up the feature light corresponding to that bonus to indicate its availability.",
+            "tags": ["transitive"],
+            "examples": ["Light the extra ball by amassing 500 million points in the wizard mode."],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [],
+        "antonyms": []
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "adjective",
+        "pronunciations": [
+          { "type": "ipa", "text": "/laɪt/", "tags": [] },
+          { "type": "ipa", "text": "[laɪt]", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "[lɑjt]", "tags": ["British", "Southern", "Standard"] },
+          { "type": "ipa", "text": "[ɫɐɪt]", "tags": ["General American"] },
+          { "type": "ipa", "text": "[ləjt]", "tags": ["Canada", "US", "regional"] },
+          { "type": "ipa", "text": "[lɑɪt]", "tags": ["General Australian"] }
+        ],
+        "forms": [
+          { "word": "lighter", "tags": ["comparative"] },
+          { "word": "lightest", "tags": ["superlative"] },
+          { "word": "lite", "tags": ["alternative", "archaic", "informal"] },
+          { "word": "lighte", "tags": ["alternative", "obsolete"] },
+          { "word": "lyght", "tags": ["alternative", "obsolete"] },
+          { "word": "lyghte", "tags": ["alternative", "obsolete"] },
+          { "word": "licht", "tags": ["alternative", "Scotland"] }
+        ],
+        "senses": [
+          {
+            "definition": "Having light; bright; clear; not dark or obscure.",
+            "tags": [],
+            "examples": ["The room is light when the Sun shines through the window."],
+            "quotes": [
+              {
+                "text": "Historic England explained the listing: \"The station's unique design employs a high level of sophistication and innovation through its use of conoid shells supported on a cruck-like frame, which not only create a dramatic aesthetic form, but endow the building with a light and spacious interior.\"",
+                "reference": "2023 March 22, Philip Haigh, “Five configuration stages to boost Manchester rail capacity”, in RAIL, number 979, page 31:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "af", "name": "Afrikaans" }, "word": "lig" },
+              { "language": { "code": "af", "name": "Afrikaans" }, "word": "helder" },
+              { "language": { "code": "ar", "name": "Arabic" }, "word": "مُنِير" },
+              { "language": { "code": "ba", "name": "Bashkir" }, "word": "яҡты" },
+              { "language": { "code": "be", "name": "Belarusian" }, "word": "све́тлы" },
+              { "language": { "code": "bn", "name": "Bengali" }, "word": "রওশন" },
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "све́тъл" },
+              { "language": { "code": "zh", "name": "Chinese Mandarin" }, "word": "明亮的" },
+              { "language": { "code": "zh", "name": "Chinese Mandarin" }, "word": "光明的" },
+              { "language": { "code": "cs", "name": "Czech" }, "word": "světlý" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "lys" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "belyst" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "oplyst" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "licht" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "helder" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "lichtend" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "lichtgevend" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "lichtend" },
+              { "language": { "code": "eo", "name": "Esperanto" }, "word": "luma" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "valoisa" },
+              { "language": { "code": "fr", "name": "French" }, "word": "lumineux" },
+              { "language": { "code": "fr", "name": "French" }, "word": "lumineuse" },
+              { "language": { "code": "gl", "name": "Galician" }, "word": "claro" },
+              { "language": { "code": "gl", "name": "Galician" }, "word": "luminoso" },
+              { "language": { "code": "ka", "name": "Georgian" }, "word": "ნათელი" },
+              { "language": { "code": "de", "name": "German" }, "word": "erleuchtet" },
+              { "language": { "code": "de", "name": "German" }, "word": "hell" },
+              { "language": { "code": "el", "name": "Greek" }, "word": "φωτεινός" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "מואר" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "מוארת" },
+              { "language": { "code": "hi", "name": "Hindi" }, "word": "उज्ज्वलित" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "világos" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "fényes" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "bjart" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "bjartur" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "björt" },
+              { "language": { "code": "ja", "name": "Japanese" }, "word": "明るい" },
+              { "language": { "code": "xdq", "name": "Kaitag" }, "word": "ша́ла" },
+              { "language": { "code": "km", "name": "Khmer" }, "word": "ពន្លឺ" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "밝다" },
+              { "language": { "code": "ckb", "name": "Central Kurdish" }, "word": "ڕوناک" },
+              { "language": { "code": "kmr", "name": "Northern Kurdish" }, "word": "ron" },
+              { "language": { "code": "kmr", "name": "Northern Kurdish" }, "word": "geş" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "clārus" },
+              { "language": { "code": "la", "name": "Latin" }, "word": "lūcidus" },
+              { "language": { "code": "lv", "name": "Latvian" }, "word": "gaišs" },
+              { "language": { "code": "lt", "name": "Lithuanian" }, "word": "šviesus" },
+              { "language": { "code": "mk", "name": "Macedonian" }, "word": "светол" },
+              { "language": { "code": "lus", "name": "Mizo" }, "word": "ëng" },
+              { "language": { "code": "no", "name": "Norwegian" }, "word": "lyst" },
+              { "language": { "code": "no", "name": "Norwegian" }, "word": "opplyst" },
+              { "language": { "code": "no", "name": "Norwegian" }, "word": "belyst" },
+              { "language": { "code": "prg", "name": "Old Prussian" }, "word": "lāuks" },
+              { "language": { "code": "fa", "name": "Persian" }, "word": "روشن" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "widny" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "jasny" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "świetlny" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "świetlisty" },
+              { "language": { "code": "pt", "name": "Portuguese" }, "word": "iluminado" },
+              { "language": { "code": "qu", "name": "Quechua" }, "word": "achik" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "све́тлый" },
+              { "language": { "code": "ru", "name": "Russian" }, "word": "я́ркий" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "светао" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "свијетао" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "svetao" },
+              { "language": { "code": "sh", "name": "Serbo-Croatian" }, "word": "svijetao" },
+              { "language": { "code": "sk", "name": "Slovak" }, "word": "svetlý" },
+              { "language": { "code": "sl", "name": "Slovene" }, "word": "svetel" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "luminoso" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "claro" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "lumínico" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" },
+              { "language": { "code": "sv", "name": "Swedish" }, "word": "belyst" },
+              { "language": { "code": "sv", "name": "Swedish" }, "word": "ljus" },
+              { "language": { "code": "tg", "name": "Tajik" }, "word": "равшан" },
+              { "language": { "code": "te", "name": "Telugu" }, "word": "కాంతి వంతము" },
+              { "language": { "code": "th", "name": "Thai" }, "word": "สว่าง" },
+              { "language": { "code": "uk", "name": "Ukrainian" }, "word": "сві́тлий" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "sáng" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "sáng sủa" },
+              { "language": { "code": "cy", "name": "Welsh" }, "word": "golau" },
+              { "language": { "code": "yi", "name": "Yiddish" }, "word": "ליכטיק" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "Pale or whitish in color; highly luminous and more or less deficient in chroma.",
+            "tags": [],
+            "examples": ["She had light skin."],
+            "quotes": [
+              {
+                "text": "'Twas early June, the new grass was flourishing everywheres, the posies in the yard—peonies and such—in full bloom, the Sun was shining, and the water of the bay was blue, with light green streaks where the shoal showed.",
+                "reference": "1913, Joseph C[rosby] Lincoln, chapter I, in Mr. Pratt’s Patients, New York, N.Y.; London: D[aniel] Appleton and Company, →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(of coffee) Served with extra milk or cream.",
+            "tags": [],
+            "examples": ["I like my coffee light."],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "ca", "name": "Catalan" }, "word": "tallat" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "med mælk" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "med fløde" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "maidolla" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "maitokahvi)" },
+              { "language": { "code": "fr", "name": "French" }, "word": "au lait" },
+              { "language": { "code": "gl", "name": "Galician" }, "word": "claro" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "með ^((please verify)) mjólk" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "hvítt" },
+              { "language": { "code": "lv", "name": "Latvian" }, "word": "balta" },
+              { "language": { "code": "pt", "name": "Portuguese" }, "word": "pingado" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "con leche" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" },
+              { "language": { "code": "sv", "name": "Swedish" }, "word": "med grädde" },
+              { "language": { "code": "sv", "name": "Swedish" }, "word": "med mjölk" },
+              { "language": { "code": "te", "name": "Telugu" }, "word": "లైట్" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "nhẹ" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "nhiều sữa" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "nhiều kem" }
+            ],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [
+          "bright",
+          "lightful",
+          "pale",
+          "white",
+          "with milk",
+          "with cream",
+          "ablaze",
+          "coruscating",
+          "dazzling",
+          "effulgent",
+          "flashy",
+          "gleaming",
+          "glowing",
+          "hot",
+          "illuminated",
+          "incandescent",
+          "irradiated",
+          "lit",
+          "lucent",
+          "luminous",
+          "lustrous",
+          "radiant",
+          "refulgent",
+          "scintillating",
+          "shiny",
+          "sparkling",
+          "splendent",
+          "vibrant"
+        ],
+        "antonyms": ["cloudy", "dark", "dim", "dull", "shady"]
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "adjective",
+        "pronunciations": [
+          { "type": "ipa", "text": "/laɪt/", "tags": [] },
+          { "type": "ipa", "text": "[laɪt]", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "[lɑjt]", "tags": ["British", "Southern", "Standard"] },
+          { "type": "ipa", "text": "[ɫɐɪt]", "tags": ["General American"] },
+          { "type": "ipa", "text": "[ləjt]", "tags": ["Canada", "US", "regional"] },
+          { "type": "ipa", "text": "[lɑɪt]", "tags": ["General Australian"] }
+        ],
+        "forms": [
+          { "word": "lighter", "tags": ["comparative"] },
+          { "word": "lightest", "tags": ["superlative"] },
+          { "word": "lite", "tags": ["alternative", "archaic", "informal"] },
+          { "word": "lighte", "tags": ["alternative", "obsolete"] },
+          { "word": "lyght", "tags": ["alternative", "obsolete"] },
+          { "word": "lyghte", "tags": ["alternative", "obsolete"] },
+          { "word": "licht", "tags": ["alternative", "Scotland"] }
+        ],
+        "senses": [
+          {
+            "definition": "Having little or relatively little actual weight; not heavy; not cumbrous or unwieldy.",
+            "tags": [],
+            "examples": ["a light load ; a lighter backpack after having removed the books ; light weapons"],
+            "quotes": [
+              {
+                "text": "These weights did not exert their natural gravity […] insomuch that I could not guess which was light or heavy whilst I held them in my hand.",
+                "reference": "1712 August 31 (Gregorian calendar), [Joseph Addison; Richard Steele et al.], “WEDNESDAY, August 21, 1712”, in The Spectator, number 463; republished in Alexander Chalmers, editor, The Spectator; a New Edition, […], volume V, New York, N.Y.: D[aniel] Appleton & Company, 1853, →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Having little weight as compared with bulk; of little density or specific gravity.",
+            "tags": [],
+            "examples": ["feathers and cork are light ; oil is lighter than water"],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of short or insufficient weight; weighing less than the legal, standard, or proper amount; clipped or diminished.",
+            "tags": [],
+            "examples": ["to issue light coin"],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Lacking that which burdens or makes heavy.",
+            "tags": [],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": [
+              {
+                "definition": "Free from burden or impediment; unencumbered.",
+                "tags": [],
+                "examples": [],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              },
+              {
+                "definition": "Lightly built; typically designed for speed or small loads.",
+                "tags": [],
+                "examples": ["a light aircraft ; a light tank"],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [
+                  { "language": { "code": "fi", "name": "Finnish" }, "word": "kevyt" },
+                  { "language": { "code": "fi", "name": "Finnish" }, "word": "kevytrakenteinen" },
+                  { "language": { "code": "fr", "name": "French" }, "word": "léger" },
+                  { "language": { "code": "he", "name": "Hebrew" }, "word": "קל" },
+                  { "language": { "code": "hu", "name": "Hungarian" }, "word": "könnyű" },
+                  { "language": { "code": "nrm", "name": "Norman" }, "word": "ligi" },
+                  { "language": { "code": "pl", "name": "Polish" }, "word": "lekki" },
+                  { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" },
+                  { "language": { "code": "te", "name": "Telugu" }, "word": "తేలికైన నిర్మాణము" },
+                  { "language": { "code": "vi", "name": "Vietnamese" }, "word": "nhẹ" },
+                  { "language": { "code": "vi", "name": "Vietnamese" }, "word": "nhanh nhẹn" }
+                ],
+                "subsenses": []
+              },
+              {
+                "definition": "(military) Not heavily armed; armed with light weapons.",
+                "tags": [],
+                "examples": ["light infantry; a troop of light horse"],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [
+                  { "language": { "code": "fi", "name": "Finnish" }, "word": "kevyt" },
+                  { "language": { "code": "hu", "name": "Hungarian" }, "word": "könnyű" }
+                ],
+                "subsenses": []
+              },
+              {
+                "definition": "(nautical, of a ship) Riding high because of no cargo; by extension, pertaining to a ship which is light.",
+                "tags": [],
+                "examples": [
+                  "if a ship is light or partially loaded ; the light draft of a vessel, or its light displacement"
+                ],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              },
+              {
+                "definition": "(rail transport, of a locomotive or consist of locomotives) Without any piece of equipment attached or attached only to a caboose.",
+                "tags": [],
+                "examples": ["the light locomotives ; a locomotive may be moved light"],
+                "quotes": [
+                  {
+                    "text": "On that August Thursday afternoon, there was little freight traffic; a large \"K3\" Mogul went down with a short, fast goods, and a W.D. 2-8-0 proceeded northward light.",
+                    "reference": "1951 January, R. A. H. Weight, “A Railway Recorder in Essex and Hertfordshire”, in Railway Magazine, page 44:"
+                  }
+                ],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              },
+              {
+                "definition": "With low viscosity.",
+                "tags": [],
+                "examples": [],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              }
+            ]
+          },
+          {
+            "definition": "(cooking) Not heavy or soggy; spongy; well raised.",
+            "tags": [],
+            "examples": ["a light bread ; sponge cake is a light cake"],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Low in fat, calories, alcohol, salt, etc.",
+            "tags": [],
+            "examples": ["This light beer still gets you drunk if you have enough of it."],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "ca", "name": "Catalan" }, "word": "lleuger" },
+              { "language": { "code": "ca", "name": "Catalan" }, "word": "light" },
+              { "language": { "code": "cs", "name": "Czech" }, "word": "dietní" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "kalorielet" },
+              { "language": { "code": "nl", "name": "Dutch" }, "word": "licht" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "kevyt-" },
+              { "language": { "code": "fr", "name": "French" }, "word": "léger" },
+              { "language": { "code": "de", "name": "German" }, "word": "leicht" },
+              { "language": { "code": "haw", "name": "Hawaiian" }, "word": "māmā" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "דיאטתי" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "דיאטתית" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "קל" },
+              { "language": { "code": "he", "name": "Hebrew" }, "word": "קלה" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "könnyű" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "könnyed" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "light" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "lájtos" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "fitulítill" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "fituskertur" },
+              { "language": { "code": "is", "name": "Icelandic" }, "word": "fitusnauður" },
+              { "language": { "code": "it", "name": "Italian" }, "word": "leggero" },
+              { "language": { "code": "it", "name": "Italian" }, "word": "leggera" },
+              { "language": { "code": "ko", "name": "Korean" }, "word": "저(低)하다" },
+              { "language": { "code": "nrm", "name": "Norman" }, "word": "ligi" },
+              { "language": { "code": "no", "name": "Norwegian" }, "word": "lett-" },
+              { "language": { "code": "fa", "name": "Persian" }, "word": "سبک" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "lekki" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "lekkostrawny" },
+              { "language": { "code": "pt", "name": "Portuguese" }, "word": "light" },
+              { "language": { "code": "pt", "name": "Portuguese" }, "word": "leve" },
+              { "language": { "code": "dsb", "name": "Lower Sorbian" }, "word": "lažki" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "ligero" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "light" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" },
+              { "language": { "code": "sv", "name": "Swedish" }, "word": "lätt-" },
+              { "language": { "code": "tr", "name": "Turkish" }, "word": "hafif" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "nhẹ" },
+              { "language": { "code": "cy", "name": "Welsh" }, "word": "ysgafn" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "Slight, not forceful or intense; small in amount or intensity.",
+            "tags": [],
+            "examples": ["a light drizzle//a light rain was falling//a light snow set in"],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Gentle; having little force or momentum.",
+            "tags": [],
+            "examples": ["This artist clearly had a light, flowing touch."],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "лек" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "kevyt" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "könnyed" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "finom" },
+              { "language": { "code": "mi", "name": "Māori" }, "word": "maiangi" },
+              { "language": { "code": "mi", "name": "Māori" }, "word": "areare" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "lekki" },
+              { "language": { "code": "pl", "name": "Polish" }, "word": "delikatny" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" },
+              { "language": { "code": "te", "name": "Telugu" }, "word": "స్వల్ప సిబ్బంది" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "Easy to endure or perform.",
+            "tags": [],
+            "examples": ["light duties around the house"],
+            "quotes": [
+              {
+                "text": "Light sufferings give us leisure to complain.",
+                "reference": "1697, Virgil, “Palamon and Arcite”, in John Dryden, transl., The Works of Virgil: Containing His Pastorals, Georgics, and Æneis. […], London: […] Jacob Tonson, […], →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "лесен" },
+              { "language": { "code": "eo", "name": "Esperanto" }, "word": "leĝera" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "kevyt" },
+              { "language": { "code": "hu", "name": "Hungarian" }, "word": "könnyű" },
+              { "language": { "code": "yi", "name": "Yiddish" }, "word": "לײַכט" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "Unimportant, trivial, having little value or significance.",
+            "tags": [],
+            "examples": ["I made some light comment, and we moved on."],
+            "quotes": [
+              {
+                "text": "He had drunk more than was fit for him, and he was singing some light song, when he saw approaching, as he said, the pale horse mentioned in the Revelation, with Death seated as the rider.",
+                "reference": "1902, John Buchan, The Outgoing of the Tide:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(obsolete) Unchaste, wanton.",
+            "tags": ["obsolete"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Long after lay he musing at her mood, / Much grieu'd to thinke that gentle Dame so light, / For whose defence he was to shed his blood.",
+                "reference": "1590, Edmund Spenser, “Book I, Canto I”, in The Faerie Queene. […], London: […] [John Wolfe] for William Ponsonbie, →OCLC:"
+              },
+              {
+                "text": "So do not you; for you are a light girl.",
+                "reference": "c. 1595–1596 (date written), William Shakespeare, “Loues Labour’s Lost”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act V, scene ii]:"
+              },
+              {
+                "text": "A light wife doth make a heavy husband.",
+                "reference": "c. 1596–1598 (date written), William Shakespeare, “The Merchant of Venice”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act V, scene i]:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [{ "language": { "code": "fi", "name": "Finnish" }, "word": "kevytmielinen" }],
+            "subsenses": []
+          },
+          {
+            "definition": "Not encumbered; unembarrassed; clear of impediments; hence, active; nimble; swift.",
+            "tags": [],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Unmarried men are best friends, best masters […] but not always best subjects, for they are light to run away.",
+                "reference": "1625, Francis [Bacon], “Of Marriage and Single Life”, in The Essayes […], 3rd edition, London: […] Iohn Haviland for Hanna Barret, →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "huoleton" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "kevytmielinen" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "Fast; nimble.",
+            "tags": [],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(dated) Easily influenced by trifling considerations; unsteady; unsettled; volatile.",
+            "tags": ["dated"],
+            "examples": ["a light, vain person; a light mind"],
+            "quotes": [
+              {
+                "text": "There is no greater argument of a light and inconsiderate person than profanely to scoff at religion.",
+                "reference": "1633, John Tillotson, The Wisdom of being Religious:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "лекомислен" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "pinnallinen" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "Indulging in, or inclined to, levity; lacking dignity or solemnity; frivolous; airy.",
+            "tags": [],
+            "examples": ["Ogden Nash was a writer of light verse."],
+            "quotes": [
+              {
+                "text": "Seneca can not be too heavy, nor Plautus too light.",
+                "reference": "c. 1599–1602 (date written), William Shakespeare, “The Tragedie of Hamlet, Prince of Denmarke”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act II, scene ii]:"
+              },
+              {
+                "text": "specimens of New England humour laboriously light and lamentably mirthful",
+                "reference": "1851, Nathaniel Hawthorne, Old News:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "несериозен" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "kevytmielinen" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "ligero" },
+              { "language": { "code": "es", "name": "Spanish" }, "word": "liviano" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "Not quite sound or normal; somewhat impaired or deranged; dizzy; giddy.",
+            "tags": [],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Are his wits safe? Is he not light of brain?",
+                "reference": "c. 1603–1604 (date written), William Shakespeare, “The Tragedie of Othello, the Moore of Venice”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act IV, scene i]:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [{ "language": { "code": "fi", "name": "Finnish" }, "word": "sekaisin" }],
+            "subsenses": []
+          },
+          {
+            "definition": "Easily interrupted by stimulation.",
+            "tags": [],
+            "examples": ["light sleep; light anesthesia"],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [{ "language": { "code": "fi", "name": "Finnish" }, "word": "kevyt" }],
+            "subsenses": []
+          },
+          {
+            "definition": "Cheerful.",
+            "tags": [],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "I wish you a good day, and you'll find a way\n To make your spirits light & gay",
+                "reference": "1980, “ア・グッド・デイ [A Good Day]”, Yoko Narahashi (lyrics), Yukihide Takekawa (music), performed by Godiego:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [
+          "unheavy",
+          "lightweight",
+          "lite",
+          "lo-cal",
+          "low-alcohol",
+          "soft",
+          "gentle",
+          "delicate",
+          "rapid",
+          "nimble",
+          "inconsequential",
+          "trivial",
+          "unimportant",
+          "ablaze",
+          "bright",
+          "coruscating",
+          "dazzling",
+          "effulgent",
+          "flashy",
+          "gleaming",
+          "glowing",
+          "hot",
+          "illuminated",
+          "incandescent",
+          "irradiated",
+          "lit",
+          "lucent",
+          "luminous",
+          "lustrous",
+          "radiant",
+          "refulgent",
+          "scintillating",
+          "shiny",
+          "sparkling",
+          "splendent",
+          "vibrant",
+          "white"
+        ],
+        "antonyms": [
+          "heavy",
+          "weighty",
+          "burdensome",
+          "cumbersome",
+          "heavyweight",
+          "massive",
+          "calorific",
+          "fatty",
+          "strong",
+          "forceful",
+          "heavy",
+          "strong",
+          "crucial",
+          "important",
+          "weighty",
+          "cloudy",
+          "dark",
+          "dim",
+          "dull",
+          "shady"
+        ]
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "adverb",
+        "pronunciations": [
+          { "type": "ipa", "text": "/laɪt/", "tags": [] },
+          { "type": "ipa", "text": "[laɪt]", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "[lɑjt]", "tags": ["British", "Southern", "Standard"] },
+          { "type": "ipa", "text": "[ɫɐɪt]", "tags": ["General American"] },
+          { "type": "ipa", "text": "[ləjt]", "tags": ["Canada", "US", "regional"] },
+          { "type": "ipa", "text": "[lɑɪt]", "tags": ["General Australian"] }
+        ],
+        "forms": [
+          { "word": "lighter", "tags": ["comparative"] },
+          { "word": "lightest", "tags": ["superlative"] },
+          { "word": "lite", "tags": ["alternative", "archaic", "informal"] },
+          { "word": "lighte", "tags": ["alternative", "obsolete"] },
+          { "word": "lyght", "tags": ["alternative", "obsolete"] },
+          { "word": "lyghte", "tags": ["alternative", "obsolete"] },
+          { "word": "licht", "tags": ["alternative", "Scotland"] }
+        ],
+        "senses": [
+          {
+            "definition": "Carrying little.",
+            "tags": [],
+            "examples": ["I prefer to travel light."],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "леко" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "kevyesti" }
+            ],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [],
+        "antonyms": []
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "noun",
+        "pronunciations": [
+          { "type": "ipa", "text": "/laɪt/", "tags": [] },
+          { "type": "ipa", "text": "[laɪt]", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "[lɑjt]", "tags": ["British", "Southern", "Standard"] },
+          { "type": "ipa", "text": "[ɫɐɪt]", "tags": ["General American"] },
+          { "type": "ipa", "text": "[ləjt]", "tags": ["Canada", "US", "regional"] },
+          { "type": "ipa", "text": "[lɑɪt]", "tags": ["General Australian"] }
+        ],
+        "forms": [
+          { "word": "lights", "tags": ["plural"] },
+          { "word": "lite", "tags": ["alternative", "archaic", "informal"] },
+          { "word": "lighte", "tags": ["alternative", "obsolete"] },
+          { "word": "lyght", "tags": ["alternative", "obsolete"] },
+          { "word": "lyghte", "tags": ["alternative", "obsolete"] },
+          { "word": "licht", "tags": ["alternative", "Scotland"] }
+        ],
+        "senses": [
+          {
+            "definition": "(curling) A stone that is not thrown hard enough.",
+            "tags": [],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "See lights (“lungs”).",
+            "tags": [],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(Australia, uncountable) A low-alcohol lager.",
+            "tags": ["Australia", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "We crossed to the pub on the corner of Carlisle Street and I ordered two schooners of old for him and one of light for me.",
+                "reference": "2010, Peter Corris, Torn Apart, Allen and Unwin, page 117:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(military, historical) A member of the light cavalry.",
+            "tags": ["historical"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": ["luminance", "radiation"],
+        "antonyms": [
+          "darkness",
+          "T-ray",
+          "X-ray",
+          "alpha ray",
+          "beta ray",
+          "gamma ray",
+          "infrared",
+          "longwave",
+          "mediumwave",
+          "microwave",
+          "radio wave",
+          "shortwave",
+          "ultraviolet"
+        ]
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "verb",
+        "pronunciations": [
+          { "type": "ipa", "text": "/laɪt/", "tags": [] },
+          { "type": "ipa", "text": "[laɪt]", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "[lɑjt]", "tags": ["British", "Southern", "Standard"] },
+          { "type": "ipa", "text": "[ɫɐɪt]", "tags": ["General American"] },
+          { "type": "ipa", "text": "[ləjt]", "tags": ["Canada", "US", "regional"] },
+          { "type": "ipa", "text": "[lɑɪt]", "tags": ["General Australian"] }
+        ],
+        "forms": [
+          { "word": "lights", "tags": ["present", "singular", "third-person"] },
+          { "word": "lighting", "tags": ["participle", "present"] },
+          { "word": "lighted", "tags": ["participle", "past"] },
+          { "word": "lighted", "tags": ["past"] },
+          { "word": "lite", "tags": ["alternative", "archaic", "informal"] },
+          { "word": "lighte", "tags": ["alternative", "obsolete"] },
+          { "word": "lyght", "tags": ["alternative", "obsolete"] },
+          { "word": "lyghte", "tags": ["alternative", "obsolete"] },
+          { "word": "licht", "tags": ["alternative", "Scotland"] }
+        ],
+        "senses": [
+          {
+            "definition": "(nautical) To unload a ship, or to jettison material to make it lighter",
+            "tags": [],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "purkaa" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "keventää" },
+              { "language": { "code": "it", "name": "Italian" }, "word": "allegiare" },
+              { "language": { "code": "it", "name": "Italian" }, "word": "allibare" },
+              { "language": { "code": "no", "name": "Norwegian" }, "word": "losse" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "To lighten; to ease of a burden; to take off.",
+            "tags": [],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "His mailèd habergeon she did undight, / And from his head his heavy burgonet did light.",
+                "reference": "1590, Edmund Spenser, “(please specify the book)”, in The Faerie Queene. […], London: […] [John Wolfe] for William Ponsonbie, →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "облекчавам" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "keventää" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "(by extension) To leave; to depart.",
+            "tags": ["broadly"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [],
+        "antonyms": []
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "verb",
+        "pronunciations": [
+          { "type": "ipa", "text": "/laɪt/", "tags": [] },
+          { "type": "ipa", "text": "[laɪt]", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "[lɑjt]", "tags": ["British", "Southern", "Standard"] },
+          { "type": "ipa", "text": "[ɫɐɪt]", "tags": ["General American"] },
+          { "type": "ipa", "text": "[ləjt]", "tags": ["Canada", "US", "regional"] },
+          { "type": "ipa", "text": "[lɑɪt]", "tags": ["General Australian"] }
+        ],
+        "forms": [
+          { "word": "lights", "tags": ["present", "singular", "third-person"] },
+          { "word": "lighting", "tags": ["participle", "present"] },
+          { "word": "lit", "tags": ["participle", "past"] },
+          { "word": "lit", "tags": ["past"] },
+          { "word": "lighted", "tags": ["participle", "past"] },
+          { "word": "lighted", "tags": ["past"] },
+          { "word": "light", "tags": ["obsolete", "participle", "past"] },
+          { "word": "light", "tags": ["obsolete", "past"] },
+          { "word": "lite", "tags": ["alternative", "archaic", "informal"] },
+          { "word": "lighte", "tags": ["alternative", "obsolete"] },
+          { "word": "lyght", "tags": ["alternative", "obsolete"] },
+          { "word": "lyghte", "tags": ["alternative", "obsolete"] },
+          { "word": "licht", "tags": ["alternative", "Scotland"] }
+        ],
+        "senses": [
+          {
+            "definition": "To find by chance.",
+            "tags": [],
+            "examples": ["I lit upon a rare book in a second-hand bookseller's."],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "натъквам се" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "snuble over" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "löytää sattumalta" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "törmätä" },
+              { "language": { "code": "io", "name": "Ido" }, "word": "trovar" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "tình cờ gặp" }
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "To stop upon (of eyes or a glance); to notice",
+            "tags": [],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "\"Sacredam!\" he cried, when his eyes lit upon Buck. \"Dat one dam bully dog! Eh? How moch?\"",
+                "reference": "1903 July, Jack London, “Into the Primitive”, in The Call of the Wild, New York, N.Y.: The Macmillan Company; London: Macmillan & Co., →OCLC, page 34:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(archaic) To alight; to land or come down.",
+            "tags": ["archaic"],
+            "examples": [
+              "She fell out of the window but luckily lit on her feet.",
+              "And Rebekah lifted up her eyes, and when she saw Isaac, she lighted off the camel.",
+              "1957, Dr. Seuss (Theodor Geisel), The Cat in the Hat\nAnd our fish came down, too. He fell into a pot! He said, \"Do I like this? Oh, no! I do not. This is not a good game,\" Said our fish as he lit."
+            ],
+            "quotes": [
+              {
+                "text": "[W]e knew not what Courſe to take, but the Creatures [wolves] reſolv'd us ſoon, for they gather'd about us preſently, in Hopes of Prey, […] I drew my little Troop in among thoſe Trees, and placing our ſelves in a Line, behind one long Tree, I advis'd them all to light, and keeping that Tree before us, for a Breaſt-Work, to ſtand in a Triangle, or three Fronts, encloſing our Horſes in the Center.",
+                "reference": "1719 May 6 (Gregorian calendar), [Daniel Defoe], The Life and Strange Surprizing Adventures of Robinson Crusoe, […], London: […] W[illiam] Taylor […], →OCLC, pages 356–357:"
+              },
+              {
+                "text": "Some kinds of ducks in lighting strike the water with their tails first, and skitter along the surface for a few feet before settling down.",
+                "reference": "1885, Theodore Roosevelt, Hunting Trips of a Ranchman:"
+              },
+              {
+                "text": "One cannot help but notice a teasingly elusive air about her, as if she were a butterfly that refused to light and fluttered just out of reach of its would-be captor.",
+                "reference": "1977 December 31, Lisa Nussbaum, “Jacqui Mac: Bringing Her Dreams Together”, in Gay Community News, volume 4, number 26, page 10:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "translations": [
+              { "language": { "code": "bg", "name": "Bulgarian" }, "word": "слизам" },
+              { "language": { "code": "da", "name": "Danish" }, "word": "lande" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "päätyä" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "laskeutua" },
+              { "language": { "code": "fi", "name": "Finnish" }, "word": "pudota" },
+              { "language": { "code": "ga", "name": "Irish" }, "word": "tuirling" },
+              { "language": { "code": "sw", "name": "Swahili" }, "word": "mwanga" },
+              { "language": { "code": "vi", "name": "Vietnamese" }, "word": "xuống" }
+            ],
+            "subsenses": []
+          }
+        ],
+        "synonyms": ["chance upon", "come upon", "find", "happen upon", "hit upon", "alight", "land"],
+        "antonyms": []
+      }
+    ],
+    "source": {
+      "url": "https://en.wiktionary.org/wiki/light",
+      "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" }
+    }
+  },
+  "source": "https://freedictionaryapi.com/api/v1/entries/en/light?translations=true",
+  "fetchedAt": "2026-10-10T22:01:56.590Z",
+  "attemptedAt": "2026-10-10T22:01:56.320Z",
+  "stale": false,
+  "unavailable": false
+}

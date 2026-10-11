@@ -1,0 +1,60 @@
+{
+  "status": 200,
+  "body": [
+    {
+      "word": "serendipity",
+      "phonetic": "/ˌsɛ.ɹən.ˈdɪ.pɪ.ti/",
+      "phonetics": [
+        {
+          "text": "/ˌsɛ.ɹən.ˈdɪ.pɪ.ti/",
+          "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/serendipity-au.mp3",
+          "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=75857831",
+          "license": {
+            "name": "BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "text": "/ˌsɛ.ɹən.ˈdɪ.pɪ.ti/",
+          "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/serendipity-us.mp3",
+          "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=965947",
+          "license": {
+            "name": "BY-SA 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        }
+      ],
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0"
+      },
+      "sourceUrls": ["https://en.wiktionary.org/wiki/serendipity"],
+      "meaning": {
+        "noun": [
+          {
+            "definition": "A combination of events which have come together by chance to make a surprisingly good or wonderful outcome.",
+            "synonyms": [],
+            "antonyms": ["Murphy's law", "perfect storm"]
+          },
+          {
+            "definition": "An unsought, unintended, and/or unexpected, but fortunate, discovery and/or learning experience that happens by accident.",
+            "synonyms": ["chance", "luck"],
+            "antonyms": []
+          }
+        ]
+      }
+    }
+  ],
+  "source": "https://api.dictionaryapi.dev/api/v1/entries/en/serendipity",
+  "fetchedAt": null,
+  "attemptedAt": "2026-10-10T22:41:26.484Z",
+  "stale": false,
+  "unavailable": false,
+  "reconstructed": true,
+  "reconstructedAt": "2026-10-11T12:07:13.512Z",
+  "derivedFrom": {
+    "source": "https://api.dictionaryapi.dev/api/v2/entries/en/serendipity",
+    "fetchedAt": "2026-10-10T22:01:50.670Z"
+  },
+  "transformSource": "https://github.com/meetDeveloper/freeDictionaryAPI/blob/master/modules/dictionary.js"
+}

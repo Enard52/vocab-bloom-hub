@@ -74,3 +74,12 @@ shape and reads the active dataset. See [the complete all-datasets contract](./a
 
 For the complete mapping and HTTP limits, see [freedictionaryapi.com compatibility](./api.md#freedictionaryapicom-compatibility).
 For dataset installation and activation, see [Datasets](./datasets.md).
+
+## Website comparison snapshots
+
+The website comparison uses saved original-service responses for all nine preset words and
+supported version/translation options. They are committed with the website and refreshed
+manually with `yarn workspace site comparisons:generate` (`--missing-only` retries missing
+or failed snapshots). Building, starting and browsing the site never requests the originals.
+The retrieval date is displayed. A failed refresh retains an older successful snapshot
+with a warning when available; otherwise the error is shown. Instance datasets are queried live.

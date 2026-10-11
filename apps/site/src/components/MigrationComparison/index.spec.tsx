@@ -13,6 +13,16 @@ jest.mock('@/core/apiBase', () => ({ browserApiBase: () => 'https://instance.tes
 
 const result = (body: unknown, status = 200) =>
   ({ status, text: async () => JSON.stringify(body) }) as Response;
+const originalResult = (body: unknown) =>
+  result({
+    status: 200,
+    body,
+    source: 'https://dictionaryapi.dev',
+    fetchedAt: '2026-10-11T00:00:00Z',
+    attemptedAt: '2026-10-11T00:00:00Z',
+    stale: false,
+    unavailable: false,
+  });
 const local = result({
   data: [
     {
@@ -48,7 +58,7 @@ describe('live comparison UI', () => {
   it('renders the original and one dataset with tabs, optional provenance and RTL controls', async () => {
     fetchMock.mockImplementation((url: string) =>
       Promise.resolve(
-        url.includes('/datasets') ? local : result([{ word: 'hello', origin: 'Original fixture' }]),
+        url.includes('/datasets') ? local : originalResult([{ word: 'hello', origin: 'Original fixture' }]),
       ),
     );
     await act(async () => {
@@ -88,13 +98,13 @@ describe('live comparison UI', () => {
     await act(async () => {
       root.render(<MigrationComparison service="freedictionaryapi" />);
     });
-    expect(container.textContent).toContain('request_error');
+    expect(container.textContent).toContain('snapshot_missing');
     expect(container.textContent).toContain('WordNet');
     await act(async () => {
       (container.querySelector('input[type="checkbox"]') as HTMLInputElement).click();
     });
     expect(fetchMock).toHaveBeenCalledTimes(4);
-    expect(fetchMock.mock.calls[2][0]).toContain('translations=true');
+    expect(fetchMock.mock.calls[2][0]).toContain('/translations/hello.json');
     expect(fetchMock.mock.calls[3][0]).toContain('/datasets?translations=true');
   });
 
@@ -112,7 +122,7 @@ describe('live comparison UI', () => {
       (container.querySelector('#comparison-words-bank') as HTMLButtonElement).click();
     });
     expect(fetchMock).toHaveBeenCalledTimes(4);
-    expect(fetchMock.mock.calls[2][0]).toContain('word=bank');
+    expect(fetchMock.mock.calls[2][0]).toContain('/bank.json');
     expect(fetchMock.mock.calls[3][0]).toContain('/en/bank/datasets');
     expect((container.querySelector('#comparison-datasets') as HTMLSelectElement).value).toBe('wordnet');
     await act(async () => {
@@ -158,7 +168,7 @@ describe('live comparison UI', () => {
       Promise.resolve(
         url.includes('/datasets')
           ? result({ message: 'Unavailable' }, 503)
-          : result([{ word: 'Original fixture' }]),
+          : originalResult([{ word: 'Original fixture' }]),
       ),
     );
     await act(async () => {

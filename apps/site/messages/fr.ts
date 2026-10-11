@@ -1,22 +1,26 @@
 export default {
   comparison: {
+    snapshot_reconstructed:
+      'Réponse reconstruite à partir de v2 selon la conversion v1 publiée par le service. Elle ne provient pas d’une requête au point d’accès v1.',
+    snapshot_missing: 'La copie est absente ou illisible. Exécutez comparisons:generate pour la télécharger.',
+    snapshot_unavailable: 'Aucune copie valide disponible. Exécutez comparisons:generate pour réessayer.',
+    snapshot_stale:
+      'La dernière actualisation manuelle a échoué. La copie précédente est affichée avec sa date d’origine.',
+    snapshot_date: 'Réponse d’origine obtenue : {date}',
     version: 'Version de l’API',
     close: 'Fermer',
-    title: 'Comparer les réponses en direct',
+    title: 'Comparer les réponses',
     description:
-      'Le même mot anglais est recherché directement auprès de {service} et dans chaque jeu de données installé sur cette instance. Les réponses sont affichées au format du service d’origine.',
+      'Les réponses d’origine sont des copies enregistrées, mises à jour manuellement. Le même mot anglais est recherché dans tous les jeux de données installés sur cette instance au format de {service}.',
     word: 'Mot anglais',
     translations: 'Inclure les traductions',
-    compare: 'Comparer',
     provenance: 'Afficher les extensions vocabBloom',
     schema_note:
-      'Seules les extensions vocabBloom sont masquées par défaut. Les autres champs, valeurs et leur ordre sont conservés, y compris les sources et licences. Consultez les conditions du jeu de données pour l’attribution. La réponse d’origine est obtenue via le serveur de ce site et peut être mise en cache pendant une minute.',
+      'Seules les extensions vocabBloom sont masquées par défaut. Les autres champs, valeurs et leur ordre sont conservés, y compris les sources et licences. Consultez les conditions du jeu de données pour l’attribution. Les réponses d’origine sont actualisées manuellement ; consulter, compiler ou démarrer le site ne sollicite aucun service externe.',
     results: 'Résultats pour « {word} »',
     dataset_count: 'Jeux de données : {count}',
     original: 'Service d’origine',
     loading: 'Chargement…',
-    request_error:
-      'La requête a échoué ou le délai est dépassé. Le service peut être indisponible ou votre navigateur peut avoir bloqué la requête. Cliquez à nouveau sur Comparer ou ouvrez l’URL.',
     active: 'Actif',
     group_status: 'Statut de l’adaptateur : {status}',
     terms: 'Conditions et attribution du jeu de données',

@@ -8,7 +8,6 @@ export const COMPARISON_WORDS = [
   'serendipity',
   'computer',
   'water',
-  'Polish',
 ];
 
 export type ComparisonServiceT = 'dictionaryapi' | 'freedictionaryapi';
@@ -90,16 +89,35 @@ export const fetchResponse = async (url: string, signal: AbortSignal): Promise<R
   return { status: response.status, body };
 };
 
-/** A same-origin site route; /api/* belongs to the dictionary server in production. */
+/** Manually refreshed static artifacts; no upstream request while serving the site. */
 export const originalComparisonPath = (
   service: ComparisonServiceT,
   word: string,
   translations: boolean,
   version: DictionaryApiVersionT,
 ): string =>
-  `/comparison-response?${new URLSearchParams({
-    service,
-    word,
-    version: service === 'dictionaryapi' ? version : 'v1',
-    translations: String(service === 'freedictionaryapi' && translations),
-  })}`;
+  `/comparison-responses/${service}/${service === 'dictionaryapi' ? version : 'v1'}/${service === 'freedictionaryapi' && translations ? 'translations' : 'plain'}/${encodeURIComponent(word)}.json`;
+
+export type ComparisonSnapshotT = ResponseT & {
+  source: string;
+  reconstructed?: boolean;
+  fetchedAt: string | null;
+  attemptedAt: string;
+  stale: boolean;
+  unavailable: boolean;
+};
+
+export const fetchOriginalSnapshot = async (url: string, signal: AbortSignal): Promise<ComparisonSnapshotT> => {
+  const response = await fetchResponse(url, signal);
+  const snapshot = response.body;
+  if (
+    response.status !== 200 ||
+    !record(snapshot) ||
+    typeof snapshot.status !== 'number' ||
+    !('body' in snapshot) ||
+    typeof snapshot.attemptedAt !== 'string' ||
+    typeof snapshot.unavailable !== 'boolean'
+  )
+    throw new Error('Comparison snapshot is missing; run comparisons:generate.');
+  return snapshot as ComparisonSnapshotT;
+};

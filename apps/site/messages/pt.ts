@@ -1,22 +1,26 @@
 export default {
   comparison: {
+    snapshot_reconstructed:
+      'Reconstruído a partir da resposta v2 salva usando a conversão v1 publicada pelo serviço. Não foi obtido do endpoint v1.',
+    snapshot_missing: 'A cópia está ausente ou ilegível. Execute comparisons:generate para baixá-la.',
+    snapshot_unavailable:
+      'Nenhuma cópia válida está disponível. Execute comparisons:generate para tentar novamente.',
+    snapshot_stale: 'A última atualização manual falhou. A cópia anterior é exibida com sua data original.',
+    snapshot_date: 'Resposta original obtida: {date}',
     version: 'Versão da API',
     close: 'Fechar',
-    title: 'Comparar respostas em tempo real',
+    title: 'Comparar respostas',
     description:
-      'A mesma palavra em inglês é consultada diretamente em {service} e em cada conjunto de dados instalado nesta instância. As respostas são apresentadas no formato do serviço original.',
+      'As respostas originais são cópias salvas e atualizadas manualmente. A mesma palavra em inglês é consultada em todos os conjuntos instalados nesta instância no formato de {service}.',
     word: 'Palavra em inglês',
     translations: 'Incluir traduções',
-    compare: 'Comparar',
     provenance: 'Mostrar extensões vocabBloom',
     schema_note:
-      'Por padrão, apenas as extensões vocabBloom são ocultadas. Os demais campos, valores e a ordem são preservados, incluindo fontes e licenças. A atribuição está nos termos do conjunto de dados. A resposta original é obtida pelo servidor deste site e pode ser armazenada em cache por um minuto.',
+      'Por padrão, apenas as extensões vocabBloom são ocultadas. Os demais campos, valores e a ordem são preservados, incluindo fontes e licenças. A atribuição está nos termos do conjunto de dados. As respostas originais são atualizadas manualmente; visitar, compilar ou iniciar o site não consulta serviços externos.',
     results: 'Resultados para “{word}”',
     dataset_count: 'Conjuntos de dados: {count}',
     original: 'Serviço original',
     loading: 'Carregando…',
-    request_error:
-      'A consulta falhou ou excedeu o tempo limite. O serviço pode estar indisponível ou seu navegador pode ter bloqueado a consulta. Clique em Comparar novamente ou abra a URL.',
     active: 'Ativo',
     group_status: 'Status do adaptador: {status}',
     terms: 'Termos e atribuição do conjunto de dados',

@@ -13,6 +13,8 @@ import {
   datasetResponses,
   DictionaryApiVersionT,
   fetchResponse,
+  fetchOriginalSnapshot,
+  ComparisonSnapshotT,
   originalService,
   ResponseT,
   responseJson,
@@ -21,7 +23,10 @@ import {
 import { ChoiceTabs, tabId, TermsPopover } from './controls';
 import styles from './styles.module.scss';
 
-type LoadT = { pending: true } | { pending: false; response: ResponseT } | { pending: false; error: true };
+type LoadT =
+  | { pending: true }
+  | { pending: false; response: ResponseT & Partial<ComparisonSnapshotT> }
+  | { pending: false; error: true };
 
 export const MigrationComparison = ({ service }: { service: ComparisonServiceT }) => {
   const t = useTranslations('comparison');
@@ -31,7 +36,6 @@ export const MigrationComparison = ({ service }: { service: ComparisonServiceT }
   const [query, setQuery] = useState({
     word: 'hello',
     translations: false,
-    revision: 0,
     version: 'v2' as DictionaryApiVersionT,
   });
   const [urls, setUrls] = useState<ReturnType<typeof comparisonUrls> | null>(null);
@@ -45,7 +49,7 @@ export const MigrationComparison = ({ service }: { service: ComparisonServiceT }
     setOriginal({ pending: true });
     setDatasets({ pending: true });
     const cleanups: (() => void)[] = [];
-    const load = async (url: string, set: (value: LoadT) => void) => {
+    const load = async (url: string, set: (value: LoadT) => void, snapshot = false) => {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 20000);
       cleanups.push(() => {
@@ -53,7 +57,7 @@ export const MigrationComparison = ({ service }: { service: ComparisonServiceT }
         controller.abort();
       });
       try {
-        const response = await fetchResponse(url, controller.signal);
+        const response = await (snapshot ? fetchOriginalSnapshot : fetchResponse)(url, controller.signal);
         if (!disposed) set({ pending: false, response });
       } catch {
         if (!disposed) set({ pending: false, error: true });
@@ -61,7 +65,11 @@ export const MigrationComparison = ({ service }: { service: ComparisonServiceT }
         clearTimeout(timeout);
       }
     };
-    void load(originalComparisonPath(service, query.word, query.translations, query.version), setOriginal);
+    void load(
+      originalComparisonPath(service, query.word, query.translations, query.version),
+      setOriginal,
+      true,
+    );
     void load(nextUrls.datasets, setDatasets);
     return () => {
       disposed = true;
@@ -131,12 +139,6 @@ export const MigrationComparison = ({ service }: { service: ComparisonServiceT }
             {t('translations')}
           </label>
         )}
-        <button
-          type="button"
-          onClick={() => setQuery((previous) => ({ ...previous, revision: previous.revision + 1 }))}
-        >
-          {t('compare')}
-        </button>
       </div>
       <label className={styles.checkbox}>
         <input type="checkbox" checked={provenance} onChange={(event) => setProvenance(event.target.checked)} />
@@ -165,10 +167,23 @@ export const MigrationComparison = ({ service }: { service: ComparisonServiceT }
           {original.pending ? (
             <p role="status">{t('loading')}</p>
           ) : 'error' in original ? (
-            <p role="alert">{t('request_error')}</p>
+            <p role="alert">{t('snapshot_missing')}</p>
           ) : (
             <>
-              <p className={styles.status}>HTTP {original.response.status}</p>
+              {original.response.reconstructed ? (
+                <p className={styles.note}>{t('snapshot_reconstructed')}</p>
+              ) : (
+                <p className={styles.status}>HTTP {original.response.status}</p>
+              )}
+              {original.response.fetchedAt && (
+                <p className={styles.note}>
+                  {t('snapshot_date', {
+                    date: original.response.fetchedAt.replace('T', ' ').slice(0, 19) + ' UTC',
+                  })}
+                </p>
+              )}
+              {original.response.stale && <p role="status">{t('snapshot_stale')}</p>}
+              {original.response.unavailable && <p role="status">{t('snapshot_unavailable')}</p>}
               {json(original.response.body)}
             </>
           )}

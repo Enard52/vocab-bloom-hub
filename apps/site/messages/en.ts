@@ -1,22 +1,25 @@
 export default {
   comparison: {
+    snapshot_reconstructed:
+      'Reconstructed from the saved v2 response using the service’s published v1 conversion. Not fetched from the v1 endpoint.',
+    snapshot_missing: 'The snapshot is missing or unreadable. Run comparisons:generate to download it.',
+    snapshot_unavailable: 'No successful snapshot is available. Run comparisons:generate to retry.',
+    snapshot_stale: 'The latest manual refresh failed. The previous snapshot is shown with its original date.',
+    snapshot_date: 'Original response retrieved: {date}',
     version: 'API version',
     close: 'Close',
-    title: 'Compare live responses',
+    title: 'Response comparison',
     description:
-      'The same English word is requested directly from {service} and from every installed dataset on this instance. Responses are displayed in the original service’s format.',
+      'Original responses are saved snapshots updated manually. The same English word is looked up in all installed datasets on this instance using the {service} format.',
     word: 'English word',
     translations: 'Include translations',
-    compare: 'Compare',
     provenance: 'Show vocabBloom extensions',
     schema_note:
-      'Only vocabBloom extensions are hidden by default. All other response fields, values and array order are preserved, including source and license information. Expand dataset terms for attribution. The original response is fetched through this site’s server and may be cached for one minute.',
+      'Only vocabBloom extensions are hidden by default. All other response fields, values and array order are preserved, including source and license information. Expand dataset terms for attribution. Original responses are updated manually; browsing, building and starting the site never calls the external services.',
     results: 'Results for “{word}”',
     dataset_count: 'Datasets: {count}',
     original: 'Original service',
     loading: 'Loading…',
-    request_error:
-      'The request failed or timed out. The service may be unavailable, or your browser may have blocked the request. Try Compare again or open the request URL.',
     active: 'Active',
     group_status: 'Adapter status: {status}',
     terms: 'Dataset terms and attribution',

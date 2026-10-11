@@ -1,0 +1,618 @@
+{
+  "status": 200,
+  "body": {
+    "word": "water",
+    "entries": [
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "noun",
+        "pronunciations": [
+          { "type": "ipa", "text": "/ˈwɔ.tɚ/", "tags": [] },
+          { "type": "ipa", "text": "[ˈwɔ.ɾɚ]", "tags": [] },
+          { "type": "ipa", "text": "/ˈwɑ.tɚ/", "tags": ["cot caught merger"] },
+          { "type": "ipa", "text": "[ˈwɑ.ɾɚ]", "tags": ["cot caught merger"] },
+          { "type": "ipa", "text": "/ˈwɒ.tɚ/", "tags": ["cot caught merger"] },
+          { "type": "ipa", "text": "[ˈwɒ.ɾɚ]", "tags": ["cot caught merger"] },
+          { "type": "ipa", "text": "/ˈwɔː.tə/", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "[wo̞ː.tʰə]", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "/ˈwoː.tə/", "tags": ["General Australian", "New Zealand"] },
+          { "type": "ipa", "text": "[ˈwoː.ɾə]", "tags": ["General Australian", "New Zealand"] },
+          { "type": "ipa", "text": "[ˈwoː.ʔɐ]", "tags": ["Estuary English"] },
+          { "type": "ipa", "text": "[ˈwoː.ʔə]", "tags": ["Estuary English"] },
+          { "type": "ipa", "text": "[ˈwoʊ.ʔə]", "tags": ["Cockney"] },
+          { "type": "ipa", "text": "[ˈwɔo.ɾɐ]", "tags": ["Cockney"] },
+          { "type": "ipa", "text": "/wʊʔə/", "tags": ["Multicultural London English"] },
+          { "type": "ipa", "text": "/-ɑ/", "tags": ["Multicultural London English"] },
+          { "type": "ipa", "text": "/ˈwæ.tə/", "tags": [] },
+          { "type": "ipa", "text": "/ˈwɔ.təɾ/", "tags": ["Scotland"] },
+          { "type": "ipa", "text": "[ˈwɔə.ɾə]", "tags": ["New York City"] },
+          { "type": "ipa", "text": "[ˈwɔə.ɾɚ]", "tags": ["New York City"] },
+          { "type": "ipa", "text": "/ˈwʊ.təɹ/", "tags": [] },
+          { "type": "ipa", "text": "[ˈwʊ.ɾɚ]", "tags": [] },
+          { "type": "ipa", "text": "/ˈwɔɹ.təɹ/", "tags": ["Pennsylvania", "Western"] },
+          { "type": "ipa", "text": "[ˈwɔɹ.ɾɚ]", "tags": ["Pennsylvania", "Western"] },
+          { "type": "ipa", "text": "/ˈwɔː.təɹ/", "tags": ["Ireland"] },
+          { "type": "ipa", "text": "[ˈwɒː.θ̠ɚ]", "tags": ["Ireland"] },
+          { "type": "ipa", "text": "[ˈwɔːʔəɹ]", "tags": ["Ireland"] },
+          { "type": "ipa", "text": "[ˈwɔ.ʈə(r)]", "tags": ["India"] },
+          { "type": "ipa", "text": "[ˈʋɔ.ʈə(r)]", "tags": ["India"] },
+          { "type": "ipa", "text": "[ˈʋaː.ʈər(ɯ)]", "tags": [] },
+          { "type": "ipa", "text": "[ˈwaː.ʈər(ɯ)]", "tags": [] },
+          { "type": "ipa", "text": "/ˈwoː.tə/", "tags": ["General South African"] },
+          { "type": "ipa", "text": "[ˈwɔː.tə]", "tags": ["General South African"] },
+          { "type": "ipa", "text": "/ˈwɔ.tə/", "tags": ["Malaysia", "Singapore"] },
+          { "type": "ipa", "text": "/ˈwɐː.t̪ɛɾ/", "tags": ["Philippines"] }
+        ],
+        "forms": [
+          { "word": "waters", "tags": ["plural"] },
+          { "word": "wahter", "tags": ["alternative", "pronunciation-spelling"] },
+          { "word": "wahtuh", "tags": ["alternative", "pronunciation-spelling"] }
+        ],
+        "senses": [
+          {
+            "definition": "(uncountable) An inorganic compound (of molecular formula H₂O) found at room temperature and pressure as a clear liquid; it is present naturally as rain, and found in rivers, lakes and seas; its solid form is ice and its gaseous form is steam.",
+            "tags": ["uncountable"],
+            "examples": [
+              "By the action of electricity, the water was resolved into its two parts, oxygen and hydrogen."
+            ],
+            "quotes": [
+              {
+                "text": "It is wholly out of the power of language to convey any idea of the blissful enjoyment of obtaining water, after an almost total want of it, during eight and forty hours, in the scorching regions of an Arabian desert, in the month of July.",
+                "reference": "1805 December, Julius Griffiths, “A Journey across the Desert”, in The Monthly Mirror, page 362:"
+              },
+              {
+                "text": "Oxygen levels on Earth skyrocketed 2.4 billion years ago, when cyanobacteria evolved photosynthesis: the ability to convert water and carbon dioxide into carbohydrates and waste oxygen using solar energy.",
+                "reference": "2013 September-October, Katie L. Burke, “In the News”, in American Scientist, archived from the original on 03 Sep 2013:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": [
+              {
+                "definition": "(uncountable, in particular) The liquid form of this substance: liquid H₂O.",
+                "tags": ["uncountable"],
+                "examples": ["May I have a glass of water?", "Your plants need more water."],
+                "quotes": [
+                  {
+                    "text": "Towards the following morning, the thermometer fell to 5°; and at daylight, there was not an atom of water to be seen in any direction.",
+                    "reference": "1835, Sir John Ross, Sir James Clark Ross, Narrative of a Second Voyage in Search of a North-west Passage …, Volume 1, pages 284–5:"
+                  },
+                  {
+                    "text": "A water drop placed on the surface of ice can either spread or form a lens depending on the properties of the three phases involved in wetting, i.e., on the properties of the ice, water, and gas phases.",
+                    "reference": "2002, Arthur T. Hubbard, Encyclopedia of Surface and Colloid Science, →ISBN, page 4895:"
+                  },
+                  {
+                    "text": "Of all the transitions brought about on the Earth’s surface by temperature change, the melting of ice into water is the starkest. It is binary. And for the land beneath, the air above and the life around, it changes everything.",
+                    "reference": "2013 May 11, “The climate of Tibet: Pole-land”, in The Economist, volume 407, number 8835, archived from the original on 10 Mar 2023, page 80:"
+                  }
+                ],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              },
+              {
+                "definition": "(countable) A serving of liquid water.",
+                "tags": ["countable"],
+                "examples": [],
+                "quotes": [
+                  {
+                    "text": "Joe bustled back and offered her a glass of wine but she shook her head. “Just a water, please.”",
+                    "reference": "2006, Lori Foster, Erin McCarthy, Amy Garvey, Bad Boys of Summer, →ISBN, page 91:"
+                  }
+                ],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              }
+            ]
+          },
+          {
+            "definition": "(alchemy, philosophy) The aforementioned liquid, considered one of the Classical elements or basic elements of alchemy.",
+            "tags": ["countable", "uncountable"],
+            "examples": [
+              "He showed me the river of living water, sparkling like crystal, flowing from the throne of God."
+            ],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(uncountable or in the plural) Water in a body; an area of open water.",
+            "tags": ["in plural", "uncountable"],
+            "examples": [
+              "The president expressed hope that creating rain over waters between the countries would help reduce pollution.",
+              "And God said, Let the waters under the heaven be gathered together unto one place, and let the dry land appear: and it was so.",
+              "The boat was found within the territorial waters.",
+              "These seals are a common sight in the coastal waters of Chile."
+            ],
+            "quotes": [
+              {
+                "text": "Roſa. O vain peticioner, beg a greater matter,\nThou now requeſts but Mooneſhine in the water.",
+                "reference": "c. 1595–1596 (date written), William Shakespeare, “Loues Labour’s Lost”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act V, scene i], page 138, column 2:"
+              },
+              {
+                "text": "'Twas early June, the new grass was flourishing everywheres, the posies in the yard—peonies and such—in full bloom, the sun was shining, and the water of the bay was blue, with light green streaks where the shoal showed.",
+                "reference": "1913, Joseph C[rosby] Lincoln, chapter I, in Mr. Pratt’s Patients, New York, N.Y.; London: D[aniel] Appleton and Company, →OCLC:"
+              },
+              {
+                "text": "\"If you foresee the event and you go forward, then you are criminally negligent,\" she said, adding, \"This was a boat that navigated on the waters of Lake George since 1979. In terms of criminal negligence, there clearly wasn't the foreseeability that there may be in civil negligence.\"",
+                "reference": "2007 February 6, Danny Hakim, quoting Kathleen B. Hogan, “Two Misdemeanor Charges in Lake George Capsizing”, in The New York Times, New York, N.Y.: The New York Times Company, →ISSN, →OCLC, archived from the original on 26 Nov 2022:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(poetic, archaic or dialectal) A body of water, almost always a river, sometimes a lake or reservoir, especially in the names given to such bodies.",
+            "tags": ["archaic", "countable", "dialectal", "poetic", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "And as they went on their waye\n they cam vnto a certayne water\n and the gelded man ſayde: Se here is water\n what ſhall lett me to be baptiſed?",
+                "reference": "1526, [William Tyndale, transl.], The Newe Testamẽt […] (Tyndale Bible), [Worms, Germany: Peter Schöffer], →OCLC, Acts viij:[36], folio clxvi, recto:"
+              },
+              {
+                "text": "When the man rode off with the silver jug from the beautiful maiden, who presented it to him, an old crone set off in pursuit of him with such velocity, that she would surely have caught him, but that providentially he came to a running water.",
+                "reference": "1828, Thomas Keightley, The Fairy Mythology, volume I, London: William Harrison Ainsworth, page 183:"
+              },
+              {
+                "text": "On one side lay the Ocean, and on one\nLay a great water, and the moon was full.",
+                "reference": "1842, Alfred Tennyson, “Morte d’Arthur”, in Poems. […], volume II, London: Edward Moxon, […], →OCLC, page 4:"
+              },
+              {
+                "text": "But ere he came to Clyde's water, fu' loud the wind did blaw.",
+                "reference": "1865, William Allingham, editor, The Ballad Book: a selection of the choicest British ballads, William and May Margaret, or the Water of Clyde:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "A combination of water and other substance(s).",
+            "tags": [],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": [
+              {
+                "definition": "(sometimes countable) Mineral water.",
+                "tags": ["countable", "sometimes"],
+                "examples": ["Perrier is the most popular water in this restaurant."],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              },
+              {
+                "definition": "(countable, often in the plural) Spa water; hot springs.",
+                "tags": ["countable", "in plural", "often"],
+                "examples": ["Many people visit Bath to take the waters."],
+                "quotes": [
+                  {
+                    "text": "Rick: My health. I came to Casablanca for the waters.\nCaptain Renault: The waters? What waters? We're in the desert.\nRick: I was misinformed.",
+                    "reference": "1942, Julius J. Epstein, Philip G. Epstein, Howard Koch, Casablanca:"
+                  }
+                ],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [
+                  { "language": { "code": "zh", "name": "Chinese Mandarin" }, "word": "礦泉水 /矿泉水" },
+                  { "language": { "code": "da", "name": "Danish" }, "word": "spabad" },
+                  { "language": { "code": "nl", "name": "Dutch" }, "word": "bronwater" },
+                  { "language": { "code": "nl", "name": "Dutch" }, "word": "spawater" },
+                  { "language": { "code": "nl", "name": "Dutch" }, "word": "plat water" },
+                  { "language": { "code": "fi", "name": "Finnish" }, "word": "kylpy" },
+                  { "language": { "code": "it", "name": "Italian" }, "word": "acque" },
+                  { "language": { "code": "pl", "name": "Polish" }, "word": "wody" },
+                  { "language": { "code": "ru", "name": "Russian" }, "word": "во́ды" }
+                ],
+                "subsenses": []
+              },
+              {
+                "definition": "(pharmacy) A solution in water of a gaseous or readily volatile substance.",
+                "tags": ["countable", "uncountable"],
+                "examples": ["ammonia water"],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              },
+              {
+                "definition": "A fluid in the body.",
+                "tags": [],
+                "examples": [],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": [
+                  {
+                    "definition": "Urine.",
+                    "tags": ["countable", "uncountable"],
+                    "examples": [],
+                    "quotes": [
+                      {
+                        "text": "Ser Dunaver's squire Jodge could not hold his water when he slept.",
+                        "reference": "1999, George R.R. Martin, A Clash of Kings, Bantam, published 2011, page 458:"
+                      }
+                    ],
+                    "synonyms": [
+                      "body fluid",
+                      "bodily fluid",
+                      "biofluid",
+                      "emiction",
+                      "lant",
+                      "netting",
+                      "pee",
+                      "peepee",
+                      "piss",
+                      "sig",
+                      "urine",
+                      "water",
+                      "wazz",
+                      "wee",
+                      "wee-wee"
+                    ],
+                    "antonyms": [],
+                    "translations": [
+                      { "language": { "code": "hy", "name": "Armenian" }, "word": "չիշիկ" },
+                      { "language": { "code": "bg", "name": "Bulgarian" }, "word": "ури́на" },
+                      {
+                        "language": { "code": "coh", "name": "Chichonyi-Chidzihana-Chikauma" },
+                        "word": "makodzo"
+                      },
+                      { "language": { "code": "da", "name": "Danish" }, "word": "tis" },
+                      { "language": { "code": "da", "name": "Danish" }, "word": "vand" },
+                      { "language": { "code": "nl", "name": "Dutch" }, "word": "water" },
+                      { "language": { "code": "fo", "name": "Faroese" }, "word": "vatn" },
+                      { "language": { "code": "fi", "name": "Finnish" }, "word": "vesi" },
+                      { "language": { "code": "de", "name": "German" }, "word": "Wasser" },
+                      { "language": { "code": "he", "name": "Hebrew" }, "word": "שֶׁתֶן" },
+                      { "language": { "code": "hi", "name": "Hindi" }, "word": "मूत्र" },
+                      { "language": { "code": "it", "name": "Italian" }, "word": "acqua" },
+                      { "language": { "code": "lv", "name": "Latvian" }, "word": "čura" },
+                      { "language": { "code": "no", "name": "Norwegian" }, "word": "tiss" },
+                      { "language": { "code": "pt", "name": "Portuguese" }, "word": "água" },
+                      { "language": { "code": "ru", "name": "Russian" }, "word": "урина" },
+                      { "language": { "code": "ru", "name": "Russian" }, "word": "моча" },
+                      { "language": { "code": "saz", "name": "Saurashtra" }, "word": "ꢪꢹꢣ꣄" },
+                      { "language": { "code": "es", "name": "Spanish" }, "word": "aguas menores" },
+                      { "language": { "code": "ta", "name": "Tamil" }, "word": "சிறுநீர்" },
+                      { "language": { "code": "ta", "name": "Tamil" }, "word": "ஒன்று" },
+                      { "language": { "code": "te", "name": "Telugu" }, "word": "మూత్రము" },
+                      { "language": { "code": "tr", "name": "Turkish" }, "word": "idrar" },
+                      { "language": { "code": "tr", "name": "Turkish" }, "word": "çiş" },
+                      { "language": { "code": "tr", "name": "Turkish" }, "word": "sidik" },
+                      { "language": { "code": "uk", "name": "Ukrainian" }, "word": "сеча" }
+                    ],
+                    "subsenses": []
+                  },
+                  {
+                    "definition": "Amniotic fluid or the amniotic sac containing it. (Used only in the plural in the UK but often also in the singular in North America.)",
+                    "tags": ["countable", "uncountable"],
+                    "examples": [
+                      "Before the child is born, the pregnant woman’s water breaks. (North America)",
+                      "Before your child is born, your water(s) will break. (North America)",
+                      "Before the child is born, the pregnant woman’s waters break. (UK)"
+                    ],
+                    "quotes": [],
+                    "synonyms": ["bag of waters"],
+                    "antonyms": [],
+                    "translations": [],
+                    "subsenses": []
+                  },
+                  {
+                    "definition": "(colloquial, medicine) A fluid that causes swelling.",
+                    "tags": ["colloquial", "countable", "uncountable"],
+                    "examples": ["He suffers from water on the knee."],
+                    "quotes": [],
+                    "synonyms": [],
+                    "antonyms": [],
+                    "translations": [],
+                    "subsenses": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "definition": "(business, often attributive) The water supply, as a service or utility.",
+            "tags": ["attributive", "countable", "often", "uncountable"],
+            "examples": [
+              "The city threatened to cut off our water after we went only a month without paying our bill.",
+              "Did you leave the water running again?"
+            ],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(figuratively, in the plural or in the singular) A state of affairs; conditions; usually with an adjective indicating an adverse condition.",
+            "tags": ["countable", "figuratively", "in plural", "singular", "uncountable"],
+            "examples": ["The rough waters of change will bring about the calm after the storm."],
+            "quotes": [
+              {
+                "text": "Taiwan didn’t report any Chinese military planes that went beyond the median line and entered the zone for a week from Feb. 27 to March 5. After two were detected on March 6, the next four days had none. Such flights resumed in small numbers between Wednesday and Friday.\nThe drop coincided with the annual meeting of China’s legislature. While such flights have fallen in the past during major events and public holidays, this year’s fall was more prominent than in the past.\nAnalysts said the meeting could not be the sole reason behind the recent drop. Another potential factor could be a desire to calm the waters with Washington weeks before a visit by U.S. President Donald Trump. The White House has said that Trump would travel to China from March 31 to April 2, though Beijing has not officially confirmed that.",
+                "reference": "2026 March 15, “Taiwan reports large-scale Chinese military aircraft presence near island”, in Politico, sourced from Associated Press, archived from the original on 15 Mar 2026:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(colloquial, figuratively) A person's intuition.",
+            "tags": ["colloquial", "countable", "figuratively", "uncountable"],
+            "examples": ["I know he'll succeed. I feel it in my waters."],
+            "quotes": [],
+            "synonyms": ["bones"],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(uncountable, dated, finance) Excess valuation of securities.",
+            "tags": ["dated", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Iowa Governor Will Fight Rock Island Reorganization. He Says That Under the New Plan Too Much Water Is Put Into the Stock—Believes Plan Is Out of Harmony with Iowa Laws.",
+                "reference": "1902 August 2, “Too Much Water to Suit Cummins”, in The Atlanta Constitution:"
+              },
+              {
+                "text": "the outstanding stock and bond obligations of the company were reduced from $34,000,000 to $24,000,000 by squeezing out the water.",
+                "reference": "1920 April 11, “Says Stock 'Water' Didn't Affect Fare”, in New York Times:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(colloquial, figuratively) Something which dilutes, or has the effect of watering down.",
+            "tags": ["colloquial", "countable", "figuratively", "uncountable"],
+            "examples": ["Thanks for the great video. No water, 100% substance!"],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "A particular quality or appearance suggestive of water:",
+            "tags": [],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": [
+              {
+                "definition": "The limpidity and lustre of a precious stone, especially a diamond.",
+                "tags": ["countable", "uncountable"],
+                "examples": ["a diamond of the first water is perfectly pure and transparent"],
+                "quotes": [
+                  {
+                    "text": "And when she raised it to see what caused this agitation, she saw nothing—nothing but the vast solitary emerald which Queen Elizabeth had given her. And was that not enough? she asked. It was of the finest water.",
+                    "reference": "1928, Virginia Woolf, Orlando: A Biography, London: The Hogarth Press, →OCLC; republished as Orlando: A Biography (eBook no. 0200331h.html), Australia: Project Gutenberg Australia, July 2015:"
+                  }
+                ],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              },
+              {
+                "definition": "A wavy, lustrous pattern or decoration such as is imparted to linen, silk, metals, etc.",
+                "tags": ["countable", "uncountable"],
+                "examples": [],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "translations": [],
+                "subsenses": []
+              }
+            ]
+          }
+        ],
+        "synonyms": [
+          "water",
+          "aqua",
+          "dihydrogen monoxide (abbr. DHMO)",
+          "H₂O",
+          "hydric acid",
+          "hydro",
+          "hydrogen hydroxide",
+          "hydrogen oxide",
+          "hydrohydroxic acid",
+          "hydroxic acid",
+          "hydroxilic acid",
+          "hydroxylic acid",
+          "oxidane",
+          "μ-oxido dihydrogen",
+          "universal solvent"
+        ],
+        "antonyms": []
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "verb",
+        "pronunciations": [
+          { "type": "ipa", "text": "/ˈwɔ.tɚ/", "tags": [] },
+          { "type": "ipa", "text": "[ˈwɔ.ɾɚ]", "tags": [] },
+          { "type": "ipa", "text": "/ˈwɑ.tɚ/", "tags": ["cot caught merger"] },
+          { "type": "ipa", "text": "[ˈwɑ.ɾɚ]", "tags": ["cot caught merger"] },
+          { "type": "ipa", "text": "/ˈwɒ.tɚ/", "tags": ["cot caught merger"] },
+          { "type": "ipa", "text": "[ˈwɒ.ɾɚ]", "tags": ["cot caught merger"] },
+          { "type": "ipa", "text": "/ˈwɔː.tə/", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "[wo̞ː.tʰə]", "tags": ["Received Pronunciation"] },
+          { "type": "ipa", "text": "/ˈwoː.tə/", "tags": ["General Australian", "New Zealand"] },
+          { "type": "ipa", "text": "[ˈwoː.ɾə]", "tags": ["General Australian", "New Zealand"] },
+          { "type": "ipa", "text": "[ˈwoː.ʔɐ]", "tags": ["Estuary English"] },
+          { "type": "ipa", "text": "[ˈwoː.ʔə]", "tags": ["Estuary English"] },
+          { "type": "ipa", "text": "[ˈwoʊ.ʔə]", "tags": ["Cockney"] },
+          { "type": "ipa", "text": "[ˈwɔo.ɾɐ]", "tags": ["Cockney"] },
+          { "type": "ipa", "text": "/wʊʔə/", "tags": ["Multicultural London English"] },
+          { "type": "ipa", "text": "/-ɑ/", "tags": ["Multicultural London English"] },
+          { "type": "ipa", "text": "/ˈwæ.tə/", "tags": [] },
+          { "type": "ipa", "text": "/ˈwɔ.təɾ/", "tags": ["Scotland"] },
+          { "type": "ipa", "text": "[ˈwɔə.ɾə]", "tags": ["New York City"] },
+          { "type": "ipa", "text": "[ˈwɔə.ɾɚ]", "tags": ["New York City"] },
+          { "type": "ipa", "text": "/ˈwʊ.təɹ/", "tags": [] },
+          { "type": "ipa", "text": "[ˈwʊ.ɾɚ]", "tags": [] },
+          { "type": "ipa", "text": "/ˈwɔɹ.təɹ/", "tags": ["Pennsylvania", "Western"] },
+          { "type": "ipa", "text": "[ˈwɔɹ.ɾɚ]", "tags": ["Pennsylvania", "Western"] },
+          { "type": "ipa", "text": "/ˈwɔː.təɹ/", "tags": ["Ireland"] },
+          { "type": "ipa", "text": "[ˈwɒː.θ̠ɚ]", "tags": ["Ireland"] },
+          { "type": "ipa", "text": "[ˈwɔːʔəɹ]", "tags": ["Ireland"] },
+          { "type": "ipa", "text": "[ˈwɔ.ʈə(r)]", "tags": ["India"] },
+          { "type": "ipa", "text": "[ˈʋɔ.ʈə(r)]", "tags": ["India"] },
+          { "type": "ipa", "text": "[ˈʋaː.ʈər(ɯ)]", "tags": [] },
+          { "type": "ipa", "text": "[ˈwaː.ʈər(ɯ)]", "tags": [] },
+          { "type": "ipa", "text": "/ˈwoː.tə/", "tags": ["General South African"] },
+          { "type": "ipa", "text": "[ˈwɔː.tə]", "tags": ["General South African"] },
+          { "type": "ipa", "text": "/ˈwɔ.tə/", "tags": ["Malaysia", "Singapore"] },
+          { "type": "ipa", "text": "/ˈwɐː.t̪ɛɾ/", "tags": ["Philippines"] }
+        ],
+        "forms": [
+          { "word": "waters", "tags": ["present", "singular", "third-person"] },
+          { "word": "watering", "tags": ["participle", "present"] },
+          { "word": "watered", "tags": ["participle", "past"] },
+          { "word": "watered", "tags": ["past"] }
+        ],
+        "senses": [
+          {
+            "definition": "(transitive) To pour water into the soil surrounding (plants).",
+            "tags": ["transitive"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Aunt Em had just come out of the house to water the cabbages when she looked up and saw Dorothy running toward her.",
+                "reference": "1900, L. Frank Baum, chapter 24, in The Wonderful Wizard of Oz:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(transitive) To wet or supply with water; to moisten; to overflow with water; to irrigate.",
+            "tags": ["transitive"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "tears watering the ground",
+                "reference": "1667, John Milton, “Book IX”, in Paradise Lost. […], London: […] [Samuel Simmons], and are to be sold by Peter Parker […]; [a]nd by Robert Boulter […]; [a]nd Matthias Walker, […], →OCLC; republished as Paradise Lost in Ten Books: […], London: Basil Montagu Pickering […], 1873, →OCLC:"
+              },
+              {
+                "text": "Men whose lives glided on like rivers that water the woodlands.",
+                "reference": "1847 November 1, Henry Wadsworth Longfellow, Evangeline, a Tale of Acadie, Boston, Mass.: William D. Ticknor & Company, →OCLC, part I:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(transitive) To provide (animals) with water for drinking.",
+            "tags": ["transitive"],
+            "examples": ["I need to water the cattle."],
+            "quotes": [
+              {
+                "text": "While they watered and washed their horses, I talked with a red-capped man, some kind of chief.",
+                "reference": "2008, Oisin Curran, Mopus, page 34:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(intransitive) To get or take in water.",
+            "tags": ["intransitive"],
+            "examples": ["The ship put into port to water."],
+            "quotes": [
+              {
+                "text": "After working the 1.30 p.m. through train from Forres to Aberdeen as far as Elgin, she returns tender first with a local passenger train and is then coaled and watered at Forres shed, and eventually works back to Perth on the 10.20 p.m. through freight.",
+                "reference": "1944 January and February, W. McGowan Gradon, “Forres as a Railway Centre”, in Railway Magazine, page 23:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(transitive, colloquial) To urinate onto.",
+            "tags": ["colloquial", "transitive"],
+            "examples": ["Nature called, so I stepped into the woods and watered a tree."],
+            "quotes": [],
+            "synonyms": ["see Thesaurus:urinate"],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(transitive) To dilute.",
+            "tags": ["transitive"],
+            "examples": ["Can you water the whisky, please?"],
+            "quotes": [],
+            "synonyms": ["water down"],
+            "antonyms": ["refine"],
+            "subsenses": []
+          },
+          {
+            "definition": "(transitive, dated, finance) To overvalue (securities), especially through deceptive accounting.",
+            "tags": ["dated", "transitive"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "such agencies would make it possible for the railroads to water stock and evade the law subjecting security issues to public regulation",
+                "reference": "1930 April 10, “Calls Rail Holding Companies Threat”, in The Sun:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(intransitive) To fill with or secrete water or similar liquid.",
+            "tags": ["intransitive"],
+            "examples": [
+              "Chopping onions makes my eyes water.",
+              "The smell of fried onions makes my mouth water."
+            ],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(transitive) To wet and calender, as cloth, so as to impart to it a lustrous appearance in wavy lines; to diversify with wavelike lines.",
+            "tags": ["transitive"],
+            "examples": ["to water silk"],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [],
+        "antonyms": []
+      }
+    ],
+    "source": {
+      "url": "https://en.wiktionary.org/wiki/water",
+      "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" }
+    }
+  },
+  "source": "https://freedictionaryapi.com/api/v1/entries/en/water?translations=false",
+  "fetchedAt": "2026-10-10T22:01:55.234Z",
+  "attemptedAt": "2026-10-10T22:01:55.057Z",
+  "stale": false,
+  "unavailable": false
+}

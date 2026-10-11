@@ -1,22 +1,27 @@
 export default {
   comparison: {
+    snapshot_reconstructed:
+      'Aus der gespeicherten v2-Antwort nach der veröffentlichten v1-Konvertierung des Dienstes rekonstruiert. Nicht vom v1-Endpunkt abgerufen.',
+    snapshot_missing:
+      'Die Aufnahme fehlt oder ist nicht lesbar. Laden Sie sie mit comparisons:generate herunter.',
+    snapshot_unavailable: 'Keine erfolgreiche Aufnahme verfügbar. Führen Sie comparisons:generate erneut aus.',
+    snapshot_stale:
+      'Die letzte manuelle Aktualisierung ist fehlgeschlagen. Die vorherige Aufnahme wird mit ihrem ursprünglichen Datum angezeigt.',
+    snapshot_date: 'Originalantwort abgerufen: {date}',
     version: 'API-Version',
     close: 'Schließen',
-    title: 'Live-Antworten vergleichen',
+    title: 'Antworten vergleichen',
     description:
-      'Dasselbe englische Wort wird direkt bei {service} und in jedem installierten Datensatz dieser Instanz abgefragt. Die Antworten werden im Format des ursprünglichen Dienstes angezeigt.',
+      'Die Originalantworten sind gespeicherte, manuell aktualisierte Aufnahmen. Dasselbe englische Wort wird in allen installierten Datensätzen dieser Instanz im Format von {service} abgefragt.',
     word: 'Englisches Wort',
     translations: 'Übersetzungen einschließen',
-    compare: 'Vergleichen',
     provenance: 'vocabBloom-Erweiterungen anzeigen',
     schema_note:
-      'Standardmäßig werden nur vocabBloom-Erweiterungen ausgeblendet. Alle anderen Felder, Werte und die Reihenfolge bleiben erhalten, einschließlich Quellen und Lizenzen. Quellenangaben stehen unter den Datensatzbedingungen. Die Originalantwort wird über den Server dieser Website geladen und kann eine Minute lang zwischengespeichert werden.',
+      'Standardmäßig werden nur vocabBloom-Erweiterungen ausgeblendet. Alle anderen Felder, Werte und die Reihenfolge bleiben erhalten, einschließlich Quellen und Lizenzen. Quellenangaben stehen unter den Datensatzbedingungen. Originalantworten werden manuell aktualisiert; Seitenaufruf, Build und Start fragen keine externen Dienste ab.',
     results: 'Ergebnisse für „{word}“',
     dataset_count: 'Datensätze: {count}',
     original: 'Ursprünglicher Dienst',
     loading: 'Wird geladen…',
-    request_error:
-      'Die Anfrage ist fehlgeschlagen oder hat zu lange gedauert. Der Dienst ist möglicherweise nicht erreichbar oder Ihr Browser hat die Anfrage blockiert. Klicken Sie erneut auf Vergleichen oder öffnen Sie die Anfrage-URL.',
     active: 'Aktiv',
     group_status: 'Adapterstatus: {status}',
     terms: 'Datensatzbedingungen und Quellenangaben',
