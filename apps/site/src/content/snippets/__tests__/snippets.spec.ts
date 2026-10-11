@@ -92,6 +92,56 @@ describe('every language', () => {
 });
 
 describe('the exact text', () => {
+  it('offers both word-by-ID SDK tabs with the same numeric ID as the playground', () => {
+    expect(snippetsOf(bySlug('get-words-id-id')).map(({ id }) => id)).toEqual(
+      expect.arrayContaining(['sdk-node', 'sdk-python']),
+    );
+    expect(render('sdk-node', 'get-words-id-id')).toBe(
+      [
+        "import { VocabBloomClient } from '@vocab-bloom-hub/client';",
+        '',
+        "const client = new VocabBloomClient({ baseUrl: 'https://x.example' });",
+        'const { data } = await client.wordById(1);',
+        'console.log(data.word, data.part_of_speech);',
+      ].join('\n'),
+    );
+    expect(render('sdk-python', 'get-words-id-id')).toBe(
+      [
+        'from vocab_bloom_hub import VocabBloomClient',
+        '',
+        'client = VocabBloomClient("https://x.example")',
+        'answer = client.word_by_id(1)',
+        'print(answer.data.word, answer.data.part_of_speech.value)',
+      ].join('\n'),
+    );
+    const endpoint = playgroundEndpoint(
+      endpoints.find(({ slug }) => slug === 'get-words-id-id')!,
+      spec,
+    );
+    expect(planRequest(endpoint, { id: '1' })).toMatchObject({
+      method: 'GET',
+      path: '/v1/words/id/1',
+      query: '',
+    });
+  });
+
+  it('word-by-ID SDK examples use the supplied origin and numeric path argument', () => {
+    const request = {
+      ...bySlug('get-words-id-id'),
+      origin: 'https://dictionary.example',
+      path: '/api/v1/words/id/42',
+    };
+    for (const [id, method] of [
+      ['sdk-node', 'wordById'],
+      ['sdk-python', 'word_by_id'],
+    ]) {
+      const code = SNIPPET_LANGUAGES.find((language) => language.id === id)!.render(request)!;
+      expect(code).toContain(request.origin);
+      expect(code).toContain(`client.${method}(42)`);
+      expect(code).not.toContain('x.example');
+    }
+  });
+
   it('Rust: a complete blocking GET with status checking and a JSON answer', () => {
     expect(render('rust', 'get-meta')).toBe(
       [
