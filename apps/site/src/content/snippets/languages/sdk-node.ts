@@ -16,6 +16,15 @@ const client = (origin: string): string[] => [
 ];
 
 const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
+  'get-openapi-json': ({ origin }) =>
+    [
+      ...client(origin),
+      'const document = await client.openapi();',
+      'const info = document.info;',
+      "if (info && typeof info === 'object' && 'version' in info) {",
+      '  console.log(info.version);',
+      '}',
+    ].join('\n'),
   'get-words-word-forms': (request) => {
     const [word] = pathArguments(request, '/api/v1/words/{word}/forms');
     return [

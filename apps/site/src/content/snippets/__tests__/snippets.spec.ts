@@ -94,6 +94,47 @@ describe('every language', () => {
 });
 
 describe('the exact text', () => {
+  it('offers OpenAPI SDK tabs and prints the document version without a data envelope', () => {
+    expect(snippetsOf(bySlug('get-openapi-json')).map(({ id }) => id)).toEqual(
+      expect.arrayContaining(['sdk-node', 'sdk-python']),
+    );
+    expect(render('sdk-node', 'get-openapi-json')).toBe(
+      [
+        "import { VocabBloomClient } from '@vocab-bloom-hub/client';",
+        '',
+        "const client = new VocabBloomClient({ baseUrl: 'https://x.example' });",
+        'const document = await client.openapi();',
+        'const info = document.info;',
+        "if (info && typeof info === 'object' && 'version' in info) {",
+        '  console.log(info.version);',
+        '}',
+      ].join('\n'),
+    );
+    expect(render('sdk-python', 'get-openapi-json')).toBe(
+      [
+        'from vocab_bloom_hub import VocabBloomClient',
+        '',
+        'client = VocabBloomClient("https://x.example")',
+        'document = client.openapi()',
+        'print(document["info"]["version"])',
+      ].join('\n'),
+    );
+    const endpoint = playgroundEndpoint(
+      endpoints.find(({ slug }) => slug === 'get-openapi-json')!,
+      spec,
+    );
+    expect(planRequest(endpoint, {})).toMatchObject({ method: 'GET', path: '/v1/openapi.json', query: '' });
+  });
+
+  it('OpenAPI SDK examples use the supplied instance origin', () => {
+    const request = { ...bySlug('get-openapi-json'), origin: 'https://dictionary.example' };
+    for (const id of ['sdk-node', 'sdk-python']) {
+      const code = SNIPPET_LANGUAGES.find((language) => language.id === id)!.render(request)!;
+      expect(code).toContain(request.origin);
+      expect(code).not.toContain('x.example');
+    }
+  });
+
   it('offers forms SDK tabs and prints each form and its type', () => {
     expect(snippetsOf(bySlug('get-words-word-forms')).map(({ id }) => id)).toEqual(
       expect.arrayContaining(['sdk-node', 'sdk-python']),
