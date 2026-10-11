@@ -94,6 +94,60 @@ describe('every language', () => {
 });
 
 describe('the exact text', () => {
+  it('offers forms SDK tabs and prints each form and its type', () => {
+    expect(snippetsOf(bySlug('get-words-word-forms')).map(({ id }) => id)).toEqual(
+      expect.arrayContaining(['sdk-node', 'sdk-python']),
+    );
+    expect(render('sdk-node', 'get-words-word-forms')).toBe(
+      [
+        "import { VocabBloomClient } from '@vocab-bloom-hub/client';",
+        '',
+        "const client = new VocabBloomClient({ baseUrl: 'https://x.example' });",
+        "const { data } = await client.forms('run');",
+        'for (const form of data) {',
+        '  console.log(form.word, form.form_of_word);',
+        '}',
+      ].join('\n'),
+    );
+    expect(render('sdk-python', 'get-words-word-forms')).toBe(
+      [
+        'from vocab_bloom_hub import VocabBloomClient',
+        '',
+        'client = VocabBloomClient("https://x.example")',
+        'answer = client.forms("run")',
+        'for form in answer.data:',
+        '    print(form.word, form.form_of_word.value)',
+      ].join('\n'),
+    );
+    const endpoint = playgroundEndpoint(
+      endpoints.find(({ slug }) => slug === 'get-words-word-forms')!,
+      spec,
+    );
+    expect(planRequest(endpoint, { word: 'run' })).toMatchObject({
+      method: 'GET',
+      path: '/v1/words/run/forms',
+      query: '',
+    });
+  });
+
+  it('forms SDK examples use the supplied origin and escaped path argument', () => {
+    const word = 'say "hi" it\'s \\';
+    const request = {
+      ...bySlug('get-words-word-forms'),
+      origin: 'https://dictionary.example',
+      path: `/api/v1/words/${encodeURIComponent(word)}/forms`,
+    };
+    for (const [id, literal] of [
+      ['sdk-node', jsLiteral],
+      ['sdk-python', pythonLiteral],
+    ] as const) {
+      const code = SNIPPET_LANGUAGES.find((language) => language.id === id)!.render(request)!;
+      expect(code).toContain(request.origin);
+      expect(code).toContain(`client.forms(${literal(word)})`);
+      expect(code).not.toContain('x.example');
+    }
+  });
+
   it.each([
     ['get-meta', 'https://x.example/api/v1/meta', 'Get', []],
     [
