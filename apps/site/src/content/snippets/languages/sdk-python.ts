@@ -16,6 +16,14 @@ const client = (origin: string): string[] => [
 ];
 
 const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
+  'get-words-id-id': (request) => {
+    const [id] = pathArguments(request, '/api/v1/words/id/{id}');
+    return [
+      ...client(request.origin),
+      `answer = client.word_by_id(${Number(id)})`,
+      'print(answer.data.word, answer.data.part_of_speech.value)',
+    ].join('\n');
+  },
   'get-words-word': (request) => {
     const [word] = pathArguments(request, '/api/v1/words/{word}');
     return [
