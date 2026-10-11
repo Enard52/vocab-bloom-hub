@@ -4,7 +4,7 @@ import path from 'node:path';
 import { listEndpoints, OpenApiSpecT, PUBLIC_SPEC_FILE } from '../../openapi';
 import { highlightLanguages } from '../../highlight';
 import { buildSnippetRequest, SNIPPET_LANGUAGES, snippetsOf } from '../index';
-import { jsLiteral, phpLiteral, pythonLiteral } from '../literals';
+import { jsLiteral, phpLiteral, pythonLiteral, rustRawString } from '../literals';
 import { planRequest, playgroundEndpoint } from '../../playground';
 
 // The code snippets of the API reference: every language over
@@ -64,7 +64,7 @@ describe('every language', () => {
   );
 
   it('the generated ones cover every endpoint; the SDK tabs only where a snippet is written', () => {
-    for (const id of ['curl', 'javascript', 'python', 'go', 'php']) {
+    for (const id of ['curl', 'javascript', 'python', 'go', 'php', 'rust']) {
       for (const request of requests) expect(render(id, request.slug)).not.toBeNull();
     }
     expect(render('sdk-node', 'get-meta')).not.toBeNull();
@@ -75,6 +75,7 @@ describe('every language', () => {
       'python',
       'go',
       'php',
+      'rust',
       'sdk-node',
       'sdk-python',
     ]);
@@ -91,6 +92,62 @@ describe('every language', () => {
 });
 
 describe('the exact text', () => {
+  it('Rust: a complete blocking GET with status checking and a JSON answer', () => {
+    expect(render('rust', 'get-meta')).toBe(
+      [
+        '// cargo add reqwest --features blocking,json',
+        '// cargo add serde_json',
+        'use reqwest::blocking::Client;',
+        'use serde_json::Value;',
+        '',
+        'fn main() -> Result<(), Box<dyn std::error::Error>> {',
+        '    let client = Client::new();',
+        '    let answer: Value = client',
+        '        .get(r#"https://x.example/api/v1/meta"#)',
+        '        .send()?',
+        '        .error_for_status()?',
+        '        .json()?;',
+        '    println!("{answer}");',
+        '    Ok(())',
+        '}',
+      ].join('\n'),
+    );
+  });
+
+  it('Rust: a complete POST sends the shared JSON body', () => {
+    expect(render('rust', 'post-words-batch')).toBe(
+      [
+        '// cargo add reqwest --features blocking,json',
+        '// cargo add serde_json',
+        'use reqwest::blocking::Client;',
+        'use serde_json::Value;',
+        '',
+        'fn main() -> Result<(), Box<dyn std::error::Error>> {',
+        '    let client = Client::new();',
+        '    let body: Value = serde_json::from_str(r#"{"words":["example"]}"#)?;',
+        '    let answer: Value = client',
+        '        .post(r#"https://x.example/api/v1/words/batch"#)',
+        '        .json(&body)',
+        '        .send()?',
+        '        .error_for_status()?',
+        '        .json()?;',
+        '    println!("{answer}");',
+        '    Ok(())',
+        '}',
+      ].join('\n'),
+    );
+  });
+
+  it('Rust preserves quotes, hashes, backslashes, Unicode and nested JSON values', () => {
+    const body = { message: 'say "##hi" \\ café\n', nested: [true, null, { value: 1 }] };
+    const code = SNIPPET_LANGUAGES.find(({ id }) => id === 'rust')!.render({
+      ...bySlug('post-suggestions'),
+      body,
+    });
+    expect(code).toContain(`serde_json::from_str(${rustRawString(JSON.stringify(body))})?`);
+    expect(rustRawString('close "# or "## here')).toBe('r###"close "# or "## here"###');
+  });
+
   it('offers headword SDK tabs and prints the first entry’s first definition safely', () => {
     expect(snippetsOf(bySlug('get-words-word')).map(({ id }) => id)).toEqual(
       expect.arrayContaining(['sdk-node', 'sdk-python']),

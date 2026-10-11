@@ -4,13 +4,14 @@ import go from 'highlight.js/lib/languages/go';
 import javascript from 'highlight.js/lib/languages/javascript';
 import php from 'highlight.js/lib/languages/php';
 import python from 'highlight.js/lib/languages/python';
+import rust from 'highlight.js/lib/languages/rust';
 import typescript from 'highlight.js/lib/languages/typescript';
 
 // The languages the API reference colours its snippets in (the Markdown
 // pages go through rehype-highlight, which brings the common set by itself).
 // A snippet language (content/snippets) names one of these in `highlight`;
 // a new one is registered here
-const LANGUAGES = { bash, go, javascript, php, python, typescript };
+const LANGUAGES = { bash, go, javascript, php, python, rust, typescript };
 
 for (const [name, language] of Object.entries(LANGUAGES)) {
   if (!hljs.getLanguage(name)) hljs.registerLanguage(name, language);
