@@ -5,6 +5,7 @@ import { listEndpoints, OpenApiSpecT, PUBLIC_SPEC_FILE } from '../../openapi';
 import { highlightLanguages } from '../../highlight';
 import { buildSnippetRequest, SNIPPET_LANGUAGES, snippetsOf } from '../index';
 import { jsLiteral, phpLiteral, pythonLiteral } from '../literals';
+import { planRequest, playgroundEndpoint } from '../../playground';
 
 // The code snippets of the API reference: every language over
 // every endpoint of the committed public document
@@ -90,6 +91,58 @@ describe('every language', () => {
 });
 
 describe('the exact text', () => {
+  it('offers both suggestion SDK tabs with the shared request body and created result', () => {
+    expect(snippetsOf(bySlug('post-suggestions')).map(({ id }) => id)).toEqual(
+      expect.arrayContaining(['sdk-node', 'sdk-python']),
+    );
+    expect(render('sdk-node', 'post-suggestions')).toBe(
+      [
+        "import { VocabBloomClient } from '@vocab-bloom-hub/client';",
+        '',
+        "const client = new VocabBloomClient({ baseUrl: 'https://x.example' });",
+        'const { data } = await client.suggest({',
+        "  headword: 'run',",
+        "  message: 'Please check the definition of this word.'",
+        '});',
+        'console.log(data.id, data.status);',
+      ].join('\n'),
+    );
+    expect(render('sdk-python', 'post-suggestions')).toBe(
+      [
+        'from vocab_bloom_hub import VocabBloomClient',
+        '',
+        'client = VocabBloomClient("https://x.example")',
+        'answer = client.suggest(**{',
+        '  "headword": "run",',
+        '  "message": "Please check the definition of this word."',
+        '})',
+        'print(answer.data.id, answer.data.status)',
+      ].join('\n'),
+    );
+    const request = bySlug('post-suggestions');
+    expect(render('javascript', request.slug)).toContain(jsLiteral(request.body, 1));
+    expect(render('python', request.slug)).toContain(pythonLiteral(request.body));
+    const endpoint = playgroundEndpoint(
+      endpoints.find(({ slug }) => slug === request.slug)!,
+      spec,
+    );
+    expect(planRequest(endpoint, request.body!).body).toEqual(request.body);
+  });
+
+  it('suggestion SDK examples use the supplied body and escape its strings', () => {
+    const body = { headword: 'bank', message: `Please check "bank": it's a \\ character.` };
+    const request = { ...bySlug('post-suggestions'), body, origin: 'https://another.example' };
+    for (const [id, literal] of [
+      ['sdk-node', jsLiteral],
+      ['sdk-python', pythonLiteral],
+    ] as const) {
+      const code = SNIPPET_LANGUAGES.find((language) => language.id === id)!.render(request)!;
+      expect(code).toContain(literal(body));
+      expect(code).toContain(request.origin);
+      expect(code).not.toContain('Please check the definition');
+    }
+  });
+
   it('offers both meanings SDK tabs and prints the first definition', () => {
     expect(snippetsOf(bySlug('get-words-word-meanings')).map((snippet) => snippet.id)).toEqual(
       expect.arrayContaining(['sdk-node', 'sdk-python']),

@@ -37,6 +37,12 @@ const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
       "const { data, meta } = await client.search({ search: 'run' });",
       'console.log(meta.fuzzy, data[0]?.word);',
     ].join('\n'),
+  'post-suggestions': ({ origin, body }) =>
+    [
+      ...client(origin),
+      `const { data } = await client.suggest(${jsLiteral(body)});`,
+      'console.log(data.id, data.status);',
+    ].join('\n'),
   'get-meta': ({ origin }) =>
     [
       ...client(origin),

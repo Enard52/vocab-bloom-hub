@@ -27,7 +27,13 @@ export const buildSnippetRequest = (
     url: `${origin}${path}`,
     path,
     origin,
-    body: resolved ? sampleBody(resolved, spec) : null,
+    // A report requires a message although edit proposals can omit it in the shared DTO.
+    body:
+      endpoint.slug === 'post-suggestions'
+        ? { headword: 'run', message: 'Please check the definition of this word.' }
+        : resolved
+          ? sampleBody(resolved, spec)
+          : null,
     slug: endpoint.slug,
   };
 };

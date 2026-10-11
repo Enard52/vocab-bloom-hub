@@ -40,6 +40,12 @@ const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
       'answer = client.search("run")',
       'print(answer.meta.fuzzy, answer.data[0].word if answer.data else None)',
     ].join('\n'),
+  'post-suggestions': ({ origin, body }) =>
+    [
+      ...client(origin),
+      `answer = client.suggest(**${pythonLiteral(body)})`,
+      'print(answer.data.id, answer.data.status)',
+    ].join('\n'),
   'get-meta': ({ origin }) =>
     [
       ...client(origin),

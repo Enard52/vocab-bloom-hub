@@ -44,6 +44,11 @@ speech and first meaning title, handling missing entries or meanings.
 The `get-words-word-meanings` examples take the headword from the sample path and print the
 first definition, handling an empty meanings list.
 
+The `post-suggestions` examples send the shared sample body through `client.suggest` and
+print the created suggestion's ID and status. The sample includes `headword: 'run'` and a
+short `message`: reports require a message even though it is optional in the DTO shared
+with edit proposals. All language tabs use that same body.
+
 ## Where the rest lives
 
 - `request.ts` — the request digest from the OpenAPI document (sample values, the body of the
