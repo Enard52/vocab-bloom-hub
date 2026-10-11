@@ -16,6 +16,15 @@ const client = (origin: string): string[] => [
 ];
 
 const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
+  'get-words-word': (request) => {
+    const [word] = pathArguments(request, '/api/v1/words/{word}');
+    return [
+      ...client(request.origin),
+      `answer = client.word(${pythonLiteral(word)})`,
+      'first = answer.data[0] if answer.data else None',
+      'print(first.meanings[0].definition if first and first.meanings else None)',
+    ].join('\n');
+  },
   'get-words-word-meanings': (request) => {
     const [word] = pathArguments(request, '/api/v1/words/{word}/meanings');
     return [

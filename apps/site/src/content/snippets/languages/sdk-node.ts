@@ -16,6 +16,14 @@ const client = (origin: string): string[] => [
 ];
 
 const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
+  'get-words-word': (request) => {
+    const [word] = pathArguments(request, '/api/v1/words/{word}');
+    return [
+      ...client(request.origin),
+      `const { data } = await client.word(${jsLiteral(word)});`,
+      'console.log(data[0]?.meanings?.[0]?.definition);',
+    ].join('\n');
+  },
   'get-words-word-meanings': (request) => {
     const [word] = pathArguments(request, '/api/v1/words/{word}/meanings');
     return [
