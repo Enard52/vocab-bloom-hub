@@ -1,4 +1,5 @@
 export default {
+  // reviewed: pt · @Furox-Art · 2026-10-11 · 23017fa
   comparison: {
     snapshot_reconstructed:
       'Reconstruído a partir da resposta v2 salva usando a conversão v1 publicada pelo serviço. Não foi obtido do endpoint v1.',
@@ -40,7 +41,7 @@ export default {
     name: 'Nome',
     version: 'Versão da fonte',
     unknown_version: 'Versão desconhecida',
-    unknown_hint: 'Deixe vazio se desconhecida.',
+    unknown_hint: 'Deixe em branco se desconhecida.',
     source_link: 'Link da fonte',
     record_link: 'Link da palavra original',
     inherited: 'Condições herdadas',
@@ -87,7 +88,7 @@ export default {
     // the start page's own title: the words a person searches for, not the bare brand (issue #480)
     home_title: 'Vocab Bloom Hub — dicionário inglês-português com API pública, auto-hospedado',
     description:
-      'Hospede, crie e faça forks de dicionários de inglês com API pública e SDKs, preservando fontes, licenças e histórico de alterações. O dataset próprio do projeto contém 300 000 verbetes.',
+      'Hospede, crie e faça forks de dicionários de inglês com API pública e SDKs, preservando fontes, licenças e histórico de alterações. O conjunto de dados do projeto inclui 300 000 verbetes.',
   },
   nav: {
     docs: 'Docs',
@@ -101,7 +102,7 @@ export default {
   home: {
     hero_title: 'Dicionários para hospedar e adaptar',
     hero_text:
-      'Hospede dicionários de inglês junto da sua aplicação: comece com os 300 000 verbetes do dataset próprio do projeto, adicione Wiktionary, WordNet ou OpenGloss, ou crie o seu. Faça forks e edite os dados preservando fontes, licenças e histórico. Acesse pela API pública, pelos SDKs para Node.js e Python ou pelas páginas de palavras.',
+      'Hospede dicionários de inglês junto da sua aplicação: comece com os 300 000 verbetes do conjunto de dados do projeto, adicione Wiktionary, WordNet ou OpenGloss, ou crie o seu. Faça forks e edite os conjuntos preservando fontes, licenças e histórico. Leia-os pela API pública, pelos SDKs para Node.js e Python ou pelas páginas de palavras.',
     cta_getting_started: 'Primeiros passos',
     cta_start: 'Instalar com Docker',
     cta_api: 'Referência da API',
@@ -120,10 +121,10 @@ export default {
         'Clientes tipados para Node.js / TypeScript e Python gerados a partir do mesmo documento OpenAPI: um método por endpoint, iteração por cursor, erros tipados, cache por ETag, novas tentativas opcionais, um DataFrame para notebooks.',
       admin_title: 'Interface de administração',
       admin_text:
-        'Edite palavras, significados, traduções, sinônimos e antônimos de qualquer dataset no navegador — cada alteração fica em um histórico que os leitores veem —, modere as correções que eles enviam, acompanhe as estatísticas, instale, importe e exporte datasets a partir dos seus cartões.',
+        'Edite palavras, significados, traduções, sinônimos e antônimos de qualquer conjunto de dados no navegador — cada alteração fica em um histórico que os leitores veem —, modere as correções que eles enviam, acompanhe as estatísticas, instale, importe e exporte conjuntos a partir dos seus cartões.',
       data_title: 'Datasets',
       data_text:
-        'O dicionário do projeto é publicado no HuggingFace sob CC BY 4.0. Adicione Wiktionary, WordNet ou OpenGloss por download no servidor ou envio manual. Crie um dataset vazio ou um fork de um instalado, defina sua versão e licença de contribuição e preserve as fontes e o histórico das palavras. Os datasets são lidos separadamente.',
+        'O dicionário do projeto é publicado no HuggingFace sob CC BY 4.0. Adicione Wiktionary, WordNet ou OpenGloss por download no servidor ou envio manual. Crie um conjunto de dados vazio ou um fork de um instalado, defina sua versão e licença de contribuição e preserve as fontes e o histórico das palavras. Os conjuntos são lidos separadamente.',
       ops_title: 'Feito para operadores',
       ops_text:
         'Sondas de saúde e prontidão, desligamento gracioso, migrações na inicialização, métricas Prometheus, logs JSON estruturados com id de requisição — o que um serviço precisa para ser operado por outra pessoa.',
@@ -138,14 +139,14 @@ export default {
     sdk_python: 'Python',
     data_title: 'Dados e licença',
     data_text:
-      'O código é MIT. Os dados do dicionário do projeto — servidos pela API, exportados como datasets, publicados no HuggingFace — são CC BY 4.0: livres para usar e adaptar, inclusive comercialmente, com atribuição. Em grande parte são gerados por LLM e não verificados por humanos; leia o que isso significa antes de confiar neles. Um dataset de outra fonte mantém a licença dessa fonte — o Wiktionary exige compartilhamento pela mesma licença, os WordNet pedem o seu aviso em cada cópia — e a instância mostra as condições do dataset que serve; leia-as antes de construir sobre ele. O OpenGloss também contém texto gerado: CC BY 4.0, com termos adicionais WordNet 3.0 nas palavras marcadas. Uma palavra pode conservar várias licenças de fontes e contribuições; uma cópia ou fork não as substitui.',
+      'O código é MIT. Os dados do dicionário do projeto — servidos pela API, exportados como conjuntos de dados, publicados no HuggingFace — são CC BY 4.0: livres para usar e adaptar, inclusive comercialmente, com atribuição. Em grande parte são gerados por LLM e não verificados por humanos; leia o que isso significa antes de confiar neles. Um conjunto de outra fonte mantém a licença dessa fonte — o Wiktionary exige compartilhamento pela mesma licença, os WordNet pedem o seu aviso em cada cópia — e a instância mostra as condições do conjunto que serve; leia-as antes de construir sobre ele. O OpenGloss também contém texto gerado: CC BY 4.0, com termos adicionais WordNet 3.0 nas palavras marcadas. Uma palavra pode conservar várias licenças de fontes e contribuições; copiá-la ou fazer um fork não as substitui.',
     data_link: 'Sobre os dados',
     license_link: 'Licença dos dados',
   },
   docs: {
     title: 'Documentação',
     intro:
-      'Instale e opere sua instância, adicione dicionários ou faça forks, gerencie fontes e licenças e use a API e os SDKs.',
+      'Instale e opere a sua instância, adicione dicionários ou faça forks, gerencie fontes e licenças e use a API e os SDKs.',
     on_this_page: 'Nesta página',
     english_only: 'Esta página está disponível apenas em inglês.',
     edit_on_github: 'Editar esta página no GitHub',
@@ -227,7 +228,7 @@ export default {
     attribution: 'Atribuição',
     notice: 'Aviso',
     modified:
-      'Uma entrada alterada ou adicionada pelo proprietário deste site diz isso sob a sua classe gramatical; vale para ela a mesma licença.',
+      'Um verbete alterado ou adicionado pelo proprietário deste site diz isso sob a sua classe gramatical; vale para ele a mesma licença.',
     use_title: 'Se você usa estes dados',
     use_intro:
       'Os dados podem ser copiados e reutilizados conforme a sua licença. A quem o faz pede-se o seguinte.',
@@ -259,7 +260,7 @@ export default {
       'Não há traduções para o idioma e a classe gramatical selecionados neste conjunto de dados.',
     parts: 'Classe gramatical',
     title: 'Relações da palavra',
-    hint: 'Selecione uma palavra relacionada para carregar mais um nível deste dataset. Arraste o grafo e use + e − para ampliar. Palavras compartilhadas unem ramos; selecione-as para destacar suas relações.',
+    hint: 'Selecione uma palavra relacionada para carregar mais um nível deste conjunto de dados. Arraste o grafo e use + e − para ampliar. Palavras compartilhadas unem ramos; selecione-as para destacar suas relações.',
     meaning: 'Significado',
     synonym: 'Sinônimo',
     antonym: 'Antônimo',
@@ -275,10 +276,10 @@ export default {
     loading: 'Carregando…',
     expand: 'Carregar relações',
     loaded: 'Relações carregadas',
-    empty: 'Não há entrada com esta classe gramatical neste dataset',
+    empty: 'Não há verbete com esta classe gramatical neste conjunto de dados',
     failed: 'Não foi possível carregar as relações. Tente novamente.',
-    limited: 'O grafo mostra uma seleção limitada. As entradas completas estão abaixo.',
-    unnamed: 'O servidor não identifica o dataset; não é possível carregar vizinhos.',
+    limited: 'O grafo mostra uma seleção limitada. Os verbetes completos permanecem abaixo.',
+    unnamed: 'O servidor não identifica o conjunto de dados; não é possível carregar vizinhos.',
     no_relations: 'Esta palavra não tem sinônimos nem antônimos registrados.',
     list: 'Lista de relações',
   },
@@ -300,7 +301,7 @@ export default {
     // the browse index over the headword list (issue #480): a paged, crawlable
     // way to every word page, not only the examples and the sitemap
     browse_title: 'Todas as palavras',
-    browse_intro: 'Todos os verbetes do dicionário pela primeira letra — {count} no total.',
+    browse_intro: 'Todos os verbetes deste dicionário pela primeira letra — {count} no total.',
     browse_letter_title: 'Palavras que começam com {letter}',
     browse_other: 'Outros caracteres',
     browse_page: 'página {page} de {pages}',
@@ -367,10 +368,10 @@ export default {
     history_field_antonyms: 'antônimos',
     history_field_word: 'grafia',
     report_license_note:
-      'Uma correção aceita pelo dono passa a fazer parte dos dados do dicionário, publicados sob {license}.',
+      'Uma correção aceita pelo proprietário passa a fazer parte dos dados do dicionário, publicados sob {license}.',
     report_button: 'Relatar um erro',
     report_hint:
-      'Algo errado em "{word}" — um significado, uma tradução, uma forma? Conte ao dono deste dicionário; o relato vai para a fila de moderação dele.',
+      'Algo errado em "{word}" — um significado, uma tradução, uma forma? Avise o proprietário deste dicionário; o relato vai para a fila de moderação dele.',
     report_entry: 'Qual verbete?',
     report_entry_any: 'A palavra inteira',
     report_message: 'O que está errado',
@@ -381,17 +382,17 @@ export default {
     report_author: 'Seu nome, para receber o crédito pela correção (opcional)',
     report_author_consent:
       'Mostrar este nome ao lado da correção neste site e nas cópias dos dados do dicionário. Um nome publicado não pode ser retirado das cópias que outros fizeram.',
-    report_author_consent_needed: 'Marque a caixa para ser citado, ou deixe o nome vazio.',
+    report_author_consent_needed: 'Marque a caixa para ser citado ou deixe o nome em branco.',
     report_done: 'Obrigado — o relato está na fila de moderação.',
     report_rate_limited: 'Relatos demais deste dispositivo — tente novamente mais tarde.',
-    report_queue_full: 'A fila está cheia agora — tente de novo quando o dono a tiver processado.',
+    report_queue_full: 'A fila está cheia agora — tente de novo quando o proprietário a tiver processado.',
     report_error: 'O relato não chegou ao dicionário — tente novamente em um minuto.',
     report_too_short: 'Descreva o erro com pelo menos {min} caracteres.',
     report_mode: 'O que enviar',
     report_mode_text: 'Descrever em palavras',
     report_mode_edit: 'Editar o verbete',
     suggest_edit_hint:
-      'Corrija os valores abaixo — só o que você mudar é enviado. O dono deste dicionário vê a proposta como um diff e pode aplicá-la com um clique.',
+      'Corrija os valores abaixo — só o que você mudar é enviado. O proprietário deste dicionário vê a proposta como um diff e pode aplicá-la com um clique.',
     suggest_edit_send: 'Sugerir as alterações',
     suggest_edit_done: 'Obrigado — a proposta está na fila de moderação.',
     suggest_edit_nothing: 'Nada mudou ainda — edite um valor primeiro.',
