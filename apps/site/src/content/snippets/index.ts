@@ -4,6 +4,7 @@
 
 import { curl } from './languages/curl';
 import { go } from './languages/go';
+import { java } from './languages/java';
 import { javascript } from './languages/javascript';
 import { php } from './languages/php';
 import { python } from './languages/python';
@@ -23,6 +24,7 @@ export const SNIPPET_LANGUAGES: readonly SnippetLanguageT[] = [
   go,
   php,
   rust,
+  java,
   sdkNode,
   sdkPython,
 ];
