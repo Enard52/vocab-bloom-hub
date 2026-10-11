@@ -43,6 +43,17 @@ const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
       `const { data } = await client.suggest(${jsLiteral(body)});`,
       'console.log(data.id, data.status);',
     ].join('\n'),
+  'get-words': ({ origin }) =>
+    [
+      ...client(origin),
+      "const { data } = await client.words({ word_level: ['A1'] });",
+      'console.log(data.slice(0, 5).map((entry) => entry.word));',
+      '',
+      '// To read every matching entry across all pages:',
+      "// for await (const entry of client.iterateWords({ word_level: ['A1'] })) {",
+      '//   console.log(entry.word);',
+      '// }',
+    ].join('\n'),
   'get-meta': ({ origin }) =>
     [
       ...client(origin),

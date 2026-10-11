@@ -91,6 +91,57 @@ describe('every language', () => {
 });
 
 describe('the exact text', () => {
+  it('offers words SDK tabs with an A1 page, five headwords and an optional iterator', () => {
+    expect(snippetsOf(bySlug('get-words')).map(({ id }) => id)).toEqual(
+      expect.arrayContaining(['sdk-node', 'sdk-python']),
+    );
+    expect(render('sdk-node', 'get-words')).toBe(
+      [
+        "import { VocabBloomClient } from '@vocab-bloom-hub/client';",
+        '',
+        "const client = new VocabBloomClient({ baseUrl: 'https://x.example' });",
+        "const { data } = await client.words({ word_level: ['A1'] });",
+        'console.log(data.slice(0, 5).map((entry) => entry.word));',
+        '',
+        '// To read every matching entry across all pages:',
+        "// for await (const entry of client.iterateWords({ word_level: ['A1'] })) {",
+        '//   console.log(entry.word);',
+        '// }',
+      ].join('\n'),
+    );
+    expect(render('sdk-python', 'get-words')).toBe(
+      [
+        'from vocab_bloom_hub import VocabBloomClient',
+        '',
+        'client = VocabBloomClient("https://x.example")',
+        'answer = client.words(word_level=["A1"])',
+        'print([entry.word for entry in answer.data[:5]])',
+        '',
+        '# To read every matching entry across all pages:',
+        '# for entry in client.iter_words(word_level=["A1"]):',
+        '#     print(entry.word)',
+      ].join('\n'),
+    );
+    const endpoint = playgroundEndpoint(
+      endpoints.find(({ slug }) => slug === 'get-words')!,
+      spec,
+    );
+    expect(planRequest(endpoint, { word_level: ['A1'] })).toMatchObject({
+      method: 'GET',
+      path: '/v1/words',
+      query: '?word_level=A1',
+    });
+  });
+
+  it('uses the supplied instance origin for both words SDK examples', () => {
+    const request = { ...bySlug('get-words'), origin: 'https://dictionary.example' };
+    for (const id of ['sdk-node', 'sdk-python']) {
+      const code = SNIPPET_LANGUAGES.find((language) => language.id === id)!.render(request)!;
+      expect(code).toContain(request.origin);
+      expect(code).not.toContain('x.example');
+    }
+  });
+
   it('offers both suggestion SDK tabs with the shared request body and created result', () => {
     expect(snippetsOf(bySlug('post-suggestions')).map(({ id }) => id)).toEqual(
       expect.arrayContaining(['sdk-node', 'sdk-python']),

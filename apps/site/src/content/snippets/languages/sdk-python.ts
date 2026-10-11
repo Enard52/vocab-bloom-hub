@@ -46,6 +46,16 @@ const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
       `answer = client.suggest(**${pythonLiteral(body)})`,
       'print(answer.data.id, answer.data.status)',
     ].join('\n'),
+  'get-words': ({ origin }) =>
+    [
+      ...client(origin),
+      'answer = client.words(word_level=["A1"])',
+      'print([entry.word for entry in answer.data[:5]])',
+      '',
+      '# To read every matching entry across all pages:',
+      '# for entry in client.iter_words(word_level=["A1"]):',
+      '#     print(entry.word)',
+    ].join('\n'),
   'get-meta': ({ origin }) =>
     [
       ...client(origin),

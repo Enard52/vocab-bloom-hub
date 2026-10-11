@@ -49,6 +49,11 @@ print the created suggestion's ID and status. The sample includes `headword: 'ru
 short `message`: reports require a message even though it is optional in the DTO shared
 with edit proposals. All language tabs use that same body.
 
+The `get-words` examples request one page filtered by `word_level: ['A1']` and print
+up to five headwords (an empty list if no entries match). Commented alternatives use
+`iterateWords` / `iter_words` with the same filter to read every page. In the playground,
+select `A1` for `word_level` to send the same filtered request.
+
 ## Where the rest lives
 
 - `request.ts` — the request digest from the OpenAPI document (sample values, the body of the
