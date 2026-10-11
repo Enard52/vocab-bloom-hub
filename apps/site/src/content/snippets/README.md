@@ -77,6 +77,10 @@ The `get-words-word-synonyms` examples request the shared sample headword (`run`
 print the linked words as a list, or an empty list when there are no synonyms. Enter
 `run` in the playground to send the same request.
 
+The `get-words-word-antonyms` examples request the shared sample headword (`run`) and
+print the linked words as a list, or an empty list when there are no antonyms. Enter
+`run` in the playground to send the same request.
+
 The `get-random` examples call `client.random()` without filters and print the returned word.
 Leave the playground filters empty to send the same request.
 

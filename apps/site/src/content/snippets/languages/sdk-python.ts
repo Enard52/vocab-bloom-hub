@@ -16,6 +16,14 @@ const client = (origin: string): string[] => [
 ];
 
 const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
+  'get-words-word-antonyms': (request) => {
+    const [word] = pathArguments(request, '/api/v1/words/{word}/antonyms');
+    return [
+      ...client(request.origin),
+      `answer = client.antonyms(${pythonLiteral(word)})`,
+      'print([link.word for link in answer.data])',
+    ].join('\n');
+  },
   'get-words-word-synonyms': (request) => {
     const [word] = pathArguments(request, '/api/v1/words/{word}/synonyms');
     return [
