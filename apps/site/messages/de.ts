@@ -293,6 +293,8 @@ export default {
     search_placeholder: 'Ein Wort oder eine Phrase…',
     search_label: 'Im Wörterbuch suchen',
     search_button: 'Suchen',
+    search_loading: 'Suche läuft…',
+    search_results: '{count, plural, one {# Ergebnis angezeigt.} other {# Ergebnisse angezeigt.}}',
     search_empty: 'Nichts gefunden.',
     search_fuzzy: 'Kein exakter Treffer — das sind die nächstliegenden Schreibweisen.',
     search_error: 'Das Wörterbuch hat nicht geantwortet.',

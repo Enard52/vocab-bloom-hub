@@ -284,6 +284,9 @@ export default {
     search_placeholder: 'كلمة أو عبارة…',
     search_label: 'ابحث في القاموس',
     search_button: 'بحث',
+    search_loading: 'جارٍ البحث…',
+    search_results:
+      '{count, plural, zero {لا توجد نتائج.} one {تُعرض نتيجة واحدة.} two {تُعرض نتيجتان.} few {تُعرض # نتائج.} many {تُعرض # نتيجة.} other {تُعرض # نتيجة.}}',
     search_empty: 'لم يُعثر على شيء.',
     search_fuzzy: 'لا تطابق تام — هذه أقرب الكتابات الإملائية.',
     search_error: 'لم يُجب القاموس.',

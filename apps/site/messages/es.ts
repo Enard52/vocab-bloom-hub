@@ -290,6 +290,9 @@ export default {
     search_placeholder: 'Una palabra o una frase…',
     search_label: 'Buscar en el diccionario',
     search_button: 'Buscar',
+    search_loading: 'Buscando…',
+    search_results:
+      '{count, plural, one {# resultado mostrado.} many {# resultados mostrados.} other {# resultados mostrados.}}',
     search_empty: 'No se encontró nada.',
     search_fuzzy: 'Sin coincidencia exacta — estas son las grafías más cercanas.',
     search_error: 'El diccionario no respondió.',

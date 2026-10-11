@@ -62,3 +62,28 @@ highlighted code), the API reference anchors, the playground round-trip against 
 the server-rendered word pages (`/word/random` redirect and the 404 included) and a crawler
 that follows every `/en/docs` link asserting each internal href answers 200 and each `#anchor`
 exists on its target page.
+
+### Manual screen reader check: word search (#547)
+
+Automated coverage in `tests-site/word-search-status.spec.ts` checks the status DOM,
+loading, focus, keyboard operation and Arabic RTL. It does **not** verify spoken output.
+Before signing off the screen reader behavior, run this check with VoiceOver + Safari
+and/or NVDA + Firefox, recording the OS, browser, screen reader versions and outcome:
+
+1. Open `/en/word` without `?q=`. There should be no results announcement on idle load.
+2. Tab to the search input, enter an installed word and press Enter. On a throttled
+   connection, confirm the loading announcement and then the concise result count.
+   Focus must stay in the input; the results list must not be read automatically.
+3. Repeat using Tab to the Search button and Enter. Focus must stay on that button
+   throughout loading and completion. Tab onward to explore result links normally.
+4. Search for a word absent from the fixture, then a near spelling that produces fuzzy
+   matches. Confirm the empty message or the result count plus the fuzzy-match note.
+5. Block the search request in developer tools (or stop the isolated fixture API), submit
+   again and confirm the error announcement. Restore requests and confirm recovery.
+6. Open `/en/word?q=sprint` and confirm the restored search announces completion.
+7. Repeat on `/ar/word`, checking RTL, keyboard navigation and Arabic messages, including
+   one and two results. Also check Russian counts for 1, 2 and 5 results.
+
+The persistent status region is separate from the list and the busy form, following
+[W3C ARIA22](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22).
+Manual speech verification has not been performed by the automated suite; record it separately.

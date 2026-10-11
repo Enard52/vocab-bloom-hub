@@ -56,14 +56,27 @@ export const WordSearch = ({ initialTerm = '' }: { initialTerm?: string }) => {
   const search = (event: React.FormEvent) => {
     event.preventDefault();
     const query = term.trim();
-    if (!query) return;
+    if (!query || state.kind === 'loading') return;
     syncUrl(query);
     void runSearch(query);
   };
 
+  const status =
+    state.kind === 'loading'
+      ? t('search_loading')
+      : state.kind === 'error'
+        ? t('search_error')
+        : state.kind === 'results'
+          ? state.items.length === 0
+            ? t('search_empty')
+            : [t('search_results', { count: state.items.length }), state.fuzzy ? t('search_fuzzy') : '']
+                .filter(Boolean)
+                .join(' ')
+          : '';
+
   return (
     <div>
-      <form className={styles.form} onSubmit={search} role="search">
+      <form className={styles.form} onSubmit={search} role="search" aria-busy={state.kind === 'loading'}>
         <input
           type="search"
           value={term}
@@ -71,17 +84,13 @@ export const WordSearch = ({ initialTerm = '' }: { initialTerm?: string }) => {
           placeholder={t('search_placeholder')}
           aria-label={t('search_label')}
         />
-        <button type="submit" disabled={state.kind === 'loading' || !term.trim()}>
+        <button type="submit" disabled={!term.trim()} aria-disabled={state.kind === 'loading' || !term.trim()}>
           {t('search_button')}
         </button>
       </form>
-      {state.kind === 'results' && state.items.length === 0 && (
-        <p className={styles.note}>{t('search_empty')}</p>
-      )}
-      {state.kind === 'results' && state.fuzzy && state.items.length > 0 && (
-        <p className={styles.note}>{t('search_fuzzy')}</p>
-      )}
-      {state.kind === 'error' && <p className={styles.note}>{t('search_error')}</p>}
+      <p className={styles.note} role="status" aria-live="polite" aria-atomic="true">
+        {status}
+      </p>
       {state.kind === 'results' && state.items.length > 0 && (
         <ul className={styles.results}>
           {state.items.map((item) => (

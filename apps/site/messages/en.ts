@@ -287,6 +287,8 @@ export default {
     search_placeholder: 'A word or a phrase…',
     search_label: 'Search the dictionary',
     search_button: 'Search',
+    search_loading: 'Searching…',
+    search_results: '{count, plural, one {# result shown.} other {# results shown.}}',
     search_empty: 'Nothing found.',
     search_fuzzy: 'No exact match — these are the closest spellings.',
     search_error: 'The dictionary did not answer.',

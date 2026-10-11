@@ -24,7 +24,8 @@
     font-weight: 600;
     cursor: pointer;
 
-    &:disabled {
+    &:disabled,
+    &[aria-disabled='true'] {
       opacity: 0.5;
       cursor: default;
     }
@@ -55,6 +56,9 @@
 }
 
 .note {
+  &:empty {
+    margin: 0;
+  }
   margin: 12px 0 0;
   color: var(--muted);
   font-size: 0.9rem;

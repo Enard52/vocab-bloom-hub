@@ -277,6 +277,8 @@ export default {
     search_placeholder: '一个单词或短语…',
     search_label: '搜索词典',
     search_button: '搜索',
+    search_loading: '正在搜索…',
+    search_results: '已显示 {count} 条结果。',
     search_empty: '未找到任何结果。',
     search_fuzzy: '没有精确匹配——以下是拼写最接近的结果。',
     search_error: '词典没有响应。',
