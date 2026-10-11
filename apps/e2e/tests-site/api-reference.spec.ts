@@ -87,7 +87,10 @@ test.describe('API reference', () => {
     const random = page.locator('section#get-random');
     await expect(random.locator('pre[data-language="sdk-python"]')).toBeVisible();
     await expect(random.locator('pre[data-language="sdk-python"]')).toContainText('client.random()');
-    await expect(page.locator('section#get-words-word-translations pre[data-language="curl"]')).toBeVisible();
+    await expect(
+      page.locator('section#get-words-word-translations pre[data-language="sdk-python"]'),
+    ).toBeVisible();
+    await expect(page.locator('section#get-words-word-synonyms pre[data-language="curl"]')).toBeVisible();
     await page.reload();
     await expect(operation.locator('pre[data-language="sdk-python"]')).toBeVisible();
     await expect(headword.locator('pre[data-language="sdk-python"]')).toBeVisible();

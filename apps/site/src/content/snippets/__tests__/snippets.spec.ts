@@ -87,13 +87,66 @@ describe('every language', () => {
         expect.arrayContaining(['sdk-node', 'sdk-python']),
       );
     }
-    expect(render('sdk-node', 'get-words-word-translations')).toBeNull();
+    expect(render('sdk-node', 'get-words-word-synonyms')).toBeNull();
     // the first tab is curl everywhere: a reader without a choice yet sees it
     for (const request of requests) expect(snippetsOf(request)[0].id).toBe('curl');
   });
 });
 
 describe('the exact text', () => {
+  it('offers translations SDK tabs and safely prints the first meaning translation', () => {
+    expect(snippetsOf(bySlug('get-words-word-translations')).map(({ id }) => id)).toEqual(
+      expect.arrayContaining(['sdk-node', 'sdk-python']),
+    );
+    expect(render('sdk-node', 'get-words-word-translations')).toBe(
+      [
+        "import { VocabBloomClient } from '@vocab-bloom-hub/client';",
+        '',
+        "const client = new VocabBloomClient({ baseUrl: 'https://x.example' });",
+        "const { data } = await client.translations('run');",
+        'const first = data.meaning_translations[0];',
+        'console.log(first?.title, first?.language);',
+      ].join('\n'),
+    );
+    expect(render('sdk-python', 'get-words-word-translations')).toBe(
+      [
+        'from vocab_bloom_hub import VocabBloomClient',
+        '',
+        'client = VocabBloomClient("https://x.example")',
+        'answer = client.translations("run")',
+        'first = answer.data.meaning_translations[0] if answer.data.meaning_translations else None',
+        'print(first.title if first else None, first.language.value if first else None)',
+      ].join('\n'),
+    );
+    const endpoint = playgroundEndpoint(
+      endpoints.find(({ slug }) => slug === 'get-words-word-translations')!,
+      spec,
+    );
+    expect(planRequest(endpoint, { word: 'run' })).toMatchObject({
+      method: 'GET',
+      path: '/v1/words/run/translations',
+      query: '',
+    });
+  });
+
+  it('translations SDK examples use the supplied origin and escaped headword', () => {
+    const word = 'say "hi"';
+    const request = {
+      ...bySlug('get-words-word-translations'),
+      origin: 'https://dictionary.example',
+      path: `/api/v1/words/${encodeURIComponent(word)}/translations`,
+    };
+    for (const [id, literal] of [
+      ['sdk-node', jsLiteral],
+      ['sdk-python', pythonLiteral],
+    ] as const) {
+      const code = SNIPPET_LANGUAGES.find((language) => language.id === id)!.render(request)!;
+      expect(code).toContain(request.origin);
+      expect(code).toContain(`client.translations(${literal(word)})`);
+      expect(code).not.toContain('x.example');
+    }
+  });
+
   it('offers OpenAPI SDK tabs and prints the document version without a data envelope', () => {
     expect(snippetsOf(bySlug('get-openapi-json')).map(({ id }) => id)).toEqual(
       expect.arrayContaining(['sdk-node', 'sdk-python']),

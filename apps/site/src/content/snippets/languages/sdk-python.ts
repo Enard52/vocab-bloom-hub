@@ -16,6 +16,15 @@ const client = (origin: string): string[] => [
 ];
 
 const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
+  'get-words-word-translations': (request) => {
+    const [word] = pathArguments(request, '/api/v1/words/{word}/translations');
+    return [
+      ...client(request.origin),
+      `answer = client.translations(${pythonLiteral(word)})`,
+      'first = answer.data.meaning_translations[0] if answer.data.meaning_translations else None',
+      'print(first.title if first else None, first.language.value if first else None)',
+    ].join('\n');
+  },
   'get-openapi-json': ({ origin }) =>
     [...client(origin), 'document = client.openapi()', 'print(document["info"]["version"])'].join('\n'),
   'get-words-word-forms': (request) => {
