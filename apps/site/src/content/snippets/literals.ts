@@ -55,3 +55,10 @@ export const phpLiteral = (value: unknown, depth = 0): string => {
 
 /** The body as one line of JSON — for the languages that send it as a string */
 export const jsonLine = (value: unknown): string => JSON.stringify(value);
+
+/** JSON stays readable in a Rust raw string; choose a delimiter its content cannot close. */
+export const rustRawString = (value: string): string => {
+  let hashes = '#';
+  while (value.includes(`"${hashes}`)) hashes += '#';
+  return `r${hashes}"${value}"${hashes}`;
+};

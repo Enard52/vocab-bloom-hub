@@ -26,6 +26,16 @@ The body helpers in `literals.ts` write a sample body as a literal of the langua
 'run' }` in JavaScript, `{"search": "run"}` in Python, `['search' => 'run']` in PHP) — add one for
 a language that reads better with its own syntax than with a JSON string.
 
+## Rust
+
+The Rust tab is a complete `src/main.rs` program using the blocking
+[reqwest client](https://docs.rs/reqwest/latest/reqwest/blocking/) and `serde_json::Value`.
+In a Cargo project, run `cargo add reqwest --features blocking,json` and
+`cargo add serde_json`, paste the example into `src/main.rs`, then run `cargo run`.
+It checks HTTP errors before decoding JSON and accepts both object and array responses.
+POST bodies come from the same sample as the other tabs; the JSON is parsed from a raw
+string whose delimiter grows when the data contains a closing quote/hash sequence.
+
 ## Snippets written by hand
 
 The two SDK tabs (`languages/sdk-node.ts`, `languages/sdk-python.ts`) cannot be generated: the

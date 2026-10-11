@@ -7,6 +7,7 @@ import { go } from './languages/go';
 import { javascript } from './languages/javascript';
 import { php } from './languages/php';
 import { python } from './languages/python';
+import { rust } from './languages/rust';
 import { sdkNode } from './languages/sdk-node';
 import { sdkPython } from './languages/sdk-python';
 import type { SnippetLanguageT, SnippetRequestT } from './types';
@@ -21,6 +22,7 @@ export const SNIPPET_LANGUAGES: readonly SnippetLanguageT[] = [
   python,
   go,
   php,
+  rust,
   sdkNode,
   sdkPython,
 ];
