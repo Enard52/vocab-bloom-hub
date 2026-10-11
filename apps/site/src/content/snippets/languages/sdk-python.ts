@@ -16,6 +16,15 @@ const client = (origin: string): string[] => [
 ];
 
 const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
+  'get-words-word-forms': (request) => {
+    const [word] = pathArguments(request, '/api/v1/words/{word}/forms');
+    return [
+      ...client(request.origin),
+      `answer = client.forms(${pythonLiteral(word)})`,
+      'for form in answer.data:',
+      '    print(form.word, form.form_of_word.value)',
+    ].join('\n');
+  },
   'get-random': ({ origin }) =>
     [...client(origin), 'answer = client.random()', 'print(answer.data.word)'].join('\n'),
   'post-words-batch': ({ origin, body }) =>

@@ -60,6 +60,10 @@ adding an entry. The sample values of the path come from `pathArguments(request,
 `request.ts`, so the snippet passes what the generated ones put into the URL. The method names are in `packages/npm-sdk/README.md` and
 `packages/python-sdk/README.md`.
 
+The `get-words-word-forms` examples take the headword from the shared sample path (`run`)
+and print every form's `word` and `form_of_word`. An empty forms list prints no rows.
+Enter `run` as the playground headword to send the same request.
+
 The `get-random` examples call `client.random()` without filters and print the returned word.
 Leave the playground filters empty to send the same request.
 
