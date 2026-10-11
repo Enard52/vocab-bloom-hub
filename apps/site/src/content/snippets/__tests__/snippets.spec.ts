@@ -86,13 +86,52 @@ describe('every language', () => {
         expect.arrayContaining(['sdk-node', 'sdk-python']),
       );
     }
-    expect(render('sdk-node', 'get-random')).toBeNull();
+    expect(render('sdk-node', 'get-words-word-translations')).toBeNull();
     // the first tab is curl everywhere: a reader without a choice yet sees it
     for (const request of requests) expect(snippetsOf(request)[0].id).toBe('curl');
   });
 });
 
 describe('the exact text', () => {
+  it('offers random SDK tabs and prints the returned word', () => {
+    expect(snippetsOf(bySlug('get-random')).map(({ id }) => id)).toEqual(
+      expect.arrayContaining(['sdk-node', 'sdk-python']),
+    );
+    expect(render('sdk-node', 'get-random')).toBe(
+      [
+        "import { VocabBloomClient } from '@vocab-bloom-hub/client';",
+        '',
+        "const client = new VocabBloomClient({ baseUrl: 'https://x.example' });",
+        'const { data } = await client.random();',
+        'console.log(data.word);',
+      ].join('\n'),
+    );
+    expect(render('sdk-python', 'get-random')).toBe(
+      [
+        'from vocab_bloom_hub import VocabBloomClient',
+        '',
+        'client = VocabBloomClient("https://x.example")',
+        'answer = client.random()',
+        'print(answer.data.word)',
+      ].join('\n'),
+    );
+    const endpoint = playgroundEndpoint(
+      endpoints.find(({ slug }) => slug === 'get-random')!,
+      spec,
+    );
+    expect(planRequest(endpoint, {})).toMatchObject({ method: 'GET', path: '/v1/random', query: '' });
+    expect(bySlug('get-random').url).toBe('https://x.example/api/v1/random');
+  });
+
+  it('random SDK examples use the supplied instance origin', () => {
+    const request = { ...bySlug('get-random'), origin: 'https://dictionary.example' };
+    for (const id of ['sdk-node', 'sdk-python']) {
+      const code = SNIPPET_LANGUAGES.find((language) => language.id === id)!.render(request)!;
+      expect(code).toContain(request.origin);
+      expect(code).not.toContain('x.example');
+    }
+  });
+
   it.each([
     ['get-meta', 'https://x.example/api/v1/meta', ['            .GET()']],
     [
