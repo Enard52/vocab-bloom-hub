@@ -62,3 +62,17 @@ export const rustRawString = (value: string): string => {
   while (value.includes(`"${hashes}`)) hashes += '#';
   return `r${hashes}"${value}"${hashes}`;
 };
+
+/** Ruby hashes with string keys; single quotes prevent interpolation of source data. */
+export const rubyLiteral = (value: unknown, depth = 0): string => {
+  if (value === null || value === undefined) return 'nil';
+  if (Array.isArray(value)) return `[${value.map((item) => rubyLiteral(item, depth)).join(', ')}]`;
+  if (typeof value === 'object') {
+    const entries = Object.entries(value).map(
+      ([key, item]) => `${indent(depth + 1)}${quoted(key, "'")} => ${rubyLiteral(item, depth + 1)}`,
+    );
+    return `{\n${entries.join(',\n')}\n${indent(depth)}}`;
+  }
+  if (typeof value === 'string') return quoted(value, "'");
+  return String(value);
+};

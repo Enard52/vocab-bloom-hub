@@ -26,6 +26,13 @@ The body helpers in `literals.ts` write a sample body as a literal of the langua
 'run' }` in JavaScript, `{"search": "run"}` in Python, `['search' => 'run']` in PHP) — add one for
 a language that reads better with its own syntax than with a JSON string.
 
+## Ruby
+
+The Ruby tab uses only `net/http` and `json`: save the example as `example.rb` and run
+`ruby example.rb`. HTTPS uses TLS, unsuccessful HTTP responses raise before JSON parsing,
+and the decoded answer is printed as formatted JSON. POST bodies use Ruby hashes with
+string keys and `JSON.generate`; quoted source data cannot trigger Ruby interpolation.
+
 ## Java
 
 The Java tab is a complete `Main.java` program for Java 11 or newer, using the standard

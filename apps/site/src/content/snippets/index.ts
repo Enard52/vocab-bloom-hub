@@ -8,6 +8,7 @@ import { java } from './languages/java';
 import { javascript } from './languages/javascript';
 import { php } from './languages/php';
 import { python } from './languages/python';
+import { ruby } from './languages/ruby';
 import { rust } from './languages/rust';
 import { sdkNode } from './languages/sdk-node';
 import { sdkPython } from './languages/sdk-python';
@@ -25,6 +26,7 @@ export const SNIPPET_LANGUAGES: readonly SnippetLanguageT[] = [
   php,
   rust,
   java,
+  ruby,
   sdkNode,
   sdkPython,
 ];
