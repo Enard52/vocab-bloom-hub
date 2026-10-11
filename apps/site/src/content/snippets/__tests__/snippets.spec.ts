@@ -64,7 +64,7 @@ describe('every language', () => {
   );
 
   it('the generated ones cover every endpoint; the SDK tabs only where a snippet is written', () => {
-    for (const id of ['curl', 'javascript', 'python', 'go', 'php', 'rust']) {
+    for (const id of ['curl', 'javascript', 'python', 'go', 'php', 'rust', 'java']) {
       for (const request of requests) expect(render(id, request.slug)).not.toBeNull();
     }
     expect(render('sdk-node', 'get-meta')).not.toBeNull();
@@ -76,6 +76,7 @@ describe('every language', () => {
       'go',
       'php',
       'rust',
+      'java',
       'sdk-node',
       'sdk-python',
     ]);
@@ -92,6 +93,50 @@ describe('every language', () => {
 });
 
 describe('the exact text', () => {
+  it.each([
+    ['get-meta', 'https://x.example/api/v1/meta', ['            .GET()']],
+    [
+      'post-words-batch',
+      'https://x.example/api/v1/words/batch',
+      [
+        '            .header("Content-Type", "application/json")',
+        String.raw`            .POST(HttpRequest.BodyPublishers.ofString("{\"words\":[\"run\",\"walk\",\"nonexistentword\"]}"))`,
+      ],
+    ],
+  ])('Java: a complete program for %s', (slug, url, methodLines) => {
+    expect(render('java', slug as string)).toBe(
+      [
+        'import java.net.URI;',
+        'import java.net.http.HttpClient;',
+        'import java.net.http.HttpRequest;',
+        'import java.net.http.HttpResponse;',
+        '',
+        'public class Main {',
+        '    public static void main(String[] args) throws Exception {',
+        '        HttpClient client = HttpClient.newHttpClient();',
+        '        HttpRequest request = HttpRequest.newBuilder()',
+        `            .uri(URI.create("${url}"))`,
+        ...methodLines,
+        '            .build();',
+        '        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());',
+        '        System.out.println(response.body());',
+        '    }',
+        '}',
+      ].join('\n'),
+    );
+  });
+
+  it('Java preserves JSON quotes, backslashes, control characters and Unicode', () => {
+    const body = { message: 'say "hi" \\ café\n', nested: [true, null, { value: 1 }] };
+    const code = SNIPPET_LANGUAGES.find(({ id }) => id === 'java')!.render({
+      ...bySlug('post-suggestions'),
+      body,
+    });
+    expect(code).toContain(
+      `.POST(HttpRequest.BodyPublishers.ofString(${JSON.stringify(JSON.stringify(body))}))`,
+    );
+  });
+
   it('offers batch SDK tabs with the shared words and prints found words and misses', () => {
     const request = bySlug('post-words-batch');
     expect(request.body).toEqual({ words: ['run', 'walk', 'nonexistentword'] });

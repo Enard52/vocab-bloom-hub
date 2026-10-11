@@ -26,6 +26,13 @@ The body helpers in `literals.ts` write a sample body as a literal of the langua
 'run' }` in JavaScript, `{"search": "run"}` in Python, `['search' => 'run']` in PHP) — add one for
 a language that reads better with its own syntax than with a JSON string.
 
+## Java
+
+The Java tab is a complete `Main.java` program for Java 11 or newer, using the standard
+`java.net.http.HttpClient` without dependencies. Save the example and run `java Main.java`.
+GET reads and POST requests with the shared JSON body print the response as a string.
+JSON is escaped again as a Java string literal, preserving quotes and backslashes.
+
 ## Rust
 
 The Rust tab is a complete `src/main.rs` program using the blocking

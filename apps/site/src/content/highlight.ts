@@ -1,6 +1,7 @@
 import hljs from 'highlight.js/lib/core';
 import bash from 'highlight.js/lib/languages/bash';
 import go from 'highlight.js/lib/languages/go';
+import java from 'highlight.js/lib/languages/java';
 import javascript from 'highlight.js/lib/languages/javascript';
 import php from 'highlight.js/lib/languages/php';
 import python from 'highlight.js/lib/languages/python';
@@ -11,7 +12,7 @@ import typescript from 'highlight.js/lib/languages/typescript';
 // pages go through rehype-highlight, which brings the common set by itself).
 // A snippet language (content/snippets) names one of these in `highlight`;
 // a new one is registered here
-const LANGUAGES = { bash, go, javascript, php, python, rust, typescript };
+const LANGUAGES = { bash, go, java, javascript, php, python, rust, typescript };
 
 for (const [name, language] of Object.entries(LANGUAGES)) {
   if (!hljs.getLanguage(name)) hljs.registerLanguage(name, language);
