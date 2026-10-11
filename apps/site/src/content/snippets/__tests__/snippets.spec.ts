@@ -4,7 +4,7 @@ import path from 'node:path';
 import { listEndpoints, OpenApiSpecT, PUBLIC_SPEC_FILE } from '../../openapi';
 import { highlightLanguages } from '../../highlight';
 import { buildSnippetRequest, SNIPPET_LANGUAGES, snippetsOf } from '../index';
-import { jsLiteral, phpLiteral, pythonLiteral, rustRawString } from '../literals';
+import { jsLiteral, phpLiteral, pythonLiteral, rubyLiteral, rustRawString } from '../literals';
 import { planRequest, playgroundEndpoint } from '../../playground';
 
 // The code snippets of the API reference: every language over
@@ -64,7 +64,7 @@ describe('every language', () => {
   );
 
   it('the generated ones cover every endpoint; the SDK tabs only where a snippet is written', () => {
-    for (const id of ['curl', 'javascript', 'python', 'go', 'php', 'rust', 'java']) {
+    for (const id of ['curl', 'javascript', 'python', 'go', 'php', 'rust', 'java', 'ruby']) {
       for (const request of requests) expect(render(id, request.slug)).not.toBeNull();
     }
     expect(render('sdk-node', 'get-meta')).not.toBeNull();
@@ -77,6 +77,7 @@ describe('every language', () => {
       'php',
       'rust',
       'java',
+      'ruby',
       'sdk-node',
       'sdk-python',
     ]);
@@ -93,6 +94,51 @@ describe('every language', () => {
 });
 
 describe('the exact text', () => {
+  it.each([
+    ['get-meta', 'https://x.example/api/v1/meta', 'Get', []],
+    [
+      'post-words-batch',
+      'https://x.example/api/v1/words/batch',
+      'Post',
+      [
+        "request['Content-Type'] = 'application/json'",
+        "request.body = JSON.generate({\n  'words' => ['run', 'walk', 'nonexistentword']\n})",
+      ],
+    ],
+  ] as const)('Ruby: a complete %s example', (slug, url, method, bodyLines) => {
+    expect(render('ruby', slug)).toBe(
+      [
+        "require 'net/http'",
+        "require 'json'",
+        '',
+        `uri = URI('${url}')`,
+        `request = Net::HTTP::${method}.new(uri)`,
+        ...bodyLines,
+        "response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: uri.scheme == 'https') do |http|",
+        '  http.request(request)',
+        'end',
+        'response.value',
+        'answer = JSON.parse(response.body)',
+        'puts JSON.pretty_generate(answer)',
+      ].join('\n'),
+    );
+  });
+
+  it('Ruby escapes strings and preserves nested JSON values without interpolation', () => {
+    expect(rubyLiteral("it's a \\ #{value} #@name #$name")).toBe(
+      String.raw`'it\'s a \\ #{value} #@name #$name'`,
+    );
+    expect(rubyLiteral({ "it's": [true, false, null, { n: 1 }] })).toBe(
+      "{\n  'it\\'s' => [true, false, nil, {\n    'n' => 1\n  }]\n}",
+    );
+    const body = { message: "it's café\n#{raise 'unexpected'}" };
+    const code = SNIPPET_LANGUAGES.find(({ id }) => id === 'ruby')!.render({
+      ...bySlug('post-suggestions'),
+      body,
+    });
+    expect(code).toContain(`request.body = JSON.generate(${rubyLiteral(body)})`);
+  });
+
   it('offers random SDK tabs and prints the returned word', () => {
     expect(snippetsOf(bySlug('get-random')).map(({ id }) => id)).toEqual(
       expect.arrayContaining(['sdk-node', 'sdk-python']),
