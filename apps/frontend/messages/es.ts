@@ -883,6 +883,16 @@ export default {
     empty_short_translations: 'Traducciones breves con descripción vacía',
   },
   documentation: {
+    endpoint_freedictionaryapi_entries_datasets: 'freedictionaryapi.com · todos los conjuntos de datos',
+    desc_freedictionaryapi_entries_datasets:
+      'Devuelve un grupo por conjunto instalado con sus condiciones, estado y respuesta en el formato del adaptador. No cambia el conjunto activo. El estado HTTP global es 200 incluso sin resultados.',
+    endpoint_dictionaryapi_v1_datasets: 'dictionaryapi.dev v1 · todos los conjuntos de datos',
+    desc_dictionaryapi_v1_datasets:
+      'Devuelve un grupo por conjunto instalado con sus condiciones, estado y respuesta en el formato del adaptador. No cambia el conjunto activo. El estado HTTP global es 200 incluso sin resultados.',
+    endpoint_dictionaryapi_v2_datasets: 'dictionaryapi.dev v2 · todos los conjuntos de datos',
+    desc_dictionaryapi_v2_datasets:
+      'Devuelve un grupo por conjunto instalado con sus condiciones, estado y respuesta en el formato del adaptador. No cambia el conjunto activo. El estado HTTP global es 200 incluso sin resultados.',
+
     endpoint_freedictionaryapi_entries: 'Búsqueda freedictionaryapi.com',
     desc_freedictionaryapi_entries:
       'Búsqueda inglesa exacta, sensible a mayúsculas, en el conjunto activo (language: en o all). Devuelve word, entries y source; condiciones completas en vocabBloom. Las palabras desconocidas devuelven entries vacío.',

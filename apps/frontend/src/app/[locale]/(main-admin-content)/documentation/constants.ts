@@ -32,9 +32,12 @@ export enum ApiEndpointKeyE {
   suggestions = 'suggestions',
   openapi = 'openapi',
   freedictionaryapi_entries = 'freedictionaryapi_entries',
+  freedictionaryapi_entries_datasets = 'freedictionaryapi_entries_datasets',
   freedictionaryapi_languages = 'freedictionaryapi_languages',
   dictionaryapi_v1 = 'dictionaryapi_v1',
+  dictionaryapi_v1_datasets = 'dictionaryapi_v1_datasets',
   dictionaryapi_v2 = 'dictionaryapi_v2',
+  dictionaryapi_v2_datasets = 'dictionaryapi_v2_datasets',
 }
 
 export enum ParamControlE {
@@ -227,6 +230,35 @@ export const DOCUMENTED_ENDPOINTS: ApiEndpointDocT[] = [
       { name: 'pretty', type: 'boolean', control: ParamControlE.boolean, required: false, defaultValue: false },
     ],
   },
+
+  {
+    key: ApiEndpointKeyE.freedictionaryapi_entries_datasets,
+    slug: 'freedictionaryapi-entries-datasets',
+    method: 'GET',
+    path: '/api/compat/freedictionaryapi/v1/entries/{language}/{word}/datasets',
+    clientPath: '/compat/freedictionaryapi/v1/entries/{language}/{word}/datasets',
+    responseType: 'FreeDictionaryDatasetsResT',
+    params: [
+      {
+        name: 'language',
+        type: 'string',
+        control: ParamControlE.enum,
+        required: true,
+        inPath: true,
+        defaultValue: 'en',
+        options: ['en', 'all'],
+      },
+      HEADWORD_PARAM,
+      {
+        name: 'translations',
+        type: 'boolean',
+        control: ParamControlE.boolean,
+        required: false,
+        defaultValue: false,
+      },
+      { name: 'pretty', type: 'boolean', control: ParamControlE.boolean, required: false, defaultValue: false },
+    ],
+  },
   {
     key: ApiEndpointKeyE.freedictionaryapi_languages,
     slug: 'freedictionaryapi-languages',
@@ -259,6 +291,27 @@ export const DOCUMENTED_ENDPOINTS: ApiEndpointDocT[] = [
       HEADWORD_PARAM,
     ],
   },
+
+  {
+    key: ApiEndpointKeyE.dictionaryapi_v1_datasets,
+    slug: 'dictionaryapi-v1-datasets',
+    method: 'GET',
+    path: '/api/compat/dictionaryapi/v1/entries/{language}/{word}/datasets',
+    clientPath: '/compat/dictionaryapi/v1/entries/{language}/{word}/datasets',
+    responseType: 'DictionaryApiV1DatasetsResT',
+    params: [
+      {
+        name: 'language',
+        type: 'string',
+        control: ParamControlE.enum,
+        required: true,
+        inPath: true,
+        defaultValue: 'en',
+        options: ['en', 'en_US', 'en_GB'],
+      },
+      HEADWORD_PARAM,
+    ],
+  },
   {
     key: ApiEndpointKeyE.dictionaryapi_v2,
     slug: 'dictionaryapi-v2',
@@ -266,6 +319,27 @@ export const DOCUMENTED_ENDPOINTS: ApiEndpointDocT[] = [
     path: '/api/compat/dictionaryapi/v2/entries/{language}/{word}',
     clientPath: '/compat/dictionaryapi/v2/entries/{language}/{word}',
     responseType: 'DictionaryApiV2ResT',
+    params: [
+      {
+        name: 'language',
+        type: 'string',
+        control: ParamControlE.enum,
+        required: true,
+        inPath: true,
+        defaultValue: 'en',
+        options: ['en', 'en_US', 'en_GB'],
+      },
+      HEADWORD_PARAM,
+    ],
+  },
+
+  {
+    key: ApiEndpointKeyE.dictionaryapi_v2_datasets,
+    slug: 'dictionaryapi-v2-datasets',
+    method: 'GET',
+    path: '/api/compat/dictionaryapi/v2/entries/{language}/{word}/datasets',
+    clientPath: '/compat/dictionaryapi/v2/entries/{language}/{word}/datasets',
+    responseType: 'DictionaryApiV2DatasetsResT',
     params: [
       {
         name: 'language',

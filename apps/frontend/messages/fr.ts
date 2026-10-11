@@ -886,6 +886,16 @@ export default {
     empty_short_translations: 'Traductions courtes avec une description vide',
   },
   documentation: {
+    endpoint_freedictionaryapi_entries_datasets: 'freedictionaryapi.com · tous les jeux de données',
+    desc_freedictionaryapi_entries_datasets:
+      'Renvoie un groupe par jeu de données installé avec ses conditions, son statut et sa réponse au format de l’adaptateur. Le jeu actif reste inchangé. Le statut HTTP global est 200 même sans résultat.',
+    endpoint_dictionaryapi_v1_datasets: 'dictionaryapi.dev v1 · tous les jeux de données',
+    desc_dictionaryapi_v1_datasets:
+      'Renvoie un groupe par jeu de données installé avec ses conditions, son statut et sa réponse au format de l’adaptateur. Le jeu actif reste inchangé. Le statut HTTP global est 200 même sans résultat.',
+    endpoint_dictionaryapi_v2_datasets: 'dictionaryapi.dev v2 · tous les jeux de données',
+    desc_dictionaryapi_v2_datasets:
+      'Renvoie un groupe par jeu de données installé avec ses conditions, son statut et sa réponse au format de l’adaptateur. Le jeu actif reste inchangé. Le statut HTTP global est 200 même sans résultat.',
+
     endpoint_freedictionaryapi_entries: 'Recherche freedictionaryapi.com',
     desc_freedictionaryapi_entries:
       'Recherche anglaise exacte, sensible à la casse, dans le jeu actif (language : en ou all). Renvoie word, entries et source ; conditions complètes dans vocabBloom. Les mots inconnus renvoient entries vide.',

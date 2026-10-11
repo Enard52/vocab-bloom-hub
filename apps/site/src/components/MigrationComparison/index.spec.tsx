@@ -70,7 +70,7 @@ describe('live comparison UI', () => {
     expect(container.textContent).toContain('WordNet');
     expect(container.textContent).toContain('Custom dictionary');
     expect(container.textContent).not.toContain('Fixture miss');
-    expect(container.querySelectorAll('[role="tablist"]')[0].querySelectorAll('[role="tab"]')).toHaveLength(10);
+    expect(container.querySelectorAll('[role="tablist"]')[0].querySelectorAll('[role="tab"]')).toHaveLength(9);
     expect(container.querySelector('input[type="text"]')).toBeNull();
     expect(container.querySelector('section')!.dir).toBe('rtl');
     expect(Array.from(container.querySelectorAll('pre')).every((pre) => pre.dir === 'ltr')).toBe(true);

@@ -884,6 +884,16 @@ export default {
     empty_short_translations: 'Kurzübersetzungen mit leerer Beschreibung',
   },
   documentation: {
+    endpoint_freedictionaryapi_entries_datasets: 'freedictionaryapi.com · alle Datensätze',
+    desc_freedictionaryapi_entries_datasets:
+      'Gibt für jeden installierten Datensatz eine Gruppe mit Bedingungen, Status und Antwort im Adapterformat zurück. Der aktive Datensatz bleibt unverändert. Der äußere HTTP-Status ist auch ohne Treffer 200.',
+    endpoint_dictionaryapi_v1_datasets: 'dictionaryapi.dev v1 · alle Datensätze',
+    desc_dictionaryapi_v1_datasets:
+      'Gibt für jeden installierten Datensatz eine Gruppe mit Bedingungen, Status und Antwort im Adapterformat zurück. Der aktive Datensatz bleibt unverändert. Der äußere HTTP-Status ist auch ohne Treffer 200.',
+    endpoint_dictionaryapi_v2_datasets: 'dictionaryapi.dev v2 · alle Datensätze',
+    desc_dictionaryapi_v2_datasets:
+      'Gibt für jeden installierten Datensatz eine Gruppe mit Bedingungen, Status und Antwort im Adapterformat zurück. Der aktive Datensatz bleibt unverändert. Der äußere HTTP-Status ist auch ohne Treffer 200.',
+
     endpoint_freedictionaryapi_entries: 'freedictionaryapi.com-Suche',
     desc_freedictionaryapi_entries:
       'Exakte englische Schreibweise mit Groß-/Kleinschreibung im aktiven Datensatz (language: en oder all). Antwort: word, entries und source; vollständige Bedingungen in vocabBloom. Unbekannte Wörter liefern leere entries.',
