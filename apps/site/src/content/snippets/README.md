@@ -68,6 +68,11 @@ The `get-openapi-json` examples call `client.openapi()` and print `info.version`
 The method returns the document directly, without a `data` envelope. The Node.js example
 narrows the SDK’s `unknown` info field before reading its version, so it also works in TypeScript.
 
+The `get-words-word-translations` examples request `run` without language filters and print
+the first meaning translation’s `title` and `language`, handling an empty list. The response
+separates `meaning_translations` (which have titles) from `short_translations`. Use `run`
+with empty filters in the playground for the same request.
+
 The `get-random` examples call `client.random()` without filters and print the returned word.
 Leave the playground filters empty to send the same request.
 
