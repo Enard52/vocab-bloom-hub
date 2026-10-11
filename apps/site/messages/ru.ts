@@ -288,6 +288,9 @@ export default {
     search_placeholder: 'Слово или фраза…',
     search_label: 'Поиск по словарю',
     search_button: 'Найти',
+    search_loading: 'Идёт поиск…',
+    search_results:
+      '{count, plural, one {Показан # результат.} few {Показано # результата.} many {Показано # результатов.} other {Показано # результата.}}',
     search_empty: 'Ничего не найдено.',
     search_fuzzy: 'Точного совпадения нет — вот ближайшие написания.',
     search_error: 'Словарь не ответил.',

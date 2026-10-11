@@ -292,6 +292,9 @@ export default {
     search_placeholder: 'Un mot ou une expression…',
     search_label: 'Chercher dans le dictionnaire',
     search_button: 'Chercher',
+    search_loading: 'Recherche en cours…',
+    search_results:
+      '{count, plural, one {# résultat affiché.} many {# résultats affichés.} other {# résultats affichés.}}',
     search_empty: 'Rien trouvé.',
     search_fuzzy: 'Pas de correspondance exacte — voici les graphies les plus proches.',
     search_error: "Le dictionnaire n'a pas répondu.",
