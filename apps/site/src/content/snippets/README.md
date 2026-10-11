@@ -58,6 +58,10 @@ and print the first entry's first definition, handling empty entries or meanings
 The `get-words-word-meanings` examples take the headword from the sample path and print the
 first definition, handling an empty meanings list.
 
+The `post-words-batch` examples use the shared body with `run`, `walk` and `nonexistentword`,
+call `wordsBatch` / `words_batch`, then print the found words and `meta.not_found`.
+In the playground, enter `run, walk, nonexistentword` in `words` for the same request.
+
 The `post-suggestions` examples send the shared sample body through `client.suggest` and
 print the created suggestion's ID and status. The sample includes `headword: 'run'` and a
 short `message`: reports require a message even though it is optional in the DTO shared
