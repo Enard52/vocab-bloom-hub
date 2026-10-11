@@ -10,6 +10,9 @@ The server exposes two surfaces on one host:
 The native public contract lives under `/api/v1`; the separate
 [dictionaryapi.dev adapter](#dictionaryapidev-compatibility) and
 [freedictionaryapi.com adapter](#freedictionaryapicom-compatibility) use upstream response shapes.
+Start with the [dictionaryapi.dev migration guide](./migrate-dictionaryapi.md) or the
+[freedictionaryapi.com migration guide](./migrate-freedictionaryapi.md) for URL changes and
+reading every installed dataset in an adapter's response format.
 Compatibility reads require no login. The public contract is also served as an [OpenAPI document](#openapi-document);
 Swagger UI, the website's reference and the other ways to read the API are compared in
 [api-tools.md](./api-tools.md).
@@ -635,7 +638,7 @@ GET /api/compat/dictionaryapi/v2/entries/en/hello
 GET /api/compat/dictionaryapi/v1/entries/en/hello
 ```
 
-These are anonymous reads of **the active dataset only**, using the native headword reader;
+The ordinary lookup routes are anonymous reads of **the active dataset only**, using the native headword reader;
 they never contact dictionaryapi.dev or combine dictionaries. Activate the desired dataset
 in the admin UI. `vocabBloom.dataset` identifies it in each result. Only English is supported:
 `en`, and the historical `en_US` / `en_GB` aliases (case-insensitive). The aliases do not filter
@@ -825,6 +828,61 @@ successful/missing/case-sensitive lookups, languages, unsupported codes, repeate
 booleans, translations and pretty output. Automated tests use original fixtures and require no
 upstream availability. No database migration, import/export format change or RFC 2229 server
 is part of this adapter.
+
+## Compatibility responses from every dataset
+
+Add `/datasets` to an adapter lookup to read every installed dataset without switching the
+active one. These routes are Vocab Bloom Hub extensions for comparison and integration tools:
+the ordinary adapter routes retain their upstream-shaped responses and active-dataset behavior.
+
+| Method | Path                                                                  | Query                    |
+| ------ | --------------------------------------------------------------------- | ------------------------ |
+| `GET`  | `/api/compat/dictionaryapi/v2/entries/{language}/{word}/datasets`     | none                     |
+| `GET`  | `/api/compat/dictionaryapi/v1/entries/{language}/{word}/datasets`     | none                     |
+| `GET`  | `/api/compat/freedictionaryapi/v1/entries/{language}/{word}/datasets` | `translations`, `pretty` |
+
+The outer JSON object is `{ data, meta }`. Each item of `data` contains the dataset terms
+(`PublicDatasetTermsV1T`: `dataset`, `title`, `active`, `source`, `dataset_version`, attribution,
+notices, license text and provenance) and two additional fields:
+
+| Field      | dictionaryapi.dev v1/v2                                                             | freedictionaryapi.com v1                                                        |
+| ---------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| `status`   | `200` when found, `404` when missing in that dataset                                | `200`, including missing words                                                  |
+| `response` | The full v1/v2 array, or the usual `{ title, message, resolution }` error on a miss | The full `{ word, entries, source, vocabBloom }` object; `entries` may be empty |
+
+`meta` has the requested `word` and `language`, `datasets` (number of returned groups), and
+`found` (groups with matching entries). The whole request returns HTTP **200 even when
+`found` is zero**. Dataset groups are retained on a miss, so callers can display which
+sources have no result. A database failure fails the whole request; it is not reported as a
+missing word or silently omitted.
+
+Each dataset uses the same reader and projection as its ordinary adapter. dictionaryapi.dev
+accepts `en`, `en_US` and `en_GB` case-insensitively; it resolves headwords and inflections by
+the native rules. An unsupported language gives an outer 404 and query parameters give 400.
+freedictionaryapi.com requires exact spelling, resolves forms and one-hop spelling aliases,
+and reads English for `en` and `all`; other languages produce empty groups. Its `translations`
+and `pretty` use the same boolean parsing rules as the ordinary route. `pretty` formats the
+whole wrapper. `dataset` is rejected by both adapters; these routes always read all installed
+datasets, including the active one and the owner's datasets/forks. SQLite returns `default` only.
+
+The nested `response` preserves word sources, modification state and complete `vocabBloom`
+terms. Its `active` flag, when present, says which dataset is actually served; reading another
+dataset does not change it. In empty freedictionaryapi.com results, source/license fallback
+links point to this all-datasets route rather than `/api/v1/meta`, which describes only the
+active dataset. Keep the terms of every group whose data you use.
+
+One request costs one unit of the shared public rate limit. `PUBLIC_API_ENABLED`, anonymous
+CORS and the respective adapter's outer error format apply. GET/HEAD support ETag and
+Last-Modified, based on **all datasets**, including edits to an inactive one, registry changes
+and deletion. Compact/pretty responses have different ETags. These routes do not call the
+upstream services or merge entries from different datasets. They are listed in OpenAPI, the
+site's API reference and Playground; both SDKs include generated types, without native wrapper
+methods for compatibility routes.
+
+```bash
+curl -fsS 'http://localhost:3240/api/compat/dictionaryapi/v2/entries/en/hello/datasets'
+curl -fsS 'http://localhost:3240/api/compat/freedictionaryapi/v1/entries/en/hello/datasets?translations=true'
+```
 
 ## DICT over TCP
 

@@ -247,6 +247,24 @@ describe('public API responses match their OpenAPI schemas (e2e, issue #305)', (
     }
   });
 
+  it('validates all-dataset adapter groups, including embedded misses', async () => {
+    for (const version of ['v1', 'v2']) {
+      const operation = `CompatibilityDatasetsController_dictionaryApi${version === 'v1' ? 'V1' : 'V2'}`;
+      for (const word of ['run', 'no-such-word']) {
+        const result = await request(server())
+          .get(`/api/compat/dictionaryapi/${version}/entries/en/${word}/datasets`)
+          .expect(200);
+        validate(operation, 200, result.body);
+      }
+    }
+    for (const word of ['run', 'no-such-word']) {
+      const result = await request(server())
+        .get(`/api/compat/freedictionaryapi/v1/entries/en/${word}/datasets?translations=true`)
+        .expect(200);
+      validate('CompatibilityDatasetsController_freeDictionaryApi', 200, result.body);
+    }
+  });
+
   it('search and detailed search', async () => {
     const flat = await request(server()).get('/api/v1/search?search=run').expect(200);
     validate('PublicSearchController_searchGet', 200, flat.body);

@@ -835,6 +835,16 @@ export default {
     empty_short_translations: '描述为空的简短翻译',
   },
   documentation: {
+    endpoint_freedictionaryapi_entries_datasets: 'freedictionaryapi.com · 所有数据集',
+    desc_freedictionaryapi_entries_datasets:
+      '为每个已安装的数据集返回一组数据，包括使用条款、状态和适配器格式的响应。不更改当前数据集。即使没有找到单词，外层 HTTP 状态仍为 200。',
+    endpoint_dictionaryapi_v1_datasets: 'dictionaryapi.dev v1 · 所有数据集',
+    desc_dictionaryapi_v1_datasets:
+      '为每个已安装的数据集返回一组数据，包括使用条款、状态和适配器格式的响应。不更改当前数据集。即使没有找到单词，外层 HTTP 状态仍为 200。',
+    endpoint_dictionaryapi_v2_datasets: 'dictionaryapi.dev v2 · 所有数据集',
+    desc_dictionaryapi_v2_datasets:
+      '为每个已安装的数据集返回一组数据，包括使用条款、状态和适配器格式的响应。不更改当前数据集。即使没有找到单词，外层 HTTP 状态仍为 200。',
+
     endpoint_freedictionaryapi_entries: 'freedictionaryapi.com 查询',
     desc_freedictionaryapi_entries:
       '在当前数据集中按精确拼写查询英语，区分大小写（language：en 或 all）。返回 word、entries 和 source；完整条款见 vocabBloom。未知单词返回空 entries。',

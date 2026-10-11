@@ -1,4 +1,35 @@
 export default {
+  comparison: {
+    snapshot_reconstructed:
+      'Aus der gespeicherten v2-Antwort nach der veröffentlichten v1-Konvertierung des Dienstes rekonstruiert. Nicht vom v1-Endpunkt abgerufen.',
+    snapshot_missing:
+      'Die Aufnahme fehlt oder ist nicht lesbar. Laden Sie sie mit comparisons:generate herunter.',
+    snapshot_unavailable: 'Keine erfolgreiche Aufnahme verfügbar. Führen Sie comparisons:generate erneut aus.',
+    snapshot_stale:
+      'Die letzte manuelle Aktualisierung ist fehlgeschlagen. Die vorherige Aufnahme wird mit ihrem ursprünglichen Datum angezeigt.',
+    snapshot_date: 'Originalantwort abgerufen: {date}',
+    version: 'API-Version',
+    close: 'Schließen',
+    title: 'Antworten vergleichen',
+    description:
+      'Die Originalantworten sind gespeicherte, manuell aktualisierte Aufnahmen. Dasselbe englische Wort wird in allen installierten Datensätzen dieser Instanz im Format von {service} abgefragt.',
+    word: 'Englisches Wort',
+    translations: 'Übersetzungen einschließen',
+    provenance: 'vocabBloom-Erweiterungen anzeigen',
+    schema_note:
+      'Standardmäßig werden nur vocabBloom-Erweiterungen ausgeblendet. Alle anderen Felder, Werte und die Reihenfolge bleiben erhalten, einschließlich Quellen und Lizenzen. Quellenangaben stehen unter den Datensatzbedingungen. Originalantworten werden manuell aktualisiert; Seitenaufruf, Build und Start fragen keine externen Dienste ab.',
+    results: 'Ergebnisse für „{word}“',
+    dataset_count: 'Datensätze: {count}',
+    original: 'Ursprünglicher Dienst',
+    loading: 'Wird geladen…',
+    active: 'Aktiv',
+    group_status: 'Adapterstatus: {status}',
+    terms: 'Datensatzbedingungen und Quellenangaben',
+    datasets: 'Datensätze der Instanz',
+    dataset_error:
+      'Die Instanz konnte keine Datensatzgruppen liefern. Prüfen Sie die Antwort unten und versuchen Sie es erneut. Die Instanz muss die /datasets-Routen der Adapter unterstützen.',
+    empty: 'Es wurden keine installierten Datensätze zurückgegeben.',
+  },
   provenance: {
     dataset_sources: 'Quellen des Datensatzes',
     contributions: 'Änderungen und ihre Lizenzen',
@@ -133,6 +164,7 @@ export default {
       database: 'Datenbank',
       operations: 'Betrieb',
       api: 'API',
+      migration: 'Migrationsanleitungen',
       sdk: 'SDKs',
       data: 'Daten',
       project: 'Projekt',

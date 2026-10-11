@@ -330,6 +330,7 @@ Everything the repository documents, also rendered on the website,
 - [`docs/observability.md`](./docs/observability.md) — how the monitoring works, Prometheus + Grafana in one command or your own, every metric, the JSON logs and the request id, shipping the logs to a collector
 - [`docs/performance.md`](./docs/performance.md) — latency of the hot reads on the full dictionary (Postgres vs SQLite), the indexes behind them, the benchmark and the query-plan guard
 - [`docs/api.md`](./docs/api.md) — the public `/api/v1` contract (envelope, errors, rate limit, caching, OpenAPI export) and the public-only / admin-only switches
+- [`docs/migrate-dictionaryapi.md`](./docs/migrate-dictionaryapi.md) and [`docs/migrate-freedictionaryapi.md`](./docs/migrate-freedictionaryapi.md) — migration from the two compatible dictionary APIs and reading every dataset in their response formats
 - [`docs/api-tools.md`](./docs/api-tools.md) — Swagger UI, the OpenAPI document, the website's reference and playground, the admin Documentation pages: which to open when
 - [`docs/data.md`](./docs/data.md) — where the dictionary data comes from (LLM-generated, `generated_by_model`), known limitations, how to report errors; the terms are in [`DATA_LICENSE.md`](./DATA_LICENSE.md)
 - [`packages/npm-sdk/README.md`](./packages/npm-sdk/README.md) and [`packages/python-sdk/README.md`](./packages/python-sdk/README.md) — the SDKs

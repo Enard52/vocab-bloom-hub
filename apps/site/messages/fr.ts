@@ -1,4 +1,34 @@
 export default {
+  comparison: {
+    snapshot_reconstructed:
+      'Réponse reconstruite à partir de v2 selon la conversion v1 publiée par le service. Elle ne provient pas d’une requête au point d’accès v1.',
+    snapshot_missing: 'La copie est absente ou illisible. Exécutez comparisons:generate pour la télécharger.',
+    snapshot_unavailable: 'Aucune copie valide disponible. Exécutez comparisons:generate pour réessayer.',
+    snapshot_stale:
+      'La dernière actualisation manuelle a échoué. La copie précédente est affichée avec sa date d’origine.',
+    snapshot_date: 'Réponse d’origine obtenue : {date}',
+    version: 'Version de l’API',
+    close: 'Fermer',
+    title: 'Comparer les réponses',
+    description:
+      'Les réponses d’origine sont des copies enregistrées, mises à jour manuellement. Le même mot anglais est recherché dans tous les jeux de données installés sur cette instance au format de {service}.',
+    word: 'Mot anglais',
+    translations: 'Inclure les traductions',
+    provenance: 'Afficher les extensions vocabBloom',
+    schema_note:
+      'Seules les extensions vocabBloom sont masquées par défaut. Les autres champs, valeurs et leur ordre sont conservés, y compris les sources et licences. Consultez les conditions du jeu de données pour l’attribution. Les réponses d’origine sont actualisées manuellement ; consulter, compiler ou démarrer le site ne sollicite aucun service externe.',
+    results: 'Résultats pour « {word} »',
+    dataset_count: 'Jeux de données : {count}',
+    original: 'Service d’origine',
+    loading: 'Chargement…',
+    active: 'Actif',
+    group_status: 'Statut de l’adaptateur : {status}',
+    terms: 'Conditions et attribution du jeu de données',
+    datasets: 'Jeux de données de l’instance',
+    dataset_error:
+      'L’instance n’a pas renvoyé les groupes de données. Consultez la réponse ci-dessous et réessayez. L’instance doit prendre en charge les routes /datasets des adaptateurs.',
+    empty: 'Aucun jeu de données installé n’a été renvoyé.',
+  },
   provenance: {
     dataset_sources: 'Sources du jeu de données',
     contributions: 'Modifications et leurs licences',
@@ -133,6 +163,7 @@ export default {
       database: 'Base de données',
       operations: 'Exploitation',
       api: 'API',
+      migration: 'Guides de migration',
       sdk: 'SDK',
       data: 'Données',
       project: 'Projet',

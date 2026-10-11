@@ -1,4 +1,33 @@
 export default {
+  comparison: {
+    snapshot_reconstructed:
+      'Reconstructed from the saved v2 response using the service’s published v1 conversion. Not fetched from the v1 endpoint.',
+    snapshot_missing: 'The snapshot is missing or unreadable. Run comparisons:generate to download it.',
+    snapshot_unavailable: 'No successful snapshot is available. Run comparisons:generate to retry.',
+    snapshot_stale: 'The latest manual refresh failed. The previous snapshot is shown with its original date.',
+    snapshot_date: 'Original response retrieved: {date}',
+    version: 'API version',
+    close: 'Close',
+    title: 'Response comparison',
+    description:
+      'Original responses are saved snapshots updated manually. The same English word is looked up in all installed datasets on this instance using the {service} format.',
+    word: 'English word',
+    translations: 'Include translations',
+    provenance: 'Show vocabBloom extensions',
+    schema_note:
+      'Only vocabBloom extensions are hidden by default. All other response fields, values and array order are preserved, including source and license information. Expand dataset terms for attribution. Original responses are updated manually; browsing, building and starting the site never calls the external services.',
+    results: 'Results for “{word}”',
+    dataset_count: 'Datasets: {count}',
+    original: 'Original service',
+    loading: 'Loading…',
+    active: 'Active',
+    group_status: 'Adapter status: {status}',
+    terms: 'Dataset terms and attribution',
+    datasets: 'Instance datasets',
+    dataset_error:
+      'The instance could not return the dataset groups. Check the response below and try again. This instance must support the /datasets compatibility routes.',
+    empty: 'No installed datasets were returned.',
+  },
   provenance: {
     dataset_sources: 'Dataset sources',
     contributions: 'Changes and their licenses',
@@ -133,6 +162,7 @@ export default {
       database: 'Database',
       operations: 'Operations',
       api: 'API',
+      migration: 'Migration guides',
       sdk: 'SDKs',
       data: 'Data',
       project: 'Project',

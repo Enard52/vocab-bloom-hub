@@ -1,5 +1,32 @@
 // reviewed: zh · @assassinationss · 2026-09-24 · bd845a9
 export default {
+  comparison: {
+    snapshot_reconstructed: '根据服务公布的 v1 转换规则，由已保存的 v2 响应重建，并非从 v1 接口获取。',
+    snapshot_missing: '快照缺失或无法读取。请运行 comparisons:generate 下载。',
+    snapshot_unavailable: '暂无有效快照。请运行 comparisons:generate 重试。',
+    snapshot_stale: '上次手动更新失败。当前显示之前的快照及其原始日期。',
+    snapshot_date: '原始响应获取时间：{date}',
+    version: 'API 版本',
+    close: '关闭',
+    title: '响应比较',
+    description:
+      '原始响应为手动更新的已保存快照。同一个英语单词将以 {service} 格式在此实例的所有已安装数据集中查询。',
+    word: '英语单词',
+    translations: '包含翻译',
+    provenance: '显示 vocabBloom 扩展',
+    schema_note:
+      '默认仅隐藏 vocabBloom 扩展。其他字段、值和数组顺序均保持不变，包括来源和许可证信息。展开数据集条款可查看署名信息。原始响应由手动更新；浏览、构建和启动网站均不会调用外部服务。',
+    results: '“{word}”的结果',
+    dataset_count: '数据集：{count}',
+    original: '原始服务',
+    loading: '加载中…',
+    active: '当前启用',
+    group_status: '适配器状态：{status}',
+    terms: '数据集条款和署名',
+    datasets: '实例数据集',
+    dataset_error: '实例未能返回数据集分组。请查看下方响应并重试。此实例必须支持适配器的 /datasets 路由。',
+    empty: '未返回已安装的数据集。',
+  },
   provenance: {
     dataset_sources: '数据集来源',
     contributions: '修改及其许可',
@@ -130,6 +157,7 @@ export default {
       database: '数据库',
       operations: '运维',
       api: 'API',
+      migration: '迁移指南',
       sdk: 'SDK',
       data: '数据',
       project: '项目',

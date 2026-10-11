@@ -868,6 +868,16 @@ export default {
     empty_short_translations: 'Short translations with empty description',
   },
   documentation: {
+    endpoint_freedictionaryapi_entries_datasets: 'freedictionaryapi.com · all datasets',
+    desc_freedictionaryapi_entries_datasets:
+      'Returns one group per installed dataset with its terms, status and response in the adapter format. Does not change the active dataset. The outer response is HTTP 200 even when no dataset contains the word.',
+    endpoint_dictionaryapi_v1_datasets: 'dictionaryapi.dev v1 · all datasets',
+    desc_dictionaryapi_v1_datasets:
+      'Returns one group per installed dataset with its terms, status and response in the adapter format. Does not change the active dataset. The outer response is HTTP 200 even when no dataset contains the word.',
+    endpoint_dictionaryapi_v2_datasets: 'dictionaryapi.dev v2 · all datasets',
+    desc_dictionaryapi_v2_datasets:
+      'Returns one group per installed dataset with its terms, status and response in the adapter format. Does not change the active dataset. The outer response is HTTP 200 even when no dataset contains the word.',
+
     endpoint_freedictionaryapi_entries: 'freedictionaryapi.com lookup',
     desc_freedictionaryapi_entries:
       'Exact, case-sensitive English lookup in the active dataset (language: en or all). Returns word, entries and source; full terms in vocabBloom. Missing words return empty entries.',

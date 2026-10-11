@@ -877,6 +877,16 @@ export default {
     empty_short_translations: 'Traduções curtas com descrição vazia',
   },
   documentation: {
+    endpoint_freedictionaryapi_entries_datasets: 'freedictionaryapi.com · todos os conjuntos de dados',
+    desc_freedictionaryapi_entries_datasets:
+      'Retorna um grupo por conjunto instalado com seus termos, status e resposta no formato do adaptador. Não altera o conjunto ativo. O status HTTP geral é 200 mesmo sem resultados.',
+    endpoint_dictionaryapi_v1_datasets: 'dictionaryapi.dev v1 · todos os conjuntos de dados',
+    desc_dictionaryapi_v1_datasets:
+      'Retorna um grupo por conjunto instalado com seus termos, status e resposta no formato do adaptador. Não altera o conjunto ativo. O status HTTP geral é 200 mesmo sem resultados.',
+    endpoint_dictionaryapi_v2_datasets: 'dictionaryapi.dev v2 · todos os conjuntos de dados',
+    desc_dictionaryapi_v2_datasets:
+      'Retorna um grupo por conjunto instalado com seus termos, status e resposta no formato do adaptador. Não altera o conjunto ativo. O status HTTP geral é 200 mesmo sem resultados.',
+
     endpoint_freedictionaryapi_entries: 'Busca freedictionaryapi.com',
     desc_freedictionaryapi_entries:
       'Busca inglesa exata, sensível a maiúsculas, no conjunto ativo (language: en ou all). Retorna word, entries e source; termos completos em vocabBloom. Palavras desconhecidas retornam entries vazio.',

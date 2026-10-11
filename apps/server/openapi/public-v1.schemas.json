@@ -2341,23 +2341,203 @@
       "statusCode"
     ]
   },
-  "DictionaryApiErrorT": {
+  "DictionaryApiV1DatasetsResT": {
     "type": "object",
     "properties": {
-      "title": {
-        "type": "string"
+      "data": {
+        "type": "array",
+        "items": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "number",
+                  "enum": [
+                    200
+                  ]
+                },
+                "response": {
+                  "$ref": "#/components/schemas/DictionaryApiV1ResT"
+                },
+                "origins": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OriginT"
+                  }
+                },
+                "licenses": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WordLicenseT"
+                  }
+                },
+                "description": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "dataset": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "active": {
+                  "type": "boolean"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "dataset_version": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "license": {
+                  "type": "string"
+                },
+                "license_url": {
+                  "type": "string"
+                },
+                "attribution": {
+                  "type": "string"
+                },
+                "attribution_url": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "notice": {
+                  "type": "string"
+                },
+                "license_text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "active",
+                "attribution",
+                "attribution_url",
+                "dataset",
+                "dataset_version",
+                "license",
+                "license_text",
+                "license_url",
+                "notice",
+                "response",
+                "source",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "number",
+                  "enum": [
+                    404
+                  ]
+                },
+                "response": {
+                  "$ref": "#/components/schemas/DictionaryApiErrorT"
+                },
+                "origins": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OriginT"
+                  }
+                },
+                "licenses": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WordLicenseT"
+                  }
+                },
+                "description": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "dataset": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "active": {
+                  "type": "boolean"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "dataset_version": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "license": {
+                  "type": "string"
+                },
+                "license_url": {
+                  "type": "string"
+                },
+                "attribution": {
+                  "type": "string"
+                },
+                "attribution_url": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "notice": {
+                  "type": "string"
+                },
+                "license_text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "active",
+                "attribution",
+                "attribution_url",
+                "dataset",
+                "dataset_version",
+                "license",
+                "license_text",
+                "license_url",
+                "notice",
+                "response",
+                "source",
+                "status"
+              ]
+            }
+          ],
+          "description": "Each response is scoped to the dataset whose terms surround it; entries are never merged."
+        }
       },
-      "message": {
-        "type": "string"
-      },
-      "resolution": {
-        "type": "string"
+      "meta": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string"
+          },
+          "word": {
+            "type": "string"
+          },
+          "datasets": {
+            "type": "integer"
+          },
+          "found": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "datasets",
+          "found",
+          "language",
+          "word"
+        ],
+        "description": "found counts datasets with entries, including for adapters whose misses are HTTP 200."
       }
     },
     "required": [
-      "title",
-      "message",
-      "resolution"
+      "data",
+      "meta"
     ]
   },
   "DictionaryApiV1ResT": {
@@ -2532,6 +2712,224 @@
       "url"
     ]
   },
+  "DictionaryApiErrorT": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "message": {
+        "type": "string"
+      },
+      "resolution": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "title",
+      "message",
+      "resolution"
+    ]
+  },
+  "DictionaryApiV2DatasetsResT": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "array",
+        "items": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "number",
+                  "enum": [
+                    200
+                  ]
+                },
+                "response": {
+                  "$ref": "#/components/schemas/DictionaryApiV2ResT"
+                },
+                "origins": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OriginT"
+                  }
+                },
+                "licenses": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WordLicenseT"
+                  }
+                },
+                "description": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "dataset": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "active": {
+                  "type": "boolean"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "dataset_version": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "license": {
+                  "type": "string"
+                },
+                "license_url": {
+                  "type": "string"
+                },
+                "attribution": {
+                  "type": "string"
+                },
+                "attribution_url": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "notice": {
+                  "type": "string"
+                },
+                "license_text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "active",
+                "attribution",
+                "attribution_url",
+                "dataset",
+                "dataset_version",
+                "license",
+                "license_text",
+                "license_url",
+                "notice",
+                "response",
+                "source",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "number",
+                  "enum": [
+                    404
+                  ]
+                },
+                "response": {
+                  "$ref": "#/components/schemas/DictionaryApiErrorT"
+                },
+                "origins": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OriginT"
+                  }
+                },
+                "licenses": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WordLicenseT"
+                  }
+                },
+                "description": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "dataset": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "active": {
+                  "type": "boolean"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "dataset_version": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "license": {
+                  "type": "string"
+                },
+                "license_url": {
+                  "type": "string"
+                },
+                "attribution": {
+                  "type": "string"
+                },
+                "attribution_url": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "notice": {
+                  "type": "string"
+                },
+                "license_text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "active",
+                "attribution",
+                "attribution_url",
+                "dataset",
+                "dataset_version",
+                "license",
+                "license_text",
+                "license_url",
+                "notice",
+                "response",
+                "source",
+                "status"
+              ]
+            }
+          ],
+          "description": "Each response is scoped to the dataset whose terms surround it; entries are never merged."
+        }
+      },
+      "meta": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string"
+          },
+          "word": {
+            "type": "string"
+          },
+          "datasets": {
+            "type": "integer"
+          },
+          "found": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "datasets",
+          "found",
+          "language",
+          "word"
+        ],
+        "description": "found counts datasets with entries, including for adapters whose misses are HTTP 200."
+      }
+    },
+    "required": [
+      "data",
+      "meta"
+    ]
+  },
   "DictionaryApiV2ResT": {
     "type": "array",
     "items": {
@@ -2650,6 +3048,121 @@
       "antonyms"
     ]
   },
+  "FreeDictionaryDatasetsResT": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "number",
+              "enum": [
+                200
+              ]
+            },
+            "response": {
+              "$ref": "#/components/schemas/FreeDictionaryEntriesResT"
+            },
+            "origins": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/OriginT"
+              }
+            },
+            "licenses": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/WordLicenseT"
+              }
+            },
+            "description": {
+              "type": "string",
+              "nullable": true
+            },
+            "dataset": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "active": {
+              "type": "boolean"
+            },
+            "source": {
+              "type": "string"
+            },
+            "dataset_version": {
+              "type": "string",
+              "nullable": true
+            },
+            "license": {
+              "type": "string"
+            },
+            "license_url": {
+              "type": "string"
+            },
+            "attribution": {
+              "type": "string"
+            },
+            "attribution_url": {
+              "type": "string",
+              "nullable": true
+            },
+            "notice": {
+              "type": "string"
+            },
+            "license_text": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "active",
+            "attribution",
+            "attribution_url",
+            "dataset",
+            "dataset_version",
+            "license",
+            "license_text",
+            "license_url",
+            "notice",
+            "response",
+            "source",
+            "status"
+          ]
+        }
+      },
+      "meta": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string"
+          },
+          "word": {
+            "type": "string"
+          },
+          "datasets": {
+            "type": "integer"
+          },
+          "found": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "datasets",
+          "found",
+          "language",
+          "word"
+        ],
+        "description": "found counts datasets with entries, including for adapters whose misses are HTTP 200."
+      }
+    },
+    "required": [
+      "data",
+      "meta"
+    ]
+  },
   "FreeDictionaryEntriesResT": {
     "type": "object",
     "properties": {
@@ -2679,7 +3192,7 @@
       },
       "vocabBloom": {
         "$ref": "#/components/schemas/PublicDatasetTermsV1T",
-        "description": "Active dataset terms. Word-specific origins are retained on each entry."
+        "description": "Terms of the dataset read. Word-specific origins are retained on each entry."
       }
     },
     "required": [

@@ -16,7 +16,8 @@
     "dev": "dotenv -e \"${ENV_FILE:-../../.env}\" -- next dev -p \"${SITE_PORT:-3020}\"",
     "build": "NODE_ENV=production dotenv -e \"${ENV_FILE:-../../.env}\" -- next build",
     "start": "dotenv -e \"${ENV_FILE:-../../.env}\" -- next start -p \"${SITE_PORT:-3020}\"",
-    "test": "jest"
+    "test": "jest",
+    "comparisons:generate": "node --experimental-strip-types scripts/generate-comparisons.mjs"
   },
   "dependencies": {
     "hast-util-to-string": "^3.0.1",

@@ -1,0 +1,1004 @@
+{
+  "status": 200,
+  "body": {
+    "word": "bright",
+    "entries": [
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "adjective",
+        "pronunciations": [
+          { "type": "ipa", "text": "/ˈbɹaɪ̯t/", "tags": ["General American", "Received Pronunciation"] },
+          { "type": "ipa", "text": "/ˈbɹɐɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹʌɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹɜɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹəɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹɑ̟ɪ̯t/", "tags": ["General Australian"] },
+          { "type": "ipa", "text": "/ˈbɹɒ̈ɪ̯t/", "tags": ["General Australian"] },
+          { "type": "ipa", "text": "/ˈbɹɑ̟e̝t/", "tags": ["New Zealand"] },
+          { "type": "ipa", "text": "/ˈbɹɒ̈e̝t/", "tags": ["New Zealand"] },
+          { "type": "ipa", "text": "/ˈbɹaːt/", "tags": [] }
+        ],
+        "forms": [
+          { "word": "brighter", "tags": ["comparative"] },
+          { "word": "brightest", "tags": ["superlative"] }
+        ],
+        "senses": [
+          {
+            "definition": "Emitting much light; visually dazzling; luminous, lucent, radiant.",
+            "tags": [],
+            "examples": ["The sky was remarkably bright and blue on that beautiful summer day."],
+            "quotes": [
+              {
+                "text": "Where the bright Seraphim in burning row / Their loud up-lifted Angel trumpets blow; / And the Cherubick hoſt in thouſand quires / Touch their immortal Harps of golden wires, […]",
+                "reference": "1646 (indicated as 1645), John Milton, “At a Solemn Musick”, in Poems of Mr. John Milton, […], London: […] Ruth Raworth for Humphrey Mosely, […], →OCLC, page 22:"
+              },
+              {
+                "text": "Thee Father firſt they ſung Omnipotent, / […] that brighteſt Seraphim / Approach not, but with both their wings veil thir eyes.",
+                "reference": "1667, John Milton, “Book III”, in Paradise Lost. […], London: […] [Samuel Simmons], and are to be sold by Peter Parker […]; [a]nd by Robert Boulter […]; [a]nd Matthias Walker, […], →OCLC; republished as Paradise Lost in Ten Books: […], London: Basil Montagu Pickering […], 1873, →OCLC, lines 372 and 381–382:"
+              },
+              {
+                "text": "There were very few people about, and though the sun was bright, and the air clear and fresh, the big, grim-looking waves, that seemed dark themselves because the foam that topped them was like snow, forced themselves in through the narrow mouth of the harbour—like a bullying man going through a crowd.",
+                "reference": "1897, Bram Stoker, “Cutting from ‘The Dailygraph,’ 8 August (Pasted in Mina Murray’s Journal.)”, in Dracula, New York, N.Y.: Modern Library, →OCLC, chapter VII, page 95:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of light: brilliant, intense.",
+            "tags": [],
+            "examples": ["Could you please dim the light? It’s far too bright."],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of an object, surface, etc.: reflecting much light; having a high lustre; gleaming, shiny.",
+            "tags": [],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [
+              "lustrous",
+              "gleamy",
+              "glisteny",
+              "mirrorlike",
+              "mirrory",
+              "relucent",
+              "shining",
+              "shiny",
+              "splendent",
+              "zazzy"
+            ],
+            "antonyms": ["dull"],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a place: not dark; well-lit.",
+            "tags": [],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "It was said that the Irish whom [Louis de Duras, 2nd Earl of] Feversham had let loose were marching on London and massacring every man, woman, and child on the road. At one in the morning the drums of the militia beat to arms. […] Before two the capital wore a face of stern preparedness which might well have daunted a real enemy, if such an enemy had been approaching. Candles were blazing at all the windows. The public places were as bright as at noonday.",
+                "reference": "1849, Thomas Babington Macaulay, chapter X, in The History of England from the Accession of James II, volume II, London: Longman, Brown, Green, and Longmans, →OCLC, page 564:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of climate or weather: not cloudy or gloomy; fair; also, of a period of time, the sky, etc.: characterized by much sunshine and good weather.",
+            "tags": [],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "[H]e felt the influence of the bright sky, and looked up smiling into its deep unfathomable blue.",
+                "reference": "1841 February–November, Charles Dickens, “Barnaby Rudge. Chapter 77.”, in Master Humphrey’s Clock, volume III, London: Chapman & Hall, […], →OCLC, page 392:"
+              },
+              {
+                "text": "Serene, smiling, enigmatic, she faced him with no fear whatever showing in her dark eyes. The clear light of the bright autumn morning had no terrors for youth and health like hers.",
+                "reference": "1910, Emerson Hough, “A Lady in Company”, in The Purchase Price: Or The Cause of Compromise, Indianapolis, Ind.: The Bobbs-Merrill Company, →OCLC, page 6:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Clearly apparent; conspicuous.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "They gathered soberly in the farthest recess of the ward and gossiped about him in malicious, offended undertones, rebelling against his presence as a ghastly imposition and resenting him malevolently for the nauseating truth of which he was bright reminder.",
+                "reference": "1961 November 10, Joseph Heller, “The Soldier in White”, in Catch-22 […], New York, N.Y.: Simon and Schuster, →OCLC, page 169:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a colour: not muted or pale; bold, brilliant, vivid.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Her step was quick; her eye piercing, and of the brightest blue; […]",
+                "reference": "1838 May, L. M., “The West Fifty Years Since”, in T[homas] W[illis] White, editor, The Southern Literary Messenger: Devoted to Every Department of Literature and the Fine Arts, volume IV, number V, Richmond, Va.: T. W. White, […], →OCLC, chapter II, page 308, column 1:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of an object, surface, etc.: having vivid colour(s); colourful.",
+            "tags": ["figuratively"],
+            "examples": [
+              "The orange and blue walls of the sitting room were much brighter than the dull grey walls of the kitchen."
+            ],
+            "quotes": [
+              {
+                "text": "Here the bright crocus and blue vi'let glow; / Here weſtern winds on breathing roſes blow.",
+                "reference": "a. 1745 (date written), Alexander Pope, “Spring. The First Pastoral, or Damon. […]”, in The Works of Alexander Pope Esq. […], volume I, London: […] J[ohn] and P[aul] Knapton, H. Lintot, J[acob] and R[ichard] Tonson, and S. Draper, published 1751, →OCLC, page 12, lines 31–32:"
+              },
+              {
+                "text": "Sunning himself on the board steps, I saw for the first time Mr. Farquhar Fenelon Cooke. He was dressed out in broad gaiters and bright tweeds, like an English tourist, and his face might have belonged to Dagon, idol of the Philistines.",
+                "reference": "1897 December (indicated as 1898), Winston Churchill, chapter II, in The Celebrity: An Episode, New York, N.Y.: The Macmillan Company; London: Macmillan & Co., Ltd., →OCLC, page 15:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a musical instrument, sound, or a voice: clearly audible; clear, resounding, and often high-pitched.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a room or other place: having acoustic qualities that tend to cause much echoing or reverberation of sound, particularly at high frequencies.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a scent or taste: having an agreeable balance of sweet and sour, often with associations of coolness, freshness, and sometimes aromaticity.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a scent or taste: not bland or mild; bold, sharp, strong.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a substance: clear, transparent; also, pure, unadulterated; (specifically) of wine: free of suspended particles; not cloudy; fine.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "From […] the brighteſt Wines / He'd turn abhorrent.",
+                "reference": "1728, [James] Thomson, Spring: A Poem, London: […] A[ndrew] Millar and G[eorge] Strahan, →OCLC, page 10:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Glorious; illustrious.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "And 'twas the worſt, if not the only ſtain, / I'th' brighteſt Annals of a Female Reign.",
+                "reference": "1681, Charles Cotton, The Wonders of the Peake, London: […] Joanna Brome, […], →OCLC, page 16:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "In good spirits; happy, optimistic.",
+            "tags": ["figuratively"],
+            "examples": ["I woke up today feeling so bright that I decided to have a little dance."],
+            "quotes": [
+              {
+                "text": "Their spirits had risen a little at the discovery of the path, but now they sank into their boots; and yet they would not give it up and go away. The hobbit [Bilbo Baggins] was no longer much brighter than the dwarves. He would do nothing but sit with his back to the rock-face and stare[…].",
+                "reference": "1937 September 21, J[ohn] R[onald] R[euel] Tolkien, “On the Doorstep”, in The Hobbit: Or There and Back Again, revised edition, New York, N.Y.: Ballantine Books, published February 1966 (August 1967 printing), →OCLC, page 199:"
+              }
+            ],
+            "synonyms": [
+              "berserk",
+              "blissed out",
+              "blithe",
+              "buoyant",
+              "blithesome",
+              "bonnie",
+              "bright",
+              "cheerful",
+              "cheerly",
+              "cheery",
+              "chuffed",
+              "cock-a-hoop",
+              "content",
+              "contented",
+              "convivial",
+              "delighted",
+              "ebullient",
+              "ecstatic",
+              "elated",
+              "enthusiastic",
+              "euphoric",
+              "excited",
+              "exhilarated",
+              "exuberant",
+              "exultant",
+              "fat and happy",
+              "gassed",
+              "gay",
+              "gayful",
+              "giddy",
+              "glad",
+              "gladsome",
+              "gleeful",
+              "gleesome",
+              "happy",
+              "hearty",
+              "hyped",
+              "high on life",
+              "jovial",
+              "joyful",
+              "joyous",
+              "merry",
+              "mirthsome",
+              "on cloud nine",
+              "overjoyed",
+              "overjoyous",
+              "over the moon",
+              "pacific",
+              "perky",
+              "placated",
+              "pleased",
+              "satisfied",
+              "stoked",
+              "thrilled",
+              "tickled pink",
+              "triumphant",
+              "vivacious",
+              "wealful",
+              "happy as a clam",
+              "happy as a clam at high water",
+              "happy as a lark",
+              "happy as a pig in mud",
+              "happy as a pig in shit",
+              "happy as a prince",
+              "happy as Larry",
+              "happy as the day is long",
+              "merry as a cricket",
+              "merry as a grig"
+            ],
+            "antonyms": [
+              "atrabiliary",
+              "atrabilious",
+              "blitheless",
+              "dispirited",
+              "blue",
+              "bummed out",
+              "chapfallen",
+              "cheerless",
+              "chopfallen",
+              "crestfallen",
+              "cut up",
+              "damp",
+              "dejected",
+              "depressed",
+              "despondent",
+              "disgruntled",
+              "disconsolate",
+              "disheartened",
+              "dismal",
+              "doleful",
+              "dolesome",
+              "down",
+              "down in the dumps",
+              "down in the mouth",
+              "downcast",
+              "downhearted",
+              "downsome",
+              "dull",
+              "elegiac",
+              "elegious",
+              "forlorn",
+              "gloomy",
+              "glum",
+              "grief-stricken",
+              "grieving",
+              "heavy-hearted",
+              "heartsore",
+              "heartsick",
+              "inconsolable",
+              "infelicitous",
+              "jawfallen",
+              "joyless",
+              "lachrymose",
+              "lamentful",
+              "low",
+              "low-spirited",
+              "lugubrious",
+              "lumpish",
+              "melancholic",
+              "melancholy",
+              "miserable",
+              "moody",
+              "mopey",
+              "morose",
+              "mournful",
+              "passionate",
+              "plaintive",
+              "Plutonian",
+              "Plutonic",
+              "querulous",
+              "ruthful",
+              "sad",
+              "saddened",
+              "saturnine",
+              "shattered",
+              "solemn",
+              "sombre",
+              "sorrowful",
+              "sorrow-ridden",
+              "sorrowsome",
+              "spiritless",
+              "sullen",
+              "threnetic",
+              "threnetical",
+              "triste",
+              "tristful",
+              "uncheerful",
+              "uncheery",
+              "unconsolable",
+              "unhappy",
+              "unlively",
+              "wistful",
+              "woe",
+              "woebegone",
+              "woeful",
+              "wretched"
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "Of the face or eyes, or a smile: showing happiness or hopefulness; cheerful, lively.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Bright eyes / Burning like fire / Bright eyes / How can you close and fail? / How can the light that burned so brightly / Suddenly burn so pale? / Bright eyes",
+                "reference": "1978 October 19, Mike Batt, “Bright Eyes”, in Fate for Breakfast, performed by Art Garfunkel, published 19 January 1979:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a person: lively, vivacious.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Come on: / Gentle my Lord, ſleeke o're your rugged Lookes, / Be bright and Iouiall among your Gueſts to Night.",
+                "reference": "c. 1606 (date written), William Shakespeare, “The Tragedie of Macbeth”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act III, scene ii], page 140, column 2:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a period of history or time: happy, prosperous, successful.",
+            "tags": ["figuratively"],
+            "examples": ["She has a bright future ahead."],
+            "quotes": [
+              {
+                "text": "Things are going great, and they're only getting better / I'm doing all right, getting good grades / The future's so bright, I gotta wear shades",
+                "reference": "1986, Pat MacDonald, “The Future’s So Bright, I Gotta Wear Shades”, in Greetings from Timbuk3, performed by Timbuk3:"
+              },
+              {
+                "text": "It's been raining the whole summer / The brightest days are few and far between",
+                "reference": "2023, Ryland Heagy, “The Brightest Days”, in The Brightest Days, performed by Origami Angel:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of an opportunity or outlook: having a reasonable chance of success; favourable, good.",
+            "tags": ["figuratively"],
+            "examples": ["If he trains hard, his chances of winning the competition are bright."],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of conversation, writing, etc.: imaginative or sparkling with wit; clever, witty.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Having a clear, quick intellect; intelligent.",
+            "tags": ["figuratively"],
+            "examples": ["She’s very bright. She was able to solve the problem without my help."],
+            "quotes": [
+              {
+                "text": "―Ah, God, Corley replied, sure I couldn't teach in a school, man. I was never one of your bright ones, he added with a half laugh, Got stuck twice in the junior at the Christian Brothers.",
+                "reference": "1922 February, James Joyce, “[Episode 16: Eumaeus]”, in Ulysses, Paris: Shakespeare and Company, […], →OCLC, part III [Nostos], page 573:"
+              },
+              {
+                "text": "Think of banking today and the image is of grey-suited men in towering skyscrapers. Its future, however, is being shaped in converted warehouses and funky offices in San Francisco, New York and London, where bright young things in jeans and T-shirts huddle around laptops, sipping lattes or munching on free food.",
+                "reference": "2013 August 3, “Revenge of the nerds: An explosion of start-ups is changing finance for the better”, in The Economist, volume 408, number 8847, London: Economist Group, →ISSN, →OCLC, archived from the original on 03 Aug 2013:"
+              }
+            ],
+            "synonyms": [
+              "astute",
+              "brainy",
+              "bright",
+              "brilliant",
+              "clever",
+              "educated",
+              "genius",
+              "gifted",
+              "ingenious",
+              "intellectual",
+              "intelligent",
+              "keen",
+              "knowledgeable",
+              "piquant",
+              "quick",
+              "quick on the uptake",
+              "quick-witted",
+              "rational",
+              "sagacious",
+              "savvy",
+              "scholared",
+              "sharp",
+              "smart",
+              "talented",
+              "whip-smart",
+              "wise"
+            ],
+            "antonyms": [
+              "addlebrained",
+              "addlepated",
+              "airheaded",
+              "bee-brained",
+              "beef-witted",
+              "beefheaded",
+              "beetle-headed",
+              "birdbrained",
+              "blockheaded",
+              "Boeotian",
+              "boneheaded",
+              "boofheaded",
+              "braindead",
+              "brainless",
+              "bubbleheaded",
+              "buffle-headed",
+              "bullet-headed",
+              "cerebrally challenged",
+              "childish",
+              "chowderheaded",
+              "chuckleheaded",
+              "crackbrained",
+              "cretinous",
+              "daft",
+              "dense",
+              "dented",
+              "dim-bulb",
+              "dim-headed",
+              "dim-witted",
+              "dim",
+              "doltish",
+              "dopey",
+              "dozy",
+              "drowsy",
+              "dull-headed",
+              "dull-minded",
+              "dull-witted",
+              "dull",
+              "dumber than a box of rocks",
+              "dumb",
+              "dunderheaded",
+              "empty-headed",
+              "fatheaded",
+              "feeble-minded",
+              "flea-brained",
+              "foolish",
+              "fuzzy-headed",
+              "fuzzy-minded",
+              "goofy",
+              "half-brained",
+              "half-witted",
+              "hammer-headed",
+              "idiotic",
+              "ignorant",
+              "imbecilic",
+              "inane",
+              "insipid",
+              "intellectually challenged",
+              "knuckleheaded",
+              "lamebrained",
+              "lowbrow",
+              "lumpish",
+              "lunkheaded",
+              "mentally challenged",
+              "mentally retarded",
+              "mindless",
+              "monosynaptic",
+              "moronic",
+              "muttonheaded",
+              "nitwitted",
+              "numbskulled",
+              "oafish",
+              "obtuse",
+              "peabrained",
+              "pratty",
+              "pudding-headed",
+              "puerile",
+              "purblind",
+              "quarter-witted",
+              "retarded",
+              "ridiculous",
+              "rockheaded",
+              "sharp as a bowling ball",
+              "sheep-headed",
+              "silly",
+              "simple",
+              "slow",
+              "slow on the uptake",
+              "slow-witted",
+              "smooth-brained",
+              "stolid",
+              "stupid",
+              "thick-skulled",
+              "thickheaded",
+              "thickwitted",
+              "thick",
+              "unapprehensive",
+              "unclever",
+              "uninformed",
+              "unintelligent",
+              "unsmart",
+              "vacant",
+              "vacuous",
+              "witless",
+              "wooden-headed",
+              "wool-headed",
+              "woolly-headed",
+              "woolly-minded",
+              "dumb as a bag of hammers",
+              "dumb as a box of rocks",
+              "dumb as a doorknob",
+              "dumb as an ox",
+              "dumb as a post",
+              "dumb as a sack of hammers",
+              "dumb as dirt",
+              "dumber than a rock",
+              "not the sharpest crayon in the box",
+              "not the sharpest knife in the drawer",
+              "not the sharpest tool in the shed",
+              "thick as a brick",
+              "thick as a plank",
+              "thick as champ",
+              "thick as mince",
+              "thick as two short planks",
+              "thick as a whale omelette",
+              "ass-brained",
+              "fuckwitted",
+              "shit-for-brains",
+              "thick as pig shit"
+            ],
+            "subsenses": []
+          },
+          {
+            "definition": "Of the eyes: able to see clearly; of eyesight: keen, sharp.",
+            "tags": ["archaic", "figuratively"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Manifest to the mind as light is to the eyes; clear, evident, plain.",
+            "tags": ["archaic", "figuratively"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "[T]he Queriſt muſt not proceed too ſwiftly towards the Determination of his Point propos'd, that he may with more Eaſe, with brighter Evidence, and with ſurer Succeſs draw the Learner on to aſſent to thoſe Principles ſtep by ſtep, from whence the final Concluſion will naturally ariſe.",
+                "reference": "1741, I[saac] Watts, “The Socratical Way of Disputation”, in The Improvement of the Mind: Or, A Supplement to the Art of Logick: […], London: […] James Brackstone, […], →OCLC, paragraph V, page 172:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a rhythm or tempo: lively, upbeat.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Of a note: slightly sharp.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(metallurgy) Of a metal object or surface: lacking any protective coating or surface treatment for the prevention of corrosion.",
+            "tags": [],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [],
+        "antonyms": []
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "noun",
+        "pronunciations": [
+          { "type": "ipa", "text": "/ˈbɹaɪ̯t/", "tags": ["General American", "Received Pronunciation"] },
+          { "type": "ipa", "text": "/ˈbɹɐɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹʌɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹɜɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹəɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹɑ̟ɪ̯t/", "tags": ["General Australian"] },
+          { "type": "ipa", "text": "/ˈbɹɒ̈ɪ̯t/", "tags": ["General Australian"] },
+          { "type": "ipa", "text": "/ˈbɹɑ̟e̝t/", "tags": ["New Zealand"] },
+          { "type": "ipa", "text": "/ˈbɹɒ̈e̝t/", "tags": ["New Zealand"] },
+          { "type": "ipa", "text": "/ˈbɹaːt/", "tags": [] }
+        ],
+        "forms": [{ "word": "brights", "tags": ["plural"] }],
+        "senses": [
+          {
+            "definition": "Brightness, glow.",
+            "tags": ["archaic", "literary"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Thee Father firſt they ſung Omnipotent, / […] when thou ſhad'ſt / The full blaze of thy beams, and through a cloud / Drawn round about thee like a radiant Shrine, / Dark with exceſſive bright thy ſkirts appeer, / Yet dazle Heav'n, […]",
+                "reference": "1667, John Milton, “Book III”, in Paradise Lost. […], London: […] [Samuel Simmons], and are to be sold by Peter Parker […]; [a]nd by Robert Boulter […]; [a]nd Matthias Walker, […], →OCLC; republished as Paradise Lost in Ten Books: […], London: Basil Montagu Pickering […], 1873, →OCLC, lines 372 and 377–381:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Glory, splendour.",
+            "tags": ["archaic", "figuratively", "literary"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(chiefly in the plural) Something (especially a product intended for sale) that has vivid colours or a lustrous appearance.",
+            "tags": ["in plural"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "A person with a naturalistic worldview with no mystical or supernatural elements.",
+            "tags": [],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Brights constitute 60% of American scientists, and a stunning 93% of those scientists good enough to be elected to the elite National Academy of Sciences (equivalent to Fellows of the Royal Society) are brights.",
+                "reference": "2003 June 20, Richard Dawkins, “The future looks bright”, in Alan Rusbridger, editor, The Guardian, London: Guardian News & Media, →ISSN, →OCLC, archived from the original on 22 Mar 2021:"
+              },
+              {
+                "text": "Many of us brights have devoted considerable time and energy at some point in our lives to looking at the arguments for and against the existence of God, and many brights continue to pursue these issues, hacking away vigorously at the arguments of believers as if they were trying to refute a rival scientific theory. But not I.",
+                "reference": "2006, Daniel C[lement] Dennett, “Breaking Which Spell?”, in Breaking the Spell: Religion as a Natural Phenomenon, New York, N.Y.: Viking, →ISBN, part I (Opening Pandora’s Box), section 5 (Religion as a Natural Phenomenon), page 27:"
+              },
+              {
+                "text": "[Richard] Dawkins has received appreciative letters from people who were formerly what he derisively calls \"faith-heads\" who have abandoned their delusions and come over to the side of the brights, the pleasant green pastures where clear-eyed, brave, bold, and supremely brainy atheists graze contentedly.",
+                "reference": "2008 April, David Aikman, “The Attack of the Four Horsemen”, in The Delusion of Disbelief: Why the New Atheism is a Threat to Your Life, Liberty, and Pursuit of Happiness, Carol Stream, Ill.: SaltRiver, Tyndale House Publishers, →ISBN, page 28:"
+              }
+            ],
+            "synonyms": ["humanist", "nonsupernaturalist"],
+            "antonyms": ["super", "supernaturalist"],
+            "subsenses": []
+          },
+          {
+            "definition": "(painting) An artist's brush used in acrylic and oil painting with a long ferrule and a flat, somewhat tapering bristle head.",
+            "tags": [],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [],
+        "antonyms": []
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "adverb",
+        "pronunciations": [
+          { "type": "ipa", "text": "/ˈbɹaɪ̯t/", "tags": ["General American", "Received Pronunciation"] },
+          { "type": "ipa", "text": "/ˈbɹɐɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹʌɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹɜɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹəɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹɑ̟ɪ̯t/", "tags": ["General Australian"] },
+          { "type": "ipa", "text": "/ˈbɹɒ̈ɪ̯t/", "tags": ["General Australian"] },
+          { "type": "ipa", "text": "/ˈbɹɑ̟e̝t/", "tags": ["New Zealand"] },
+          { "type": "ipa", "text": "/ˈbɹɒ̈e̝t/", "tags": ["New Zealand"] },
+          { "type": "ipa", "text": "/ˈbɹaːt/", "tags": [] }
+        ],
+        "forms": [
+          { "word": "more bright", "tags": ["comparative"] },
+          { "word": "most bright", "tags": ["superlative"] }
+        ],
+        "senses": [
+          {
+            "definition": "(often literary) In a bright manner; brightly, glowingly, luminously, lustrously.",
+            "tags": ["literary", "often"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Referring to colour: with bold or vivid colours; brightly, boldly, vividly.",
+            "tags": ["figuratively"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Referring to sight, sound, understanding, etc.: clearly, distinctly; brightly.",
+            "tags": ["archaic", "figuratively"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [],
+        "antonyms": []
+      },
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "verb",
+        "pronunciations": [
+          { "type": "ipa", "text": "/ˈbɹaɪ̯t/", "tags": ["General American", "Received Pronunciation"] },
+          { "type": "ipa", "text": "/ˈbɹɐɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹʌɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹɜɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹəɪ̯t/", "tags": [] },
+          { "type": "ipa", "text": "/ˈbɹɑ̟ɪ̯t/", "tags": ["General Australian"] },
+          { "type": "ipa", "text": "/ˈbɹɒ̈ɪ̯t/", "tags": ["General Australian"] },
+          { "type": "ipa", "text": "/ˈbɹɑ̟e̝t/", "tags": ["New Zealand"] },
+          { "type": "ipa", "text": "/ˈbɹɒ̈e̝t/", "tags": ["New Zealand"] },
+          { "type": "ipa", "text": "/ˈbɹaːt/", "tags": [] }
+        ],
+        "forms": [
+          { "word": "brights", "tags": ["present", "singular", "third-person"] },
+          { "word": "brighting", "tags": ["participle", "present"] },
+          { "word": "brighted", "tags": ["participle", "past"] },
+          { "word": "brighted", "tags": ["past"] },
+          { "word": "no-table-tags", "tags": ["table-tags"] },
+          { "word": "glossary", "tags": ["inflection-template"] },
+          { "word": "bright", "tags": ["infinitive"] },
+          { "word": "bright", "tags": ["first-person", "present", "singular"] },
+          { "word": "brighted", "tags": ["first-person", "past", "singular"] },
+          { "word": "bright", "tags": ["present", "second-person", "singular"] },
+          { "word": "brightest", "tags": ["archaic", "present", "second-person", "singular"] },
+          { "word": "brighted", "tags": ["past", "second-person", "singular"] },
+          { "word": "brightedst", "tags": ["archaic", "past", "second-person", "singular"] },
+          { "word": "brights", "tags": ["present", "singular", "third-person"] },
+          { "word": "brighteth", "tags": ["archaic", "present", "singular", "third-person"] },
+          { "word": "brighted", "tags": ["past", "singular", "third-person"] },
+          { "word": "bright", "tags": ["plural", "present"] },
+          { "word": "brighted", "tags": ["past", "plural"] },
+          { "word": "bright", "tags": ["present", "subjunctive"] },
+          { "word": "brighted", "tags": ["past", "subjunctive"] },
+          { "word": "bright", "tags": ["imperative", "present"] },
+          { "word": "-", "tags": ["imperative", "past"] },
+          { "word": "brighting", "tags": ["participle", "present"] },
+          { "word": "brighted", "tags": ["participle", "past"] }
+        ],
+        "senses": [
+          {
+            "definition": "(transitive) Often followed by up: to cast light on (someone or something); to brighten, to illuminate.",
+            "tags": ["British", "dialectal", "transitive"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [
+              "enlighten",
+              "light",
+              "alight",
+              "belight",
+              "beshine",
+              "bright",
+              "enlighten",
+              "fire",
+              "illume",
+              "illuminate",
+              "illumine",
+              "illustrate",
+              "irradiate",
+              "light",
+              "lighten",
+              "light up",
+              "luster",
+              "lustrate",
+              "shed light on"
+            ],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(transitive, figuratively) Often followed by up: to cause (someone or something) to be bright (in various senses); to brighten; specifically, to make (someone or something) energetic, or happy and optimistic.",
+            "tags": ["British", "dialectal", "figuratively", "transitive"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Toward Mid-day he [the Sun] brighteth the Air into a chearful Saphir, and guildeth the Borders of the very Clouds with a coſtly limbus.",
+                "reference": "1686, J[ohn] Goad, “The Sun, the Great Light, Justly Admired. […]”, in Astro-meteorologica, or, Aphorisms and Large Significant Discourses of the Natures and Influences of the Cœlestial Bodies; […], 2nd edition, London: […] O[badiah] B[lagrave] and sold by John Sprint, […], published 1699, →OCLC, book I, § 2, page 14:"
+              }
+            ],
+            "synonyms": [
+              "embrighten",
+              "enliven",
+              "delight",
+              "gladden",
+              "please",
+              "animate",
+              "arouse",
+              "awaken",
+              "beghast",
+              "leaven",
+              "bright",
+              "brighten",
+              "cheer",
+              "energize",
+              "enliven",
+              "enthuse",
+              "exalt",
+              "excite",
+              "fire up",
+              "ginger",
+              "ginger up",
+              "inflame",
+              "invigorate",
+              "inspire",
+              "inspirit",
+              "jazz",
+              "kindle",
+              "liven",
+              "liven up",
+              "perk up",
+              "quicken",
+              "spice",
+              "spice up",
+              "stimulate",
+              "vitalise",
+              "beatify",
+              "enrapture",
+              "begladden",
+              "blissen",
+              "bright",
+              "cheer",
+              "fetch",
+              "cheer up",
+              "cherish",
+              "content",
+              "delight",
+              "elate",
+              "elevate",
+              "enbliss",
+              "exhilarate",
+              "fain",
+              "gay",
+              "gladden",
+              "gladden someone's heart",
+              "gratify",
+              "happify",
+              "happy",
+              "hearten",
+              "jollify",
+              "laetificate",
+              "light up",
+              "make someone's day",
+              "perk up",
+              "please",
+              "raise someone's spirits",
+              "rejoice",
+              "turn the frown upside down",
+              "upcheer",
+              "warm someone's heart",
+              "warm the cockles of someone's heart"
+            ],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(intransitive, also figuratively) Often followed by up: to become bright (in various senses); to brighten.",
+            "tags": ["British", "also", "dialectal", "figuratively", "intransitive"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "Day brighteth at the smile o' her and yea, He hath aplanted full o' seed for harvesting by thy loving.",
+                "reference": "1915, Keith Ringkamp, editor, The Patience Worth Record, volume I, [Morrisville, N.C.]: Lulu.com, published 2008, →ISBN, page 238:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [],
+        "antonyms": []
+      }
+    ],
+    "source": {
+      "url": "https://en.wiktionary.org/wiki/bright",
+      "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" }
+    }
+  },
+  "source": "https://freedictionaryapi.com/api/v1/entries/en/bright?translations=false",
+  "fetchedAt": "2026-10-10T22:01:54.438Z",
+  "attemptedAt": "2026-10-10T22:01:54.271Z",
+  "stale": false,
+  "unavailable": false
+}

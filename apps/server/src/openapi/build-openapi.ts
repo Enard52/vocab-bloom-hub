@@ -179,6 +179,7 @@ export const buildPublicDocument = (
         '{ statusCode, message, error: true }, X-API-Version on every response. ' +
         'The /api/compat/freedictionaryapi/v1 routes use freedictionaryapi.com objects, language lists and plain-text errors. ' +
         'The /api/compat/dictionaryapi routes use dictionaryapi.dev v1/v2 arrays and errors, with additive vocabBloom provenance. ' +
+        'Compatibility lookups ending in /datasets wrap the responses from all installed datasets in { data, meta }; each group has dataset terms, status and response. ' +
         'Successful GET answers carry ETag, Last-Modified and Cache-Control. ' +
         `Documentation: ${projectWebsitePage('en', '/docs/api')}.`,
     )

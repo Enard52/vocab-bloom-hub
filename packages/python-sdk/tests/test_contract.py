@@ -48,6 +48,9 @@ def test_every_operation_has_a_method() -> None:
         for op in item.values()
     )
     assert compatibility == [
+        "CompatibilityDatasetsController_dictionaryApiV1",
+        "CompatibilityDatasetsController_dictionaryApiV2",
+        "CompatibilityDatasetsController_freeDictionaryApi",
         "DictionaryApiController_v1",
         "DictionaryApiController_v2",
         "FreeDictionaryApiController_entries",

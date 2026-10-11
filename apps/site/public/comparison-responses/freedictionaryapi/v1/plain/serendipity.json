@@ -1,0 +1,81 @@
+{
+  "status": 200,
+  "body": {
+    "word": "serendipity",
+    "entries": [
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "noun",
+        "pronunciations": [
+          { "type": "ipa", "text": "/ˌsɛɹ.ənˈdɪp.ɪ.ti/", "tags": [] },
+          { "type": "ipa", "text": "/ˌsɛɹ.ɛnˈdɪp.ɪ.ti/", "tags": [] }
+        ],
+        "forms": [{ "word": "serendipities", "tags": ["plural"] }],
+        "senses": [
+          {
+            "definition": "The phenomenon of making an unplanned, fortunate discovery through a combination of unexpected circumstances and insightful recognition.",
+            "tags": ["countable", "uncountable"],
+            "examples": [
+              "The most random serendipity brought the two of us together, and now, we are happily married! If I was just 15 seconds slower, I'd have never met her!\nThis discovery, indeed, is almost of that kind which I call Serendipity, a very expressive word, which, as I have nothing better to tell you, I shall endeavour to explain to you: you will understand it better by the derivation than by the definition. I once read a silly fairy tale, called \"The Three Princes of Serendip;\" as their Highnesses travelled, they were always making discoveries, by accidents and sagacity, of things which they were not in quest of: for instance, one of them discovered that a mule blind of the right eye had travelled the same road lately, because the grass was eaten only on the left side, where it was worse than on the right – now do you understand Serendipity? One of the most remarkable instances of this accidental Sagacity, (for you must observe that no discovery of a thing you are looking for comes under this description,) was of my Lord Shaftsbury, who, happening to dine at Lord Chancellor Clarendon's, found out the marriage of the Duke of York and Mrs. Hyde, by the respect with which her mother treated her at table."
+            ],
+            "quotes": [
+              {
+                "text": "After I got here, in the first lockdown, my mum suddenly passed. It was the week of my final interview with the Mayor. It is serendipity that I am here when my dad really needs me.",
+                "reference": "2020 December 2, Andy Byford talks to Paul Clifton, “I enjoy really big challenges...”, in Rail, page 54:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": ["Murphy's law", "perfect storm"],
+            "subsenses": []
+          },
+          {
+            "definition": "An unsought, unintended or unexpected, but fortunate, discovery or learning experience that occurs by accident.",
+            "tags": ["countable", "uncountable"],
+            "examples": [
+              "2007, Erin McKean, speech at TED\nSerendipity is when you find things you weren't looking for because finding what you are looking for is so damn difficult."
+            ],
+            "quotes": [],
+            "synonyms": [
+              "chance",
+              "luck",
+              "adventure",
+              "accident",
+              "casualty",
+              "chance",
+              "chance-medley",
+              "fortune",
+              "hap",
+              "hazard",
+              "joss",
+              "luck",
+              "serendipity",
+              "weird"
+            ],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "The occurrence and development of events by chance in a happy or beneficial way.",
+            "tags": ["countable", "uncountable"],
+            "examples": [],
+            "quotes": [],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": [],
+        "antonyms": []
+      }
+    ],
+    "source": {
+      "url": "https://en.wiktionary.org/wiki/serendipity",
+      "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" }
+    }
+  },
+  "source": "https://freedictionaryapi.com/api/v1/entries/en/serendipity?translations=false",
+  "fetchedAt": "2026-10-10T22:01:54.872Z",
+  "attemptedAt": "2026-10-10T22:01:54.608Z",
+  "stale": false,
+  "unavailable": false
+}

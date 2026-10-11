@@ -870,6 +870,16 @@ export default {
     empty_short_translations: 'Короткие переводы с пустым описанием',
   },
   documentation: {
+    endpoint_freedictionaryapi_entries_datasets: 'freedictionaryapi.com · все датасеты',
+    desc_freedictionaryapi_entries_datasets:
+      'Возвращает группу для каждого установленного датасета с его условиями, статусом и ответом в формате адаптера. Не меняет активный датасет. Общий HTTP-статус — 200, даже если слово нигде не найдено.',
+    endpoint_dictionaryapi_v1_datasets: 'dictionaryapi.dev v1 · все датасеты',
+    desc_dictionaryapi_v1_datasets:
+      'Возвращает группу для каждого установленного датасета с его условиями, статусом и ответом в формате адаптера. Не меняет активный датасет. Общий HTTP-статус — 200, даже если слово нигде не найдено.',
+    endpoint_dictionaryapi_v2_datasets: 'dictionaryapi.dev v2 · все датасеты',
+    desc_dictionaryapi_v2_datasets:
+      'Возвращает группу для каждого установленного датасета с его условиями, статусом и ответом в формате адаптера. Не меняет активный датасет. Общий HTTP-статус — 200, даже если слово нигде не найдено.',
+
     endpoint_freedictionaryapi_entries: 'Поиск freedictionaryapi.com',
     desc_freedictionaryapi_entries:
       'Точный поиск английского написания с учётом регистра в активном датасете (language: en или all). Ответ: word, entries и source; полные условия — в vocabBloom. Для неизвестного слова entries пуст.',

@@ -1,0 +1,133 @@
+{
+  "status": 200,
+  "body": {
+    "word": "freedom",
+    "entries": [
+      {
+        "language": { "code": "en", "name": "English" },
+        "partOfSpeech": "noun",
+        "pronunciations": [
+          {
+            "type": "ipa",
+            "text": "/ˈfɹiː.dəm/",
+            "tags": ["General Australian", "New Zealand", "Received Pronunciation"]
+          },
+          { "type": "ipa", "text": "/ˈfɹi.dəm/", "tags": ["Canada", "General American"] }
+        ],
+        "forms": [{ "word": "freedoms", "tags": ["plural"] }],
+        "senses": [
+          {
+            "definition": "(uncountable) The state of being free.",
+            "tags": ["uncountable"],
+            "examples": [
+              "Having recently been released from prison, he didn't know what to do with his newfound freedom."
+            ],
+            "quotes": [
+              {
+                "text": "Well Russia at the present time is at a crossroads. It is often said that the Cold War is over and that the West has won it- that's only half true. Because what has happened is that the communists have been defeated, but the ideas of freedom now are on trial. If they don't work, there will be a reversion to, not communism which has failed, but what I call a new despotism which would pose a mortal danger to the rest of the world because it would be infected with the virus of Russian imperialism which of course has been a characteristic of Russian foreign policy for centuries.",
+                "reference": "1992 March 30, Richard Nixon, 13:46 from the start, in Richard Nixon on ‘Inside Washington’, Richard Nixon Foundation, via Seoul Broadcasting System, archived from the original on 09 Oct 2017:"
+              },
+              {
+                "text": "However, the next generation of innovators to benefit from this freedom – Google, Facebook, Amazon, Microsoft, Apple et al – saw no reason to extend it to anyone else.",
+                "reference": "2024 May 4, John Naughton, “The internet is in decline – it needs rewilding”, in The Guardian:"
+              }
+            ],
+            "synonyms": ["freehood"],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "(countable) The lack of a specific constraint, or of constraints in general; a state of being free, unconstrained.",
+            "tags": ["countable"],
+            "examples": [
+              "Freedom of speech is a basic democratic value.",
+              "People in our city enjoy many freedoms.",
+              "Every child has a right to freedom from fear and freedom from want."
+            ],
+            "quotes": [
+              {
+                "text": "The spice exists on only one planet in the entire universe- a desolate, dry planet with vast deserts. Hidden away within the rocks of these deserts are a people known as the Fremen, who have long held a prophecy, that a man would come, a messiah, who would lead them to true freedom. The planet is Arrakis, also known as Dune.",
+                "reference": "1984, 1:50 from the start, in Dune (Science Fiction), spoken by Princess Irulan, →OCLC:"
+              },
+              {
+                "text": "China's experience reminded me of the French and Russian revolutions. The pattern was the same: People seized control by promising to promote certain ideals. Once they had consolidated power, they abused it, casting aside their beliefs and brutalizing their fellow citizens. It was as if mankind had a sickness that it kept inflicting on itself. The sobering thought deepened my conviction that freedom— economic, political, and religious — is the only fair and productive way of governing a society.",
+                "reference": "2010, George W. Bush, Decision Points, →ISBN, →OCLC, →OL, page 23:"
+              },
+              {
+                "text": "The dispatches […] also exposed the blatant discrepancy between the west's professed values and actual foreign policies. Having lectured the Arab world about democracy for years, its collusion in suppressing freedom was undeniable as protesters were met by weaponry and tear gas made in the west, employed by a military trained by westerners.",
+                "reference": "2013 June 7, Gary Younge, “Hypocrisy lies at heart of Manning prosecution”, in The Guardian Weekly, volume 188, number 26, page 18:"
+              },
+              {
+                "text": "“When I lived in North Korea, I never had the freedom to wear what I wanted, but I never questioned it because I didn’t know this freedom existed,” said Jihyun Kang, 31, who grew up in Chongjin, the third-largest city in North Korea.",
+                "reference": "2021 August 4, Hahna Yoon, “Tracing Freedom to a Pair of Jeans”, in The New York Times, →ISSN, →OCLC, archived from the original on 04 Aug 2021:"
+              },
+              {
+                "text": "[Chris] Green asked for the same freedoms he had been given in Scotland, and Reid and Transport Secretary Nicholas Ridley agreed.",
+                "reference": "2026 April 1, Christian Wolmar, “Managers must be given freedom to make decisions”, in RAIL, number 1058, page 35:"
+              }
+            ],
+            "synonyms": ["freeness"],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "The right or privilege of unrestricted use or access",
+            "tags": ["countable", "uncountable"],
+            "examples": [
+              "Freedom of a city",
+              "The freedom of the city can now only be acquired by birth or servitude; but many were formerly admitted by gift and purchase, a fine of from £ 3 to £ 25, according to trade, being charged on the admission of strangers."
+            ],
+            "quotes": [
+              {
+                "text": "Yet the wisest princes, who adopted the maxims of Augustus, guarded with the strictest care the dignity of the Roman name, and diffused the freedom of the city with a prudent liberality.",
+                "reference": "1776, Edward Gibbon, “2i”, in The History of the Decline and Fall of the Roman Empire, volume I, London: […] W[illiam] Strahan; and T[homas] Cadell, […], →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Frankness; openness; unreservedness.",
+            "tags": ["countable", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "I doubt not, that you will take amiss my freedom; but as you have deserved it from me, I shall be less and less concerned on that score, as I see you are more and more intent to show your wit at the expense of justice and compassion.",
+                "reference": "1748, [Samuel Richardson], “Letter L”, in Clarissa. Or, The History of a Young Lady: […], volume (please specify |volume=I to VII), London: […] S[amuel] Richardson; […], →OCLC:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          },
+          {
+            "definition": "Improper familiarity; violation of the rules of decorum.",
+            "tags": ["countable", "uncountable"],
+            "examples": [],
+            "quotes": [
+              {
+                "text": "\"A first love is not easily extinguished, Mr. Allanson,\" said she. \"You may guess from my appearance, that I have been fortunate in life; but, for all that, my first love for you has continued the same, unaltered and unchanged, and you must forgive the little freedoms I used to-day to try your affections, and the effects my appearance would have on you.\"",
+                "reference": "1828, James Hogg, Mary Burnet:"
+              }
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "subsenses": []
+          }
+        ],
+        "synonyms": ["liberty", "license", "exemption"],
+        "antonyms": ["bondage", "constraint", "imprisonment", "slavery", "unfreedom"]
+      }
+    ],
+    "source": {
+      "url": "https://en.wiktionary.org/wiki/freedom",
+      "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" }
+    }
+  },
+  "source": "https://freedictionaryapi.com/api/v1/entries/en/freedom?translations=false",
+  "fetchedAt": "2026-10-10T22:01:54.605Z",
+  "attemptedAt": "2026-10-10T22:01:54.442Z",
+  "stale": false,
+  "unavailable": false
+}

@@ -23,6 +23,8 @@ import { PublicWordDatasetsController } from './public-word-datasets.controller'
 import { PublicWordDatasetsService } from './public-word-datasets.service';
 import { PublicOpenApiController } from './public-openapi.controller';
 import { PublicOpenApiService } from './public-openapi.service';
+import { CompatibilityDatasetsController } from './compatibility-datasets.controller';
+import { CompatibilityDatasetsService } from './compatibility-datasets.service';
 
 /**
  * The public, read-only, versioned surface of the dictionary (`/api/v1`,
@@ -39,6 +41,7 @@ import { PublicOpenApiService } from './public-openapi.service';
     SettingsModule,
   ],
   controllers: [
+    CompatibilityDatasetsController,
     DictionaryApiController,
     FreeDictionaryApiController,
     PublicSearchController,
@@ -51,6 +54,7 @@ import { PublicOpenApiService } from './public-openapi.service';
   ],
   exports: [PublicMetaService],
   providers: [
+    CompatibilityDatasetsService,
     FreeDictionaryApiService,
     FreeDictionaryJsonInterceptor,
     PublicWordsService,

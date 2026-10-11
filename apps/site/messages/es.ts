@@ -1,4 +1,34 @@
 export default {
+  comparison: {
+    snapshot_reconstructed:
+      'Reconstruido a partir de la respuesta v2 guardada mediante la conversión v1 publicada por el servicio. No se obtuvo del endpoint v1.',
+    snapshot_missing: 'La copia falta o no se puede leer. Ejecuta comparisons:generate para descargarla.',
+    snapshot_unavailable: 'No hay una copia válida. Ejecuta comparisons:generate para reintentarlo.',
+    snapshot_stale:
+      'La última actualización manual ha fallado. Se muestra la copia anterior con su fecha original.',
+    snapshot_date: 'Respuesta original obtenida: {date}',
+    version: 'Versión de la API',
+    close: 'Cerrar',
+    title: 'Comparar respuestas',
+    description:
+      'Las respuestas originales son copias guardadas que se actualizan manualmente. La misma palabra inglesa se consulta en todos los conjuntos instalados en esta instancia con el formato de {service}.',
+    word: 'Palabra en inglés',
+    translations: 'Incluir traducciones',
+    provenance: 'Mostrar extensiones vocabBloom',
+    schema_note:
+      'Solo se ocultan las extensiones vocabBloom de forma predeterminada. Los demás campos, valores y el orden se conservan, incluidas las fuentes y licencias. La atribución está en las condiciones del conjunto de datos. Las respuestas originales se actualizan manualmente; visitar, compilar o iniciar el sitio no llama a servicios externos.',
+    results: 'Resultados de «{word}»',
+    dataset_count: 'Conjuntos de datos: {count}',
+    original: 'Servicio original',
+    loading: 'Cargando…',
+    active: 'Activo',
+    group_status: 'Estado del adaptador: {status}',
+    terms: 'Condiciones y atribución del conjunto de datos',
+    datasets: 'Conjuntos de datos de la instancia',
+    dataset_error:
+      'La instancia no pudo devolver los grupos de datos. Revisa la respuesta y vuelve a intentarlo. La instancia debe admitir las rutas /datasets de los adaptadores.',
+    empty: 'No se devolvieron conjuntos de datos instalados.',
+  },
   provenance: {
     dataset_sources: 'Fuentes del conjunto de datos',
     contributions: 'Cambios y sus licencias',
@@ -133,6 +163,7 @@ export default {
       database: 'Base de datos',
       operations: 'Operación',
       api: 'API',
+      migration: 'Guías de migración',
       sdk: 'SDK',
       data: 'Datos',
       project: 'Proyecto',

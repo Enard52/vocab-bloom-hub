@@ -855,6 +855,16 @@ export default {
     empty_short_translations: 'ترجمات موجزة بوصف فارغ',
   },
   documentation: {
+    endpoint_freedictionaryapi_entries_datasets: 'freedictionaryapi.com · كل مجموعات البيانات',
+    desc_freedictionaryapi_entries_datasets:
+      'يعيد مجموعة لكل مجموعة بيانات مثبتة تتضمن شروطها وحالتها واستجابتها بتنسيق المحول. لا يغير مجموعة البيانات النشطة. حالة HTTP العامة هي 200 حتى عند عدم العثور على الكلمة.',
+    endpoint_dictionaryapi_v1_datasets: 'dictionaryapi.dev v1 · كل مجموعات البيانات',
+    desc_dictionaryapi_v1_datasets:
+      'يعيد مجموعة لكل مجموعة بيانات مثبتة تتضمن شروطها وحالتها واستجابتها بتنسيق المحول. لا يغير مجموعة البيانات النشطة. حالة HTTP العامة هي 200 حتى عند عدم العثور على الكلمة.',
+    endpoint_dictionaryapi_v2_datasets: 'dictionaryapi.dev v2 · كل مجموعات البيانات',
+    desc_dictionaryapi_v2_datasets:
+      'يعيد مجموعة لكل مجموعة بيانات مثبتة تتضمن شروطها وحالتها واستجابتها بتنسيق المحول. لا يغير مجموعة البيانات النشطة. حالة HTTP العامة هي 200 حتى عند عدم العثور على الكلمة.',
+
     endpoint_freedictionaryapi_entries: 'بحث freedictionaryapi.com',
     desc_freedictionaryapi_entries:
       'بحث إنجليزي بالتهجئة الدقيقة مع مراعاة حالة الأحرف في مجموعة البيانات النشطة (language: en أو all). يعيد word وentries وsource؛ الشروط الكاملة في vocabBloom. الكلمات غير الموجودة تعيد entries فارغة.',

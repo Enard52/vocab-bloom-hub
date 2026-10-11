@@ -406,10 +406,23 @@ class PublicApiErrorT(BaseModel):
     error: bool
 
 
-class DictionaryApiErrorT(BaseModel):
-    title: str
-    message: str
-    resolution: str
+class Status(Enum):
+    number_200 = 200
+
+
+class Status1(Enum):
+    number_404 = 404
+
+
+class Meta(BaseModel):
+    """
+    found counts datasets with entries, including for adapters whose misses are HTTP 200.
+    """
+
+    language: str
+    word: str
+    datasets: int
+    found: int
 
 
 class DictionaryApiDefinitionT(BaseModel):
@@ -433,11 +446,29 @@ class DictionaryApiLicenseT(BaseModel):
     url: str
 
 
+class DictionaryApiErrorT(BaseModel):
+    title: str
+    message: str
+    resolution: str
+
+
+class Status2(Enum):
+    number_200 = 200
+
+
+class Status3(Enum):
+    number_404 = 404
+
+
 class DictionaryApiMeaningT(BaseModel):
     partOfSpeech: str
     definitions: list[DictionaryApiDefinitionT]
     synonyms: list[str]
     antonyms: list[str]
+
+
+class Status4(Enum):
+    number_200 = 200
 
 
 class Source(BaseModel):
@@ -712,6 +743,29 @@ class PublicMetaV1ResT(BaseModel):
     data: PublicMetaV1T
 
 
+class Data1(BaseModel):
+    """
+    Each response is scoped to the dataset whose terms surround it; entries are never merged.
+    """
+
+    status: Status1
+    response: DictionaryApiErrorT
+    origins: list[OriginT] | None = None
+    licenses: list[WordLicenseT] | None = None
+    description: str | None = None
+    dataset: str
+    title: str | None = None
+    active: bool
+    source: str
+    dataset_version: str | None = Field(...)
+    license: str
+    license_url: str
+    attribution: str
+    attribution_url: str | None = Field(...)
+    notice: str
+    license_text: str
+
+
 class VocabBloom(BaseModel):
     """
     Complete terms and modification indication, additive to the upstream shape.
@@ -736,6 +790,29 @@ class DictionaryApiPhoneticT(BaseModel):
     )
 
 
+class Data3(BaseModel):
+    """
+    Each response is scoped to the dataset whose terms surround it; entries are never merged.
+    """
+
+    status: Status3
+    response: DictionaryApiErrorT
+    origins: list[OriginT] | None = None
+    licenses: list[WordLicenseT] | None = None
+    description: str | None = None
+    dataset: str
+    title: str | None = None
+    active: bool
+    source: str
+    dataset_version: str | None = Field(...)
+    license: str
+    license_url: str
+    attribution: str
+    attribution_url: str | None = Field(...)
+    notice: str
+    license_text: str
+
+
 class DictionaryApiV2ResTItem(BaseModel):
     meanings: list[DictionaryApiMeaningT]
     word: str
@@ -747,10 +824,6 @@ class DictionaryApiV2ResTItem(BaseModel):
     vocabBloom: VocabBloom = Field(
         ..., description="Complete terms and modification indication, additive to the upstream shape."
     )
-
-
-class DictionaryApiV2ResT(RootModel[list[DictionaryApiV2ResTItem]]):
-    root: list[DictionaryApiV2ResTItem]
 
 
 class VocabBloom3(BaseModel):
@@ -885,8 +958,35 @@ class DictionaryApiV1ResTItem(BaseModel):
     )
 
 
-class DictionaryApiV1ResT(RootModel[list[DictionaryApiV1ResTItem]]):
-    root: list[DictionaryApiV1ResTItem]
+class Data2(BaseModel):
+    """
+    Each response is scoped to the dataset whose terms surround it; entries are never merged.
+    """
+
+    status: Status2
+    response: list[DictionaryApiV2ResTItem]
+    origins: list[OriginT] | None = None
+    licenses: list[WordLicenseT] | None = None
+    description: str | None = None
+    dataset: str
+    title: str | None = None
+    active: bool
+    source: str
+    dataset_version: str | None = Field(...)
+    license: str
+    license_url: str
+    attribution: str
+    attribution_url: str | None = Field(...)
+    notice: str
+    license_text: str
+
+
+class DictionaryApiV2DatasetsResT(BaseModel):
+    data: list[Data2 | Data3]
+    meta: Meta = Field(
+        ...,
+        description="found counts datasets with entries, including for adapters whose misses are HTTP 200.",
+    )
 
 
 class FreeDictionaryEntriesResT(BaseModel):
@@ -894,7 +994,7 @@ class FreeDictionaryEntriesResT(BaseModel):
     entries: list[FreeDictionaryEntryT]
     source: Source
     vocabBloom: PublicDatasetTermsV1T = Field(
-        ..., description="Active dataset terms. Word-specific origins are retained on each entry."
+        ..., description="Terms of the dataset read. Word-specific origins are retained on each entry."
     )
 
 
@@ -996,6 +1096,64 @@ class PublicWordsBatchV1ResT(BaseModel):
 class PublicWordsV1ResT(BaseModel):
     data: list[PublicWordV1T]
     meta: PublicWordsV1MetaT
+
+
+class Data(BaseModel):
+    """
+    Each response is scoped to the dataset whose terms surround it; entries are never merged.
+    """
+
+    status: Status
+    response: list[DictionaryApiV1ResTItem]
+    origins: list[OriginT] | None = None
+    licenses: list[WordLicenseT] | None = None
+    description: str | None = None
+    dataset: str
+    title: str | None = None
+    active: bool
+    source: str
+    dataset_version: str | None = Field(...)
+    license: str
+    license_url: str
+    attribution: str
+    attribution_url: str | None = Field(...)
+    notice: str
+    license_text: str
+
+
+class DictionaryApiV1DatasetsResT(BaseModel):
+    data: list[Data | Data1]
+    meta: Meta = Field(
+        ...,
+        description="found counts datasets with entries, including for adapters whose misses are HTTP 200.",
+    )
+
+
+class Datum(BaseModel):
+    status: Status4
+    response: FreeDictionaryEntriesResT
+    origins: list[OriginT] | None = None
+    licenses: list[WordLicenseT] | None = None
+    description: str | None = None
+    dataset: str
+    title: str | None = None
+    active: bool
+    source: str
+    dataset_version: str | None = Field(...)
+    license: str
+    license_url: str
+    attribution: str
+    attribution_url: str | None = Field(...)
+    notice: str
+    license_text: str
+
+
+class FreeDictionaryDatasetsResT(BaseModel):
+    data: list[Datum]
+    meta: Meta = Field(
+        ...,
+        description="found counts datasets with entries, including for adapters whose misses are HTTP 200.",
+    )
 
 
 class PublicSearchDetailedV1ResT(BaseModel):
