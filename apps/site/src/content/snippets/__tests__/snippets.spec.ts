@@ -85,13 +85,60 @@ describe('every language', () => {
         expect.arrayContaining(['sdk-node', 'sdk-python']),
       );
     }
-    expect(render('sdk-node', 'post-words-batch')).toBeNull();
+    expect(render('sdk-node', 'get-random')).toBeNull();
     // the first tab is curl everywhere: a reader without a choice yet sees it
     for (const request of requests) expect(snippetsOf(request)[0].id).toBe('curl');
   });
 });
 
 describe('the exact text', () => {
+  it('offers batch SDK tabs with the shared words and prints found words and misses', () => {
+    const request = bySlug('post-words-batch');
+    expect(request.body).toEqual({ words: ['run', 'walk', 'nonexistentword'] });
+    expect(snippetsOf(request).map(({ id }) => id)).toEqual(expect.arrayContaining(['sdk-node', 'sdk-python']));
+    expect(render('sdk-node', request.slug)).toBe(
+      [
+        "import { VocabBloomClient } from '@vocab-bloom-hub/client';",
+        '',
+        "const client = new VocabBloomClient({ baseUrl: 'https://x.example' });",
+        "const { data, meta } = await client.wordsBatch(['run', 'walk', 'nonexistentword']);",
+        'console.log(data.map((item) => item.word), meta.not_found);',
+      ].join('\n'),
+    );
+    expect(render('sdk-python', request.slug)).toBe(
+      [
+        'from vocab_bloom_hub import VocabBloomClient',
+        '',
+        'client = VocabBloomClient("https://x.example")',
+        'answer = client.words_batch(["run", "walk", "nonexistentword"])',
+        'print([item.word for item in answer.data], answer.meta.not_found)',
+      ].join('\n'),
+    );
+    const endpoint = playgroundEndpoint(
+      endpoints.find(({ slug }) => slug === request.slug)!,
+      spec,
+    );
+    expect(planRequest(endpoint, { words: 'run, walk, nonexistentword' })).toMatchObject({
+      method: 'POST',
+      path: '/v1/words/batch',
+      body: request.body,
+    });
+  });
+
+  it('batch SDK examples use the supplied origin and escape the shared word list', () => {
+    const words = ['say "hi"', "it's", 'back\\slash'];
+    const request = { ...bySlug('post-words-batch'), origin: 'https://dictionary.example', body: { words } };
+    for (const [id, method, literal] of [
+      ['sdk-node', 'wordsBatch', jsLiteral],
+      ['sdk-python', 'words_batch', pythonLiteral],
+    ] as const) {
+      const code = SNIPPET_LANGUAGES.find((language) => language.id === id)!.render(request)!;
+      expect(code).toContain(request.origin);
+      expect(code).toContain(`client.${method}(${literal(words)})`);
+      expect(code).not.toContain('x.example');
+    }
+  });
+
   it('offers both word-by-ID SDK tabs with the same numeric ID as the playground', () => {
     expect(snippetsOf(bySlug('get-words-id-id')).map(({ id }) => id)).toEqual(
       expect.arrayContaining(['sdk-node', 'sdk-python']),
@@ -174,7 +221,7 @@ describe('the exact text', () => {
         '',
         'fn main() -> Result<(), Box<dyn std::error::Error>> {',
         '    let client = Client::new();',
-        '    let body: Value = serde_json::from_str(r#"{"words":["example"]}"#)?;',
+        '    let body: Value = serde_json::from_str(r#"{"words":["run","walk","nonexistentword"]}"#)?;',
         '    let answer: Value = client',
         '        .post(r#"https://x.example/api/v1/words/batch"#)',
         '        .json(&body)',
@@ -442,7 +489,7 @@ describe('the exact text', () => {
       "curl 'https://x.example/api/v1/words/run/meanings'",
     );
     expect(render('curl', 'post-words-batch')).toBe(
-      "curl -X POST 'https://x.example/api/v1/words/batch' \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"words\":[\"example\"]}'",
+      'curl -X POST \'https://x.example/api/v1/words/batch\' \\\n  -H \'Content-Type: application/json\' \\\n  -d \'{"words":["run","walk","nonexistentword"]}\'',
     );
   });
 
@@ -455,7 +502,7 @@ describe('the exact text', () => {
       ].join('\n'),
     );
     expect(render('javascript', 'post-words-batch')).toContain(
-      "  body: JSON.stringify({\n    words: ['example']\n  }),",
+      "  body: JSON.stringify({\n    words: ['run', 'walk', 'nonexistentword']\n  }),",
     );
   });
 
@@ -470,18 +517,18 @@ describe('the exact text', () => {
       ].join('\n'),
     );
     expect(render('python', 'post-words-batch')).toContain(
-      'requests.post("https://x.example/api/v1/words/batch", json={\n  "words": ["example"]\n})',
+      'requests.post("https://x.example/api/v1/words/batch", json={\n  "words": ["run", "walk", "nonexistentword"]\n})',
     );
   });
 
   it('Go and PHP: the standard clients', () => {
     expect(render('go', 'get-meta')).toContain('resp, err := http.Get("https://x.example/api/v1/meta")');
     expect(render('go', 'post-words-batch')).toContain(
-      'http.Post("https://x.example/api/v1/words/batch", "application/json", strings.NewReader(`{"words":["example"]}`))',
+      'http.Post("https://x.example/api/v1/words/batch", "application/json", strings.NewReader(`{"words":["run","walk","nonexistentword"]}`))',
     );
     expect(render('php', 'get-meta')).toContain("$ch = curl_init('https://x.example/api/v1/meta');");
     expect(render('php', 'post-words-batch')).toContain(
-      "CURLOPT_POSTFIELDS => json_encode([\n      'words' => ['example']\n    ]),",
+      "CURLOPT_POSTFIELDS => json_encode([\n      'words' => ['run', 'walk', 'nonexistentword']\n    ]),",
     );
   });
 

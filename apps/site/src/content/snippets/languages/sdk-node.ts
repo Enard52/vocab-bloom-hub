@@ -16,6 +16,12 @@ const client = (origin: string): string[] => [
 ];
 
 const BY_SLUG: Record<string, (request: SnippetRequestT) => string> = {
+  'post-words-batch': ({ origin, body }) =>
+    [
+      ...client(origin),
+      `const { data, meta } = await client.wordsBatch(${jsLiteral(body?.words)});`,
+      'console.log(data.map((item) => item.word), meta.not_found);',
+    ].join('\n'),
   'get-words-id-id': (request) => {
     const [id] = pathArguments(request, '/api/v1/words/id/{id}');
     return [

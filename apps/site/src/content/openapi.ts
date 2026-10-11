@@ -154,6 +154,7 @@ export const jsonSchemaOf = (media: MediaT | undefined): SchemaT | undefined =>
 const SAMPLE_BY_NAME: Record<string, unknown> = {
   search: 'run',
   word: 'run',
+  words: ['run', 'walk', 'nonexistentword'],
   // every instance holds the default dataset
   dataset: 'default',
   id: 1,
