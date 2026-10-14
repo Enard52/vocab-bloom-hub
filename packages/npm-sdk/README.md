@@ -44,6 +44,53 @@ for await (const word of client.iterateWords({ word_level: ['A1', 'A2'], with_me
 }
 ```
 
+## Runnable cursor pagination example
+
+[`examples/cursor-pagination.mjs`](https://github.com/Fristail27/vocab-bloom-hub/blob/main/packages/npm-sdk/examples/cursor-pagination.mjs)
+walks the verbs of an instance with `client.words()`, two entries per page. It prints the
+dataset's metadata and terms first, then each page's entries with their origins, contributions
+and licenses, and labels entries changed on the instance (see [License](#license)).
+
+With Node.js ≥ 20, save the linked file as `cursor-pagination.mjs` in an empty directory, then run:
+
+```bash
+npm install @vocab-bloom-hub/client
+node cursor-pagination.mjs https://dict.example.com
+```
+
+Replace the URL with your instance's base URL; `/api/v1` is appended by the client.
+The example imports the package's public ESM export and needs no other dependency.
+From a repository checkout, use the pinned Yarn and build the SDK first (Node.js ≥ 22.13):
+
+```bash
+yarn install --immutable
+yarn workspace @vocab-bloom-hub/client build
+node packages/npm-sdk/examples/cursor-pagination.mjs http://localhost:3010
+```
+
+For an isolated local walkthrough, run `yarn workspace server fixture:public-api` in another
+terminal (Node.js ≥ 24.9). It uses an in-memory SQLite database and prints `LISTENING <url>`.
+Use that URL in the command above: its three verbs produce two pages and `Done: 3 entries
+across 2 page(s).` Stop the fixture with Ctrl+C when finished.
+
+The first request omits `cursor`. Every subsequent request keeps `limit` and `part_of_speech`
+unchanged and passes `meta.next_cursor` back exactly as received; the cursor is opaque.
+An absent cursor ends the walk, even on a full final page. An empty first page prints
+`No entries match the filter.` and completes without an extra request. SDK failures go to
+stderr and set a non-zero exit code; the example does not retry automatically.
+
+When you only need entries, replace the manual loop with the existing convenience API:
+
+```js
+for await (const word of client.iterateWords({ limit: 2, part_of_speech: ['verb'] })) {
+  console.log(`${word.word}${word.modified ? ' (changed on this instance)' : ''}`);
+  console.log(JSON.stringify(word, null, 2));
+}
+```
+
+`iterateWords()` fetches pages lazily and follows their cursors for you. Keep the metadata
+display and error handling around it. Running both loops reads the same entries twice.
+
 ## API
 
 | Method                              | Endpoint                                       | Answer                                                                                                         |
