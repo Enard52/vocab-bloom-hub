@@ -1651,6 +1651,22 @@ export class EnImportDictionaryService implements OnModuleDestroy {
       // can set this.target while the previous run still has to clear it.
       this.importStatus?.end(outcome);
     }
+
+    // Clients can activate/delete a dataset or start another import as soon
+    // as they see completion. Publish it only after the audit and cleanup
+    // have finished and the import slot has been released.
+    progress.write({
+      percent: 100,
+      stage: EnDictionaryImportPhasesE.completed,
+      ...(outcome.dataset_version && { datasetVersion: outcome.dataset_version }),
+      ...(updateCtx && {
+        updated_entries: updateCtx.replaced.size,
+        added_entries: updateCtx.added.size,
+        kept_user_modified: updateCtx.kept.size,
+      }),
+    });
+    this.metrics?.transferFinished('import', 'success');
+    progress.end();
   }
 
   /** The import pipeline shared by every source; the source is disposed at the end */
@@ -1787,20 +1803,6 @@ export class EnImportDictionaryService implements OnModuleDestroy {
         );
       });
     }
-
-    const finalChunk: ImportDictionaryChunkT = {
-      percent: 100,
-      stage: EnDictionaryImportPhasesE.completed,
-      ...(datasetVersion && { datasetVersion }),
-      ...(updateCtx && {
-        updated_entries: updateCtx.replaced.size,
-        added_entries: updateCtx.added.size,
-        kept_user_modified: updateCtx.kept.size,
-      }),
-    };
-    progress.write(finalChunk);
-    this.metrics?.transferFinished('import', 'success');
-    progress.end();
 
     this.logger.log(
       `Dictionary import from ${label} completed: ${count} records in ${Date.now() - startedAt}ms` +

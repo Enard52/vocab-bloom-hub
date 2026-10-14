@@ -477,7 +477,11 @@ describe('EnImportDictionaryService NDJSON import (issue #87)', () => {
         },
       });
 
-    const runImport = async (withManifest = true, importer = service): Promise<FakeProgressRes> => {
+    const runImport = async (
+      withManifest = true,
+      importer = service,
+      res = new FakeProgressRes(),
+    ): Promise<FakeProgressRes> => {
       mockDatasetFiles({
         ...(withManifest && { 'manifest.json': makeManifest() }),
         'vocab-bloom-hub-en-words.jsonl':
@@ -574,7 +578,6 @@ describe('EnImportDictionaryService NDJSON import (issue #87)', () => {
         ]),
       });
 
-      const res = new FakeProgressRes();
       await importer.importDictionary({}, res as unknown as ExpressResponse);
       return res;
     };
@@ -608,7 +611,7 @@ describe('EnImportDictionaryService NDJSON import (issue #87)', () => {
       return { importer, status, recordImport };
     };
 
-    it('holds the import slot until the audit and target cleanup have finished', async () => {
+    it('reports completion only after the audit, target cleanup and import slot release', async () => {
       const auditing = deferred();
       const audited = deferred();
       const closing = deferred();
@@ -626,16 +629,29 @@ describe('EnImportDictionaryService NDJSON import (issue #87)', () => {
         },
       });
 
-      const first = runImport(true, importer);
+      const res = new FakeProgressRes();
+      const completionStates: boolean[] = [];
+      const write = res.write;
+      res.write = (chunk) => {
+        if ((JSON.parse(chunk) as ProgressChunk).stage === EnDictionaryImportPhasesE.completed) {
+          completionStates.push(status.running);
+        }
+        return write(chunk);
+      };
+      const first = runImport(true, importer, res);
       try {
         await auditing.promise;
         expect(status.running).toBe(true);
+        expect(res.ended).toBe(false);
+        expect(completionStates).toEqual([]);
         await expect(
           importer.importDictionary({}, new FakeProgressRes() as unknown as ExpressResponse),
         ).rejects.toThrow(ErrorCodes.import_in_progress);
         audited.resolve();
         await closing.promise;
         expect(status.running).toBe(true);
+        expect(res.ended).toBe(false);
+        expect(completionStates).toEqual([]);
         await expect(
           importer.importDictionary({}, new FakeProgressRes() as unknown as ExpressResponse),
         ).rejects.toThrow(ErrorCodes.import_in_progress);
@@ -645,6 +661,8 @@ describe('EnImportDictionaryService NDJSON import (issue #87)', () => {
         await first;
       }
       expect(status.snapshot()).toEqual(expect.objectContaining({ running: false, dataset_version: '0.2.0' }));
+      expect(res.ended).toBe(true);
+      expect(completionStates).toEqual([false]);
 
       // After cleanup the next run can claim its target and record its version.
       await runImport(true, importer);
